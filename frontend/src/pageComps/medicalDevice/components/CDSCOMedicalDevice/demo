@@ -1,0 +1,284 @@
+<TabsContent value="services" className="mt-8">
+            <div className="bg-card rounded-xl shadow-sm border overflow-hidden">
+              <div className="bg-gradient-to-br from-primary/5 to-primary/10 p-8 md:p-12 text-center border-b">
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                  Our Services
+                </h2>
+                <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+                  Comprehensive solutions for CDSCO Cosmetic Import License and regulatory compliance
+                </p>
+              </div>
+              </div>
+              
+              <div className="p-8 md:p-12">
+                <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                  {/* Service 1 */}
+                  <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950/30 dark:to-blue-900/30 p-8 rounded-xl border border-blue-200 dark:border-blue-800 hover:shadow-lg transition-all group">
+                    <div className="flex items-start gap-4 mb-4">
+                      <div className="w-12 h-12 rounded-lg bg-blue-500 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                        <FileText className="w-6 h-6 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-foreground mb-2">Cosmetic Import License (COS-2) Approval
+                        </h3>
+                        <p className="text-muted-foreground mb-4">End-to-end support for cosmetic import license application and approval</p>
+                      </div>
+                    </div>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                        <span>Assistance with fresh, endorsement & renewal applications.
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                        <span>Complete CDSCO documentation & SUGAM portal filing.
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                        <span>Compliance with Cosmetics Rules, 2020.</span>
+                      </li>
+                      {/* <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                        <span>Application tracking and follow-up</span>
+                      </li> */}
+                    </ul>
+                  </div>
+
+                  {/* Service 2 */}
+                  <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-950/30 dark:to-green-900/30 p-8 rounded-xl border border-green-200 dark:border-green-800 hover:shadow-lg transition-all group">
+                    <div className="flex items-start gap-4 mb-4">
+                      <div className="w-12 h-12 rounded-lg bg-green-500 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                        <ShieldCheck className="w-6 h-6 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-foreground mb-2">Authorized Agent Support</h3>
+                        <p className="text-muted-foreground mb-4">Comprehensive compliance assessment and gap analysis</p>
+                      </div>
+                    </div>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                        <span>Act as Indian representative for foreign manufacturers.</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                        <span>Manage CDSCO communication & submissions</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                        <span>Ensure full local regulatory compliance.</span>
+                      </li>
+                      {/* <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                        <span>Claims validation and correction</span>
+                      </li> */}
+                    </ul>
+                  </div>
+
+                  {/* Service 3 */}
+                  <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-950/30 dark:to-purple-900/30 p-8 rounded-xl border border-purple-200 dark:border-purple-800 hover:shadow-lg transition-all group">
+                    <div className="flex items-start gap-4 mb-4">
+                      <div className="w-12 h-12 rounded-lg bg-purple-500 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                        <FileText className="w-6 h-6 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-foreground mb-2">⁠Legal Metrology Importer Registration</h3>
+                        <p className="text-muted-foreground mb-4">Compliant label artwork design and legal metrology adherence</p>
+                      </div>
+                    </div>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-purple-500 mt-0.5 flex-shrink-0" />
+                        <span>LMPC registration under Legal Metrology Act.</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-purple-500 mt-0.5 flex-shrink-0" />
+                        <span>Compliance for weight, volume & labeling norms.</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-purple-500 mt-0.5 flex-shrink-0" />
+                        <span>Avoid customs delays & legal penalties.
+                        </span>
+                      </li>
+                      {/* <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-purple-500 mt-0.5 flex-shrink-0" />
+                        <span>Warning and cautionary statement</span>
+                      </li> */}
+                    </ul>
+                  </div>
+
+                  {/* Service 4 */}
+                  <div className="bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-950/30 dark:to-orange-900/30 p-8 rounded-xl border border-orange-200 dark:border-orange-800 hover:shadow-lg transition-all group">
+                    <div className="flex items-start gap-4 mb-4">
+                      <div className="w-12 h-12 rounded-lg bg-orange-500 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                        <Handshake className="w-6 h-6 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-foreground mb-2">EPR Authorization from CPCB</h3>
+                        <p className="text-muted-foreground mb-4">Professional assistance with all required documentation</p>
+                      </div>
+                    </div>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" />
+                        <span>EPR registration under Plastic Waste Management Rules.</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" />
+                        <span>Ensure sustainable packaging compliance.
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" />
+                        <span>Preparation of EPR plan & coordination with CPCB.
+                        </span>
+                      </li>
+                      {/* <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" />
+                        <span>Product specification sheets</span>
+                      </li> */}
+                    </ul>
+                  </div>
+
+                  {/* Service 5 */}
+                  <div className="bg-gradient-to-br from-cyan-50 to-cyan-100 dark:from-cyan-950/30 dark:to-cyan-900/30 p-8 rounded-xl border border-cyan-200 dark:border-cyan-800 hover:shadow-lg transition-all group">
+                    <div className="flex items-start gap-4 mb-4">
+                      <div className="w-12 h-12 rounded-lg bg-cyan-500 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                        <Globe className="w-6 h-6 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-foreground mb-2">⁠Labeling Compliance</h3>
+                        <p className="text-muted-foreground mb-4">Strategic guidance for international cosmetic brands entering India</p>
+                      </div>
+                    </div>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-cyan-500 mt-0.5 flex-shrink-0" />
+                        <span>Label review per Cosmetic Rules & BIS standards.</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-cyan-500 mt-0.5 flex-shrink-0" />
+                        <span>Verify mandatory details & bilingual text.</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-cyan-500 mt-0.5 flex-shrink-0" />
+                        <span>Pre-import label approval support</span>
+                      </li>
+                      {/* <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-cyan-500 mt-0.5 flex-shrink-0" />
+                        <span>Ongoing compliance support</span>
+                      </li> */}
+                    </ul>
+                  </div>
+
+                  {/* Service 6 */}
+                  <div className="bg-gradient-to-br from-pink-50 to-pink-100 dark:from-pink-950/30 dark:to-pink-900/30 p-8 rounded-xl border border-pink-200 dark:border-pink-800 hover:shadow-lg transition-all group">
+                    <div className="flex items-start gap-4 mb-4">
+                      <div className="w-12 h-12 rounded-lg bg-pink-500 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                        <Route className="w-6 h-6 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-foreground mb-2"> ⁠Ingredient Compliance
+                        </h3>
+                        <p className="text-muted-foreground mb-4">Continued support after license approval for smooth operations</p>
+                      </div>
+                    </div>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-pink-500 mt-0.5 flex-shrink-0" />
+                        <span>Ingredient check against prohibited/restricted lists.
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-pink-500 mt-0.5 flex-shrink-0" />
+                        <span>Verify formulations with Indian cosmetic standards.
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-pink-500 mt-0.5 flex-shrink-0" />
+                        <span>Guidance for reformulation if required.
+                        </span>
+                      </li>
+                      {/* <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-pink-500 mt-0.5 flex-shrink-0" />
+                        <span>Compliance audit and monitoring</span>
+                      </li> */}
+                    </ul>
+                  </div>
+                
+
+                {/* service 7 */}
+                <div className="bg-gradient-to-br from-pink-50 to-pink-100 dark:from-pink-950/30 dark:to-pink-900/30 p-8 rounded-xl border border-pink-200 dark:border-pink-800 hover:shadow-lg transition-all group">
+                    <div className="flex items-start gap-4 mb-4">
+                      <div className="w-12 h-12 rounded-lg bg-pink-500 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                        <Route className="w-6 h-6 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-foreground mb-2"> ⁠Regulatory Reporting & Post-Approval Changes
+
+                        </h3>
+                        <p className="text-muted-foreground mb-4">Continued support after license approval for smooth operations</p>
+                      </div>
+                    </div>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-pink-500 mt-0.5 flex-shrink-0" />
+                        <span>Handle formula, label & manufacturer change filings.
+
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-pink-500 mt-0.5 flex-shrink-0" />
+                        <span>Support renewals & endorsements.
+
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-pink-500 mt-0.5 flex-shrink-0" />
+                        <span>Maintain updated regulatory documentation.
+                        </span>
+                      </li>
+                      {/* <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-pink-500 mt-0.5 flex-shrink-0" />
+                        <span>Compliance audit and monitoring</span>
+                      </li> */}
+                    </ul>
+                  </div>
+               
+
+
+                
+
+                {/* CTA */}
+                <div className="mt-12 text-center">
+                  <div className="bg-gradient-to-br from-primary/10 to-primary/5 p-8 rounded-xl border border-primary/20">
+                    <h3 className="text-2xl font-bold text-foreground mb-3">
+                      Ready to Get Started?
+                    </h3>
+                    <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+                      Let our experts guide you through the entire CDSCO cosmetic import licensing process. Get in touch for a free consultation.
+                    </p>
+                    <a 
+                      href="https://wa.me/919711467307" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors shadow-lg hover:shadow-xl"
+                    >
+                      <Handshake className="w-5 h-5" />
+                      Contact Us Today
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </TabsContent>
+
+
+
+
+
+          <TabsContent value="compliance" className="mt-8">
+            
+          </TabsContent>
