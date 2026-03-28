@@ -3,17 +3,17 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 
 const DEFAULTS = {
-  title: "Regacats Solutions | CDSCO & FSSAI Consultant in India",
+  title: "Regacats Solutions | Licensing & Regulatory Consultancy India",
   description:
-    "Regacats Solutions provides expert CDSCO, FSSAI, IAA, EPR, and Legal Metrology compliance services for Indian and global businesses.",
-  siteUrl: "https://regacats.in",
-  image: "https://blogs.regacats.in/wp-content/uploads/2026/02/regacats-cdsco-import-license.webp",
+    "Expert licensing consultancy in India for CDSCO, FSSAI, BIS & medical devices. Fast approvals with Regacats Solutions.",
+  siteUrl: "https://regacat-client.vercel.app",
+  image: "/preview.png",
   twitterHandle: "@regacats",
   twitterSite: "@regacats",
   locale: "en_IN",
   lang: "en",
   keywords:
-    "CDSCO consultant, FSSAI consultant, Indian authorized agent, cosmetic import license India, medical device import license India, drug registration India, EPR authorization, legal metrology",
+    "Licensing consultancy India, CDSCO registration, FSSAI license, BIS certification, medical device registration, cosmetic import license India",
 };
 
 export default function SEO({

@@ -10,6 +10,9 @@ import Portfolio from "./pages/Portfolio";
 import Team from "./pages/Team";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import CdscoRegistrationGuide from "./pages/blog/CdscoRegistrationGuide";
+import FssaiLicenseProcess from "./pages/blog/FssaiLicenseProcess";
+import BisCertificationIndia from "./pages/blog/BisCertificationIndia";
 import CosmeticImportLicense from "./pages/services/CosmeticImportLicense";
 import CDSCORegistration from "./pages/services/CDSCORegistration";
 import MedicalDeviceLicense from "./pages/services/MedicalDeviceLicense";
@@ -57,6 +60,9 @@ const App = () => (
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/team" element={<Team />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/cdsco-registration-guide" element={<CdscoRegistrationGuide />} />
+          <Route path="/blog/fssai-license-process" element={<FssaiLicenseProcess />} />
+          <Route path="/blog/bis-certification-india" element={<BisCertificationIndia />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/cosmetic-import-license-india" element={<CosmeticImportLicense />} />
           <Route path="/cdsco-registration" element={<CDSCORegistration />} />

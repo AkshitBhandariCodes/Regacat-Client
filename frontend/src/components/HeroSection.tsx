@@ -113,8 +113,7 @@ export const HeroSection = ({ onConsultClick }: HeroSectionProps) => {
           {/* Left Side - Content */}
           <div className="animate-fade-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-              India's Trusted Licensing &{" "}
-              <span className="text-primary">Regulatory Consultancy</span> Partner
+              Licensing & Regulatory Consultancy Services in India
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8">
               Navigate complex regulatory requirements with confidence. From CDSCO cosmetic import registration, medical device import registration to
