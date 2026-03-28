@@ -8,24 +8,36 @@ import {
 const FAQSection = () => {
   const faqs = [
     {
-      question: "Who needs an FSSAI License?",
-      answer: "Any business involved in food manufacturing, processing, packaging, storage, distribution, or sale must obtain an FSSAI license. This includes restaurants, cafes, cloud kitchens, food manufacturers, importers, retailers, and even small home-based food businesses. The type of license depends on your annual turnover and scale of operations."
+      question: "Who requires FSSAI regulatory and compliance services in India?",
+      answer: "Any business involved in manufacturing, importing, exporting, marketing, or selling food, nutraceuticals, or dietary supplements in India must comply with FSSAI regulations and may require professional consulting support."
     },
     {
-      question: "How long does it take to get FSSAI approval?",
-      answer: "Basic FSSAI Registration typically takes 7-10 working days once all documents are submitted. State License approval takes 30-60 days, while Central License may take 60-90 days. With Regacats Solutions handling your application, we ensure optimal processing time by maintaining accurate documentation and proactive follow-ups with authorities."
+      question: "What services do FSSAI consultants in India provide?",
+      answer: "Services include licensing and registration, product classification, formulation and label compliance, non-specified food approvals, import assistance, health claim approvals, authorized agent support, and post-market compliance."
     },
     {
-      question: "What's the difference between State and Central License?",
-      answer: "State License is for businesses with turnover between ₹12 lakhs and ₹20 crores operating within a single state. Central License is mandatory for businesses with turnover above ₹20 crores, those operating across multiple states, importers/exporters, or manufacturers of specific food categories like supplements, organic foods, or novel foods."
+      question: "Do international food companies need FSSAI consultants in India?",
+      answer: "Yes. International companies entering India must comply with FSSAI regulations and often require an Indian consultant or authorized agent to manage approvals, imports, and ongoing compliance."
     },
     {
-      question: "Is FSSAI renewal mandatory every year?",
-      answer: "FSSAI licenses are typically valid for 1-5 years depending on the license type and the validity period you choose during application. Renewal is mandatory before the expiry date. Operating with an expired license can result in penalties. Regacats Solutions offers renewal assistance and sends timely reminders to ensure continuous compliance."
+      question: "What is a Non-Specified Food under FSSAI regulations?",
+      answer: "A non-specified food is a product or ingredient not specifically covered under existing FSSAI standards and requires prior approval before manufacturing, import, or sale in India."
     },
     {
-      question: "Can you operate multiple locations under one license?",
-      answer: "No, each food business premises requires a separate FSSAI license. If you operate multiple branches or manufacturing units, you'll need individual licenses for each location. However, a Central License holder can manufacture the same category of products at different locations by getting additional premises approved under the same license through an amendment process."
+      question: "How long does it take to obtain FSSAI licenses or approvals?",
+      answer: "Timelines depend on service type. Basic or State licenses may take a few weeks, while Central licenses, product approvals, and non-specified food approvals can take several months."
+    },
+    {
+      question: "Can FSSAI consultants help with product labeling and artwork compliance?",
+      answer: "Yes. Consultants review formulations and artwork for ingredient permissions, declarations, warnings, claims, and label format compliance before launch."
+    },
+    {
+      question: "What is an Indian Authorized Agent (IAA) under FSSAI?",
+      answer: "An IAA represents foreign food manufacturers before FSSAI, handling regulatory communication, approvals, compliance responsibilities, and post-market obligations in India."
+    },
+    {
+      question: "Why should businesses engage professional FSSAI consultants instead of applying directly?",
+      answer: "Professional consultants reduce misclassification and misbranding risks, improve submission quality, and help prevent delays by aligning filings with current FSSAI regulatory expectations."
     }
   ];
 

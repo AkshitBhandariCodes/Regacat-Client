@@ -37,12 +37,14 @@ import NotFound from "./pages/NotFound";
 import EPRPage from "./pages/services/EPRPage";
 
 import LegalPage from "./pages/services/LegalPage";
+import SEO from "./seo/SEO";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
+      <SEO />
       <Toaster />
       <Sonner />
       <BrowserRouter>

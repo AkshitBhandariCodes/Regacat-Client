@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { TopBar } from "@/components/TopBar";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
@@ -18,6 +18,9 @@ import {
 } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { CheckCircle2, ChevronDown, ChevronUp } from "lucide-react";
+import SEO from "@/seo/SEO";
+import WebsiteSchema from "@/seo/schema/WebsiteSchema";
+import FAQSchema from "@/seo/schema/FAQSchema";
 
 export interface FssaiFaq {
   question: string;
@@ -52,6 +55,7 @@ interface FssaiServiceTemplateProps {
 
 const FssaiServiceTemplate = ({ data }: FssaiServiceTemplateProps) => {
   const navigate = useNavigate();
+  const location = useLocation();
   const { toast } = useToast();
 
   const heroBadge = data?.heroBadge ?? "FSSAI Service";
@@ -67,6 +71,27 @@ const FssaiServiceTemplate = ({ data }: FssaiServiceTemplateProps) => {
   const formServiceOptions = data?.formServiceOptions ?? ["FSSAI Service"];
   const processImage = data?.processImage;
   const secondaryImage = data?.secondaryImage;
+  const siteUrl = "https://regacats.in";
+  const canonical = `${siteUrl}${location.pathname}`;
+  const schema = [
+    WebsiteSchema(),
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: heroTitle,
+      description: heroDescription,
+      provider: {
+        "@type": "Organization",
+        name: "Regacats Solutions",
+        url: siteUrl,
+      },
+      areaServed: "India",
+      serviceType: heroBadge,
+      url: canonical,
+      image: heroImage || undefined,
+    },
+    FAQSchema(faqs),
+  ];
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
@@ -128,6 +153,14 @@ const FssaiServiceTemplate = ({ data }: FssaiServiceTemplateProps) => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title={`${heroTitle} | Regacats Solutions`}
+        description={heroDescription}
+        canonical={canonical}
+        type="website"
+        image={heroImage}
+        jsonLd={schema}
+      />
       <TopBar />
       <Navigation onConsultClick={() => navigate("/")} />
 
@@ -148,7 +181,7 @@ const FssaiServiceTemplate = ({ data }: FssaiServiceTemplateProps) => {
                   <img
                     src={heroImage}
                     alt={heroTitle}
-                    className="w-full h-[220px] sm:h-[300px] md:h-[360px] object-cover rounded-xl"
+                    className="w-full h-[220px] sm:h-[300px] md:h-[360px] object-contain bg-white p-2 rounded-xl"
                     loading="eager"
                   />
                 ) : (
@@ -233,7 +266,7 @@ const FssaiServiceTemplate = ({ data }: FssaiServiceTemplateProps) => {
                   <img
                     src={processImage}
                     alt="FSSAI process visual"
-                    className="w-full rounded-2xl border border-blue-100 shadow-sm object-cover"
+                    className="w-full max-h-[360px] rounded-2xl border border-blue-100 shadow-sm object-contain bg-white p-2"
                     loading="lazy"
                   />
                 )}
@@ -241,7 +274,7 @@ const FssaiServiceTemplate = ({ data }: FssaiServiceTemplateProps) => {
                   <img
                     src={secondaryImage}
                     alt="FSSAI compliance visual"
-                    className="w-full rounded-2xl border border-blue-100 shadow-sm object-cover"
+                    className="w-full max-h-[360px] rounded-2xl border border-blue-100 shadow-sm object-contain bg-white p-2"
                     loading="lazy"
                   />
                 )}

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FileCheck, Pill, Stethoscope, Award, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
+import { Link } from "react-router-dom";
 
 interface Service {
   title: string;
@@ -9,6 +10,7 @@ interface Service {
   summary: string;
   details: string;
   icon: any;
+  href: string;
 }
 
 const services: Service[] = [
@@ -18,6 +20,7 @@ const services: Service[] = [
     summary: "Get expert assistance in obtaining cosmetic import licenses for your beauty and personal care products.",
     details: "Our comprehensive cosmetic import license service includes consultation on regulatory requirements, documentation preparation, liaison with regulatory authorities, and complete support until license approval. We handle all aspects of CDSCO cosmetic registration and ensure compliance with Indian regulations.",
     icon: Pill,
+    href: "/cosmetic-import-license-india",
   },
   {
     title: "CDSCO Drug Registration",
@@ -25,6 +28,7 @@ const services: Service[] = [
     summary: "Navigate CDSCO regulations efficiently with our expert guidance and documentation support.",
     details: "We provide end-to-end CDSCO registration services including Form 10 & 10A, manufacturing license, import license, and product registration. Our team ensures accurate documentation, faster processing, and complete compliance with Central Drugs Standard Control Organization requirements.",
     icon: FileCheck,
+    href: "/cdsco-registration",
   },
   {
     title: "Medical Device Import License MD14",
@@ -32,6 +36,7 @@ const services: Service[] = [
     summary: "Secure medical device licenses quickly with our specialized regulatory expertise.",
     details: "Our medical device licensing services cover Class A, B, C, and D devices. We assist with product classification, technical documentation, manufacturing license, import registration, and ongoing compliance. Our experts ensure your devices meet all Indian regulatory standards.",
     icon: Stethoscope,
+    href: "/medical-device-import-license-india",
   },
   {
     title: "FSSAI License",
@@ -39,6 +44,7 @@ const services: Service[] = [
     summary: "Complete trademark registration and FSSAI licensing for food businesses.",
     details: "We offer comprehensive services for trademark registration, brand protection, and FSSAI licensing. From state to central FSSAI licenses, we handle documentation, filing, and follow-ups. Protect your brand identity while ensuring food safety compliance.",
     icon: Award,
+    href: "/fssai-consultants-india",
   },
   {
     title: "EPR Authorization",
@@ -46,6 +52,7 @@ const services: Service[] = [
     summary: "Obtain BIS certification for your products with our streamlined process.",
     details: "Get BIS (Bureau of Indian Standards) certification for electronics, appliances, and other products. We provide complete support including product testing coordination, documentation, application filing, factory inspection preparation, and certificate maintenance.",
     icon: ShieldCheck,
+    href: "/epr-registration",
   },
   {
     title: "Legal Metrology",
@@ -53,6 +60,7 @@ const services: Service[] = [
     summary: "Obtain BIS certification for your products with our streamlined process.",
     details: "Get BIS (Bureau of Indian Standards) certification for electronics, appliances, and other products. We provide complete support including product testing coordination, documentation, application filing, factory inspection preparation, and certificate maintenance.",
     icon: ShieldCheck,
+    href: "/legal-metrology",
   },
 ];
 
@@ -103,10 +111,18 @@ export const ServicesSection = ({ onConsultClick }: ServicesSectionProps) => {
                     <Button
                       variant="secondary"
                       onClick={() => setSelectedService(service)}
-                      className="w-full"
+                      className="w-full bg-white text-primary hover:bg-white/90"
                     >
                       Read More
                     </Button>
+                    <Link to={service.href} className="block">
+                      <Button
+                        variant="outline"
+                        className="w-full mt-2 border-white bg-transparent text-white hover:bg-white hover:text-primary"
+                      >
+                        Visit Service Page
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </div>

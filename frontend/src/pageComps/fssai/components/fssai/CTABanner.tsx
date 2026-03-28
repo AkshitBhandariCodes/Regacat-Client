@@ -24,10 +24,10 @@ const CTABanner = ({ onCTAClick }: CTABannerProps) => {
           {/* Heading */}
           <div className="space-y-4">
             <h2 className="text-3xl md:text-5xl font-bold leading-tight">
-              Ready to Launch Your Food Business Legally?
+              Get Support From Trusted FSSAI Consultants in India
             </h2>
             <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto">
-              Let Regacats Solutions handle your FSSAI registration — fast, simple, and 100% compliant.
+              Whether you need licensing, product approvals, import assistance, or ongoing compliance support, Regacats delivers regulatory clarity and continuity.
             </p>
           </div>
 
@@ -38,7 +38,7 @@ const CTABanner = ({ onCTAClick }: CTABannerProps) => {
               onClick={onCTAClick}
               className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold px-10 py-7 text-lg rounded-xl shadow-2xl hover:shadow-accent/50 transition-all hover:scale-105"
             >
-              Talk to Our Experts
+              Talk to Our Regulatory Experts
               <ArrowRight className="ml-2 w-6 h-6" />
             </Button>
           </div>
@@ -46,8 +46,8 @@ const CTABanner = ({ onCTAClick }: CTABannerProps) => {
           {/* Trust indicators */}
           <div className="flex flex-wrap justify-center gap-8 pt-6 text-sm text-white/80">
             <div>✓ Free Consultation</div>
-            <div>✓ 500+ Successful Applications</div>
-            <div>✓ Expert Guidance</div>
+            <div>✓ PAN India & International Support</div>
+            <div>✓ FSSAI Regulatory Specialists</div>
           </div>
         </div>
       </div>

@@ -6,58 +6,64 @@ const OverviewSection = () => {
   const features = [
     {
       icon: FileCheck,
-      title: "1.⁠ ⁠FSSAI License",
-      description: "New license, renewal & modification support Annual return filing & six-monthly lab report upload Fast, end-to-end assistance for all food businesses",
+      title: "1. FSSAI License",
+      description: "Complete support for Central License, State License, and FSSAI Registration including category assessment, documentation, filing, and authority coordination.",
       href: "/fssai-license-registration-services-india"
     },
     {
       icon: Users,
-      title: "2.⁠ ⁠Product Compliance (Formulation & Artwork",
-      description: "Ingredient & formulation review as per FSSAI norms Artwork & labeling compliance check Ensure product approval before market launch",
+      title: "2. Nutraceutical Consultant",
+      description: "Regulatory strategy, formulation review, licensing, claim support, and compliance planning for nutraceutical and dietary supplement products.",
       href: "/fssai-consultant-nutraceutical-supplement-india"
     },
     {
       icon: MapPin,
       title: "3. Non-Specified Food/Ingredient Approval",
-      description: "Dossier preparation for novel foods/ingredients Scientific data submission & FSSAI coordination Hassle-free approval process",
+      description: "End-to-end scientific and technical dossier support for non-specified or novel foods under NSF regulations.",
       href: "/non-specified-food-ingredient-approval-india"
     },
     {
       icon: MapPin,
-      title: "4.⁠ ⁠Import Assistance",
-      description: "FSSAI clearance for imported food consignments Documentation & inspection support Smooth coordination with port authorities",
+      title: "4. Import Assistance",
+      description: "FSSAI import compliance for food and nutraceutical consignments including documentation, sampling, testing, and port coordination.",
       href: "/fssai-import-assistance-services-india"
 
     },
     {
       icon: MapPin,
-      title: "5.⁠ ⁠Product Health Claim Approval",
-      description: "Scientific substantiation & dossier preparation Filing & liaison with FSSAI for claim approval Ensure compliant marketing communication",
+      title: "5. Product Health Claim Approval",
+      description: "Claim permissibility review, scientific substantiation, dossier preparation, and representation for health and nutrition claim approvals.",
       href: "/fssai-health-claim-approval-services-india"
     },
     {
       icon: MapPin,
-      title: "6.⁠ ⁠FSSAI Authorized Agent (India)",
-      description: "Official FSSAI liaison for foreign food brands Manage submissions, renewals & compliance Trusted representation in India",
+      title: "6. FSSAI Authorized Agent (India)",
+      description: "Indian Authorized Agent support for foreign manufacturers with regulatory representation, submissions, and post-approval compliance.",
       href: "/indian-authorized-agent-for-fssai-products-india"
     },
     {
       icon: MapPin,
-      title: "7.⁠ ⁠Foreign Food Facility Registration",
-      description: "Registration of overseas food plants with FSSAI Complete documentation & application support Seamless approval coordination",
+      title: "7. Foreign Food Facility Registration",
+      description: "Support for Foreign Food Manufacturing Facility Registration (FFMFR/ReFOM) for overseas units exporting to India.",
       href: "/foreign-food-manufacturing-facility-registration-in-india"
     },
     {
       icon: MapPin,
-      title: "8.⁠ ⁠Vegan Approval",
-      description: "FSSAI vegan certification support Ingredient & process compliance review Guidance for logo usage & labeling",
+      title: "8. Vegan Approval",
+      description: "Ingredient and process verification, application support, and compliance guidance for vegan claim and logo usage.",
       href: "/vegan-endorsement-india"
     },
     {
       icon: MapPin,
       title: "9. Nutraceutical Import Consultant",
-      description: "Dedicated support for ingredient validation, label adaptation, NSF pathway and end-to-end port clearance for nutraceutical imports",
+      description: "Dedicated support for ingredient validation, label adaptation, NSF pathway, and end-to-end nutraceutical import clearance.",
       href: "/fssai-nutraceutical-import-consultant-india"
+    },
+    {
+      icon: Users,
+      title: "10. Product Formulation & Label (Artwork) Review",
+      description: "Technical review of ingredient composition, additives, nutrient limits, claims, declarations, and artwork under applicable FSSAI regulations.",
+      href: undefined
     }
   ];
 
@@ -68,20 +74,20 @@ const OverviewSection = () => {
           {/* Heading */}
           <div className="text-center space-y-4 fade-in">
             <h2 className="text-3xl md:text-5xl font-bold text-foreground">
-              What is an FSSAI License?
+              Our FSSAI Regulatory & Compliance Services
             </h2>
           </div>
 
           {/* Main content */}
           <div className="space-y-6 fade-in">
             <p className="text-lg text-muted-foreground leading-relaxed max-w-4xl mx-auto text-center">
-              The <strong className="text-foreground">Food Safety and Standards Authority of India (FSSAI)</strong> ensures that all food businesses operate in compliance with safety and hygiene standards.
+              Regacats Solutions provides comprehensive FSSAI regulatory services for food, nutraceutical, and dietary supplement businesses across India and global markets.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-4xl mx-auto text-center">
-              Any manufacturer, trader, or importer of food products must obtain an FSSAI License or Registration before selling or distributing food in India.
+              We support manufacturers, importers, exporters, brand owners, and international companies with licensing, approvals, formulation compliance, import pathway planning, and post-market execution.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-4xl mx-auto text-center">
-              <strong className="text-primary">Regacats Solutions</strong> simplifies the entire process — handling documentation, application filing, and communication with authorities — so you can focus on growing your business.
+              Our regulatory approach combines technical expertise, practical execution, and regulator-aligned submissions to reduce delays and compliance risk.
             </p>
           </div>
 
@@ -104,7 +110,7 @@ const OverviewSection = () => {
                   <p className="text-muted-foreground">
                     {feature.description}
                   </p>
-                  {"href" in feature && (
+                  {feature.href && (
                     <Link
                       to={feature.href}
                       className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors"

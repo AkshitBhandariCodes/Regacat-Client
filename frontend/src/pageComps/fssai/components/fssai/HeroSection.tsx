@@ -186,8 +186,8 @@ const HeroSection = ({ onCTAClick }: HeroSectionProps) => {
   return (
     <>
       <SEO
-        title="Leading FSSAI Consultants in India | Global Food Compliance"
-        description="Best FSSAI consultants in India for food, dietary supplement & nutraceutical import, manufacturing & export licensing. Expert compliance support."
+        title="FSSAI Consultants in India | Regulatory Services"
+        description="Comprehensive FSSAI regulatory and compliance services for food, nutraceutical, and dietary supplement businesses across India and global markets."
       />
 
       <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-primary/90 text-primary-foreground py-20 md:py-32">
@@ -222,32 +222,32 @@ const HeroSection = ({ onCTAClick }: HeroSectionProps) => {
               {/* Badge */}
               <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
                 <Shield className="w-4 h-4" />
-                <span className="text-sm font-medium">FSSAI License Experts</span>
+                <span className="text-sm font-medium">FSSAI Regulatory Consultants</span>
               </div>
 
               {/* Heading */}
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
-                FSSAI Regulatory Services in India for Food, Dietary Supplement & Nutraceuticals
+                FSSAI Consultants for Food, Nutraceutical & Dietary Supplement
               </h1>
 
               {/* Subheading */}
               <p className="text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed">
-                End-to-end food licensing assistance for businesses across India. We handle everything from documentation to final approval.
+                Regacats Solutions provides end-to-end FSSAI regulatory and compliance services including product formulation review, licensing, approvals, import support, labeling compliance, and post-market guidance.
               </p>
 
               {/* Trust Indicators */}
               <div className="flex flex-wrap gap-6 md:gap-8 pt-4 justify-center md:justify-start">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-5 h-5 text-secondary" />
-                  <span className="text-sm font-medium">500+ Licenses Issued</span>
+                  <span className="text-sm font-medium">8+ Years Regulatory Experience</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-5 h-5 text-secondary" />
-                  <span className="text-sm font-medium">100% Compliance</span>
+                  <span className="text-sm font-medium">PAN India & International Clients</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-5 h-5 text-secondary" />
-                  <span className="text-sm font-medium">PAN India Service</span>
+                  <span className="text-sm font-medium">Food | Nutraceutical | Dietary Supplements</span>
                 </div>
               </div>
 

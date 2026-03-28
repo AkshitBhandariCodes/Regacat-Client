@@ -39,11 +39,6 @@ const coreServiceCards = [
 
 const iaaCards = [
 	{
-		title: "Indian Authorized Agent Services",
-		description: "Complete India regulatory representation model across regulated product categories.",
-		href: "/indian-authorized-agent-services-india",
-	},
-	{
 		title: "IAA for Cosmetics",
 		description: "Local accountable representation for foreign cosmetic manufacturers under Indian cosmetic framework.",
 		href: "/indian-authorized-agent-for-cosmetics-in-india",
@@ -179,7 +174,7 @@ const CdscoImportLicenseService = () => {
 								<img
 									src="https://blogs.regacats.in/wp-content/uploads/2026/02/regacats-cdsco-import-license-1024x683.webp"
 									alt="CDSCO Import License Consultant in India"
-									className="w-full h-[240px] sm:h-[320px] md:h-[380px] object-cover rounded-xl"
+									className="w-full h-[240px] sm:h-[320px] md:h-[380px] object-contain bg-white p-2 rounded-xl"
 									loading="eager"
 								/>
 							</div>
@@ -265,7 +260,7 @@ const CdscoImportLicenseService = () => {
 							<h2 className="text-3xl md:text-4xl font-bold text-cyan-950">Indian Authorized Agent (IAA) Services</h2>
 							<p className="text-slate-600">Foreign manufacturers generally require compliant local representation to obtain CDSCO approvals.</p>
 						</div>
-						<div className="grid md:grid-cols-2 xl:grid-cols-4 gap-5">
+						<div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5 max-w-5xl mx-auto">
 							{iaaCards.map((service) => (
 								<Card key={service.title} className="border-cyan-100 shadow-sm hover:shadow-md transition-shadow h-full">
 									<CardContent className="pt-6 space-y-3 flex flex-col h-full">

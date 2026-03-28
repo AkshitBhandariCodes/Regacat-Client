@@ -5,28 +5,28 @@ const ProcessSection = () => {
   const steps = [
     {
       icon: ClipboardCheck,
-      title: "Consultation & Eligibility Check",
-      description: "We identify which FSSAI license your business requires"
+      title: "Regulatory Mapping",
+      description: "We assess product composition, intended use, claims, and business model to define the correct regulatory pathway."
     },
     {
       icon: FileText,
-      title: "Documentation Preparation",
-      description: "Our team gathers and verifies all required paperwork"
+      title: "Technical Compliance Review",
+      description: "Our team reviews formulation, additives, labels, declarations, and claim language against current FSSAI requirements."
     },
     {
       icon: Send,
-      title: "Application Filing with FSSAI Portal",
-      description: "Submission through the official FoSCoS system"
+      title: "Submission Strategy",
+      description: "Applications, dossiers, and approvals are filed with regulator-aligned documentation and submission accuracy."
     },
     {
       icon: MessageSquare,
-      title: "Follow-up & Clarifications",
-      description: "Handling any queries or objections from the authority"
+      title: "Authority Coordination",
+      description: "We handle regulatory communication, clarifications, and deficiency responses to keep approvals on track."
     },
     {
       icon: Award,
-      title: "Final License Approval",
-      description: "Delivery of your FSSAI Certificate digitally and physically"
+      title: "Post-Approval Continuity",
+      description: "We support ongoing compliance, renewals, modifications, and market expansion planning after approval."
     }
   ];
 
@@ -37,10 +37,10 @@ const ProcessSection = () => {
           {/* Heading */}
           <div className="text-center space-y-4 fade-in">
             <h2 className="text-3xl md:text-5xl font-bold text-foreground">
-              How We Help You Get Your FSSAI License
+              How Regacats Supports Food and Nutraceutical Businesses
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Our streamlined 5-step process ensures quick and accurate license approval
+              Our role extends beyond filing by reducing misclassification, misbranding, and regulatory objections through proactive planning.
             </p>
           </div>
 

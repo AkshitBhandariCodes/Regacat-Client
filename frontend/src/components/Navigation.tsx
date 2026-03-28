@@ -11,7 +11,6 @@ import {
 } from "@/components/ui/navigation-menu";
 
 import logoImg from '../assets/images/logo2.png';
-import SEO from '../seo/SEO';
 
 interface NavigationProps {
   onConsultClick: () => void;
@@ -35,19 +34,13 @@ export const Navigation = ({ onConsultClick }: NavigationProps) => {
 
   return (
     <>
-    <SEO
-      title="Regacats Solutions | CDSCO & FSSAI Consultant in India"
-      description=""
-    />
-
-    
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center ">
             <Link to="/" className="text-xl font-bold text-primary">
-              <img src={logoImg} className="w-[300px] " />
+              <img src={logoImg} alt="Regacats Solutions" className="w-[300px] " />
             </Link>
           </div>
 

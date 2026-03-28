@@ -1,16 +1,18 @@
 // src/seo/schema/FAQSchema.js
 export default function FAQSchema(faqs = []) {
-    return {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": faqs.map((f) => ({
-        "@type": "Question",
-        "name": f.question,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": f.answer,
-        },
-      })),
-    };
-  }
+  const validFaqs = faqs.filter((f) => f?.question && f?.answer);
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: validFaqs.map((f) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: f.answer,
+      },
+    })),
+  };
+}
   

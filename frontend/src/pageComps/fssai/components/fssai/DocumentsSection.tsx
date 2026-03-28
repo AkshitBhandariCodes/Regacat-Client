@@ -3,19 +3,19 @@ import { CheckCircle2 } from "lucide-react";
 
 const DocumentsSection = () => {
   const documentsColumn1 = [
-    "Form-B duly completed and signed",
-    "Photo ID of proprietor/director",
-    "Proof of business premises (Rent Agreement / NOC)",
-    "List of food products",
-    "Blueprint/layout of premises"
+    "Food & Beverage Manufacturers",
+    "Nutraceutical & Dietary Supplement Companies",
+    "Health Supplement & Functional Food Brands",
+    "Importers & Exporters",
+    "Global Food Companies Entering India"
   ];
 
   const documentsColumn2 = [
-    "List of equipment/machinery",
-    "Water test report",
-    "Partnership Deed / Incorporation Certificate",
-    "Import Export Code (for importers)",
-    "NOC from Municipality/Panchayat"
+    "Startups and SMEs",
+    "Multinational Corporations",
+    "Brand Owners and Marketers",
+    "Warehouses and Distributors",
+    "E-commerce Food Businesses"
   ];
 
   return (
@@ -25,10 +25,10 @@ const DocumentsSection = () => {
           {/* Heading */}
           <div className="text-center space-y-4 fade-in">
             <h2 className="text-3xl md:text-5xl font-bold text-foreground">
-              Documents Required for FSSAI License Registration
+              Industries & Businesses Served by FSSAI Consultants in India
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              We'll help you prepare all necessary documentation for a smooth application process
+              We support businesses at every growth stage with category-specific regulatory planning and execution.
             </p>
           </div>
 
@@ -67,7 +67,7 @@ const DocumentsSection = () => {
             {/* Note */}
             <div className="mt-8 pt-8 border-t border-border">
               <p className="text-sm text-muted-foreground text-center">
-                <strong className="text-foreground">Note:</strong> Document requirements may vary based on license type and business category. Our experts will provide a personalized checklist.
+                <strong className="text-foreground">About FSSAI:</strong> The Food Safety and Standards Authority of India is the statutory authority under the Food Safety and Standards Act, 2006, regulating manufacturing, storage, distribution, sale, and import of food products across India.
               </p>
             </div>
           </Card>

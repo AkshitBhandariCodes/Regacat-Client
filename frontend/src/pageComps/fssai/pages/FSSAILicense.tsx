@@ -21,18 +21,18 @@ const FSSAILicense = () => {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Who needs an FSSAI License?",
+        "name": "Who requires FSSAI regulatory and compliance services in India?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Any business involved in food manufacturing, processing, packaging, storage, distribution, or sale must obtain an FSSAI license. This includes restaurants, cafes, cloud kitchens, food manufacturers, importers, and retailers."
+          "text": "Any business involved in manufacturing, importing, exporting, marketing, or selling food, nutraceuticals, or dietary supplements in India must comply with FSSAI regulations and may require professional consulting support."
         }
       },
       {
         "@type": "Question",
-        "name": "How long does it take to get FSSAI approval?",
+        "name": "What services do FSSAI consultants in India provide?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Basic FSSAI Registration typically takes 7-10 working days. State License takes 30-60 days, while Central License may take 60-90 days depending on documentation completeness and authority workload."
+          "text": "FSSAI consultants support licensing and registration, formulation and label compliance, non-specified food approvals, import assistance, health claim approvals, authorized agent services, and post-market compliance."
         }
       }
     ]
@@ -41,13 +41,13 @@ const FSSAILicense = () => {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "serviceType": "FSSAI License Registration",
+    "serviceType": "FSSAI Regulatory and Compliance Consulting",
     "provider": {
       "@type": "Organization",
       "name": "Regacats Solutions"
     },
     "areaServed": "IN",
-    "description": "Complete FSSAI license registration assistance including documentation, application filing, and compliance support."
+    "description": "Comprehensive FSSAI regulatory services for food, nutraceutical, and dietary supplement businesses including licensing, approvals, import compliance, and product-level review."
   };
 
   return (

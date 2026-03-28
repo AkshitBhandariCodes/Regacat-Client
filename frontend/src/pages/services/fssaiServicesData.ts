@@ -13,11 +13,13 @@ export const fssaiServicesData: Record<string, FssaiServiceData> = {
     secondaryImage:
       "https://blogs.regacats.in/wp-content/uploads/2026/02/fssai-import-clearance-regacats-1024x683.webp",
     highlights: [
-      "Regulatory classification assessment",
-      "Ingredient and dosage validation",
-      "FSSAI Central License with import endorsement",
-      "Label adaptation for Indian market",
-      "NSF approval support when required",
+      "FSSAI Nutraceutical Import Consultant for global brands and Indian importers",
+      "Regulatory classification assessment for nutraceutical, dietary supplement, FSDU, FSMP, prebiotic and probiotic products",
+      "Ingredient and dosage validation against FSSAI schedules and limits",
+      "FSSAI Central License with import endorsement and filing support",
+      "Label adaptation for Indian market with mandatory declarations",
+      "NSF approval support for non-listed ingredients",
+      "Foreign manufacturing facility registration support where applicable",
       "Pre-shipment audit and port clearance coordination",
     ],
     detailedSteps: [
@@ -50,6 +52,35 @@ export const fssaiServicesData: Record<string, FssaiServiceData> = {
         title: "Step 6: Pre-shipment and Port Clearance",
         description:
           "We run pre-shipment compliance checks and support customs/FSSAI coordination during sampling and release.",
+        points: [
+          "Documentation verification and COA alignment",
+          "Label compliance confirmation before dispatch",
+          "Sampling and testing coordination at port level",
+          "Query handling with customs brokers and FSSAI officers",
+        ],
+      },
+      {
+        title: "Common Challenges in Nutraceutical Import",
+        description:
+          "Importers commonly face rejection risks from dosage, ingredient, and label gaps when products are not pre-assessed for Indian requirements.",
+        points: [
+          "Excess vitamin dosage rejection",
+          "Ingredient non-permissibility",
+          "Label misalignment and claim overstatement",
+          "Missing documentation and incorrect HS classification",
+          "Shipment detention and delayed release",
+        ],
+      },
+      {
+        title: "Estimated Timelines and Planning",
+        description:
+          "Timelines depend on product complexity and scientific review needs, so regulatory planning should begin before shipment preparation.",
+        points: [
+          "Central License: 2-4 weeks",
+          "Label review: 3-5 days",
+          "NSF approval: 4-6 months",
+          "Port clearance: 2-12 days",
+        ],
       },
     ],
     timeline: [
@@ -62,6 +93,7 @@ export const fssaiServicesData: Record<string, FssaiServiceData> = {
       "FSSAI Central license copy",
       "IEC (Import Export Code)",
       "Product composition and specifications",
+      "Ingredient and dosage schedules mapping",
       "Certificate of Free Sale",
       "Raw material CoA",
       "Country of origin certificate",
@@ -109,12 +141,13 @@ export const fssaiServicesData: Record<string, FssaiServiceData> = {
     secondaryImage:
       "https://blogs.regacats.in/wp-content/uploads/2026/01/Non-Specified-Product-Ingredient-Approval-799x1024.png",
     highlights: [
-      "Regulatory feasibility and category mapping",
-      "Scientific safety dossier development",
+      "Regulatory support for non-specified, novel food, and new ingredients",
+      "Applicability assessment under Approval for Non-Specified Food and Food Ingredients Regulations, 2017",
+      "Scientific safety dossier development and submission",
       "Application filing through FSSAI approval mechanism",
       "Expert panel query response support",
-      "Import pathway alignment for global brands",
-      "Post-approval compliance guidance",
+      "Importer and international brand compliance alignment",
+      "Post-approval labeling and license mapping support",
     ],
     detailedSteps: [
       {
@@ -142,6 +175,23 @@ export const fssaiServicesData: Record<string, FssaiServiceData> = {
         description:
           "Decision is issued based on data adequacy and risk profile; approved products can be marketed under specified conditions.",
       },
+      {
+        title: "Regulatory Framework Governing NSF Approvals",
+        description:
+          "Approvals are governed by the Food Safety and Standards Act, 2006, NSF Regulations, 2017, and relevant FSSAI advisories.",
+      },
+      {
+        title: "Role of Expert Regulatory Consultants",
+        description:
+          "Consultant support improves classification accuracy, dossier quality, and authority coordination to reduce avoidable delays and rejection risk.",
+        points: [
+          "Regulatory strategy and product classification",
+          "Scientific documentation and dossier structuring",
+          "Efficient authority coordination",
+          "Risk reduction through regulator-aligned submissions",
+          "Cross-category support across food, nutraceutical, and supplements",
+        ],
+      },
     ],
     timeline: [
       { label: "Indicative approval timeline", value: "6-8 months" },
@@ -153,11 +203,14 @@ export const fssaiServicesData: Record<string, FssaiServiceData> = {
       "Detailed product and ingredient information",
       "Ingredient source and nature",
       "Manufacturing process and flow chart",
+      "FSSAI license number (if available)",
       "Intended use and functional use details",
       "Worldwide regulatory status (at least two countries)",
       "NABL CoA and safety data",
+      "Applicant-manufacturer relationship agreement",
       "Claim substantiation studies/journals",
       "Label compliant with FSSAI regulations",
+      "Declaration for post-marketing surveillance",
     ],
     challenges: [
       "Complex scientific documentation requirements",
@@ -197,12 +250,13 @@ export const fssaiServicesData: Record<string, FssaiServiceData> = {
     secondaryImage:
       "https://blogs.regacats.in/wp-content/uploads/2026/01/food-categories-refom-registration-india-regacats-hq-1024x683.webp",
     highlights: [
-      "Applicability check for notified categories",
-      "ReFOM application preparation",
+      "FSSAI registration for foreign food manufacturers exporting to India",
+      "Applicability check for notified categories under ReFOM",
+      "ReFOM application preparation and authority-side coordination",
       "Competent authority and facility data alignment",
-      "Inspection readiness guidance",
-      "Authority communication support",
-      "India market entry risk reduction",
+      "Inspection readiness guidance for risk-based assessments",
+      "Authority communication support through review and closure",
+      "India market entry risk reduction for notified food categories",
     ],
     detailedSteps: [
       {
@@ -224,6 +278,23 @@ export const fssaiServicesData: Record<string, FssaiServiceData> = {
         title: "Step 4: Approval or Rejection",
         description:
           "Registration is granted on compliance or rejected with reasons; reapplication is possible after corrective action.",
+      },
+      {
+        title: "Mandatory Food Categories and Coverage",
+        description:
+          "FSSAI currently focuses ReFOM controls on higher risk categories where preventive upstream regulation improves traceability and import safety.",
+        points: [
+          "Milk and milk products",
+          "Meat and meat products",
+          "Egg powder",
+          "Infant food",
+          "Nutraceuticals",
+        ],
+      },
+      {
+        title: "Validity, Fees, and Ongoing Compliance",
+        description:
+          "ReFOM registration remains valid for two years from grant date; there is no registration fee currently, but inspection cost is payable when inspection is triggered.",
       },
     ],
     timeline: [
@@ -278,12 +349,13 @@ export const fssaiServicesData: Record<string, FssaiServiceData> = {
     secondaryImage:
       "https://blogs.regacats.in/wp-content/uploads/2026/01/what-is-vegan-endorsement-under-fssai-regulations-1024x683.png",
     highlights: [
+      "FSSAI vegan endorsement for food and nutraceutical products",
       "Vegan claim eligibility review",
       "Ingredient and additive source validation",
-      "Manufacturing cross-contact assessment",
+      "Manufacturing cross-contact and contamination assessment",
       "Vegan labeling and logo compliance",
-      "Submission and query support",
-      "India and imported product compliance",
+      "Submission and authority query support",
+      "Indian and imported product compliance planning",
     ],
     detailedSteps: [
       {
@@ -315,6 +387,22 @@ export const fssaiServicesData: Record<string, FssaiServiceData> = {
         title: "Step 6: Grant of Vegan Endorsement",
         description:
           "On approval, product becomes eligible for official vegan logo and compliant vegan communication.",
+      },
+      {
+        title: "FSSAI Position on Vegan Claims",
+        description:
+          "No food business operator should use vegan term or vegan logo unless endorsement is granted under prescribed process; self-declaration is not sufficient.",
+      },
+      {
+        title: "Who Requires Vegan Endorsement in India",
+        description:
+          "Vegan endorsement applies to food products and imported products claiming vegan status, in addition to valid FSSAI license obligations.",
+        points: [
+          "Food products claiming vegan status",
+          "Imported food products marketed as vegan",
+          "Indian manufacturers using vegan claim or logo",
+          "Foreign brands selling vegan products in India",
+        ],
       },
     ],
     timeline: [
@@ -370,12 +458,13 @@ export const fssaiServicesData: Record<string, FssaiServiceData> = {
     secondaryImage:
       "https://blogs.regacats.in/wp-content/uploads/2026/01/documents-required-fssai-license-india-regacats-1024x682.webp",
     highlights: [
+      "FSSAI license for food, nutraceutical, and dietary supplement businesses",
       "License category assessment (Registration/State/Central)",
       "Form A / Form B application support",
       "FoSCoS filing and query management",
       "License modification and renewal support",
       "Importer-focused Central license assistance",
-      "Regulator-aligned documentation quality",
+      "Regulator-aligned documentation and compliance execution",
     ],
     detailedSteps: [
       {
@@ -403,12 +492,34 @@ export const fssaiServicesData: Record<string, FssaiServiceData> = {
         description:
           "Upon successful review and closure of queries, license is issued in Form C.",
       },
+      {
+        title: "Types of FSSAI License and Registration",
+        description:
+          "Licensing category depends on turnover, scale, and activity. Registration applies up to INR 12 lakh, State License above INR 12 lakh to INR 20 crore, and Central License above INR 20 crore and for specified activities such as import and nutraceutical categories.",
+        points: [
+          "Registration fee: INR 100",
+          "State License fee: INR 2000/3000/5000",
+          "Central License fee: INR 7500 + GST",
+        ],
+      },
+      {
+        title: "Who Requires FSSAI License and Registration",
+        description:
+          "Any entity in the food supply chain must hold applicable registration or license before operations.",
+        points: [
+          "Manufacturers and processors",
+          "Nutraceutical and dietary supplement companies",
+          "Importers and exporters",
+          "Warehouses, distributors, and wholesalers",
+          "Retailers, e-commerce, restaurants, cloud kitchens, and caterers",
+        ],
+      },
     ],
     timeline: [
-      { label: "Registration", value: "~1-3 weeks" },
-      { label: "State License", value: "~3-6 weeks" },
-      { label: "Central License", value: "~4-8 weeks" },
-      { label: "Typical authority query window", value: "Up to 30 days" },
+      { label: "Form C issuance target", value: "~30-45 days after filing or query closure" },
+      { label: "Authority response window", value: "Within 30 days for raised queries" },
+      { label: "Registration fee", value: "INR 100" },
+      { label: "Central license fee", value: "INR 7500 + GST" },
     ],
     documents: [
       "Blueprint/layout of processing unit",
@@ -460,12 +571,13 @@ export const fssaiServicesData: Record<string, FssaiServiceData> = {
     secondaryImage:
       "https://blogs.regacats.in/wp-content/uploads/2026/01/fssai-food-import-compliance-customs-clearance-india-1024x683.png",
     highlights: [
+      "Understanding FSSAI import regulations for food and nutraceutical products",
       "Product and ingredient compliance assessment",
       "Central FSSAI importer license support",
       "Indian label compliance review",
       "NOC filing support on FICS portal",
       "Port sampling and customs coordination",
-      "Risk mitigation for detention and rejection",
+      "Risk mitigation for detention, testing delays, and rejection",
     ],
     detailedSteps: [
       {
@@ -498,6 +610,32 @@ export const fssaiServicesData: Record<string, FssaiServiceData> = {
         description:
           "We coordinate with customs, FSSAI officers, and CHA during verification, sampling, and final release.",
       },
+      {
+        title: "Our FSSAI Import Assistance Services",
+        description:
+          "Import support is delivered as a structured compliance package across licensing, approvals, labeling, and authority coordination.",
+        points: [
+          "Import regulatory mapping",
+          "Labeling and claims compliance",
+          "Central FSSAI importer license",
+          "Non-specified food and ingredient approval support",
+          "NOC filing on FICS portal",
+          "Customs and authority coordination",
+          "Import risk mitigation",
+        ],
+      },
+      {
+        title: "Who Requires Import Assistance and Why",
+        description:
+          "Import compliance applies to Indian importers, foreign manufacturers, nutraceutical brands, and e-commerce businesses importing packaged foods.",
+        points: [
+          "Indian food importers",
+          "Foreign food manufacturers exporting to India",
+          "Nutraceutical and dietary supplement brands",
+          "E-commerce businesses importing packaged foods",
+          "Global companies entering Indian food market",
+        ],
+      },
     ],
     timeline: [
       { label: "Importer license readiness", value: "2-6 weeks" },
@@ -511,6 +649,7 @@ export const fssaiServicesData: Record<string, FssaiServiceData> = {
       "Product labels and artwork",
       "Ingredient and composition details",
       "Country of origin and manufacturer details",
+      "HS code and consignment details",
       "Additional approval documents (if applicable)",
     ],
     challenges: [
@@ -552,11 +691,12 @@ export const fssaiServicesData: Record<string, FssaiServiceData> = {
     secondaryImage:
       "https://blogs.regacats.in/wp-content/uploads/2026/01/types-of-health-claims-fssai-india-regacats.webp",
     highlights: [
+      "Regulatory support for food, nutraceutical, and dietary supplement claims",
       "Claim feasibility assessment",
       "Scientific Claim Support Dossier (CSD)",
       "Application filing and fee support",
       "Expert committee query handling",
-      "Claim wording alignment for labels/ads",
+      "Claim wording alignment for labels and advertising",
       "Global-to-India claim adaptation",
     ],
     detailedSteps: [
@@ -591,6 +731,22 @@ export const fssaiServicesData: Record<string, FssaiServiceData> = {
       {
         title: "Step 7: Acceptance of Amended Claim",
         description: "Where required, amended claim language is accepted and aligned before final use.",
+      },
+      {
+        title: "Who Can Apply and What Claims Are Covered",
+        description:
+          "FSSAI health claim approvals are applicable to manufacturers, nutraceutical and dietary supplement companies, importers, brand owners, and relabelers when claims exceed standard permitted statements.",
+        points: [
+          "Disease risk reduction claims",
+          "Ingredient-led health benefit claims",
+          "Product-led functional claims",
+          "Enhanced physiological or metabolic function claims",
+        ],
+      },
+      {
+        title: "Regulatory Framework and Risk Considerations",
+        description:
+          "Claims are evaluated under the Food Safety and Standards Act, Advertising and Claims Regulations, nutraceutical regulations, and scientific advisories with focus on non-misleading substantiation.",
       },
     ],
     timeline: [
@@ -647,12 +803,14 @@ export const fssaiServicesData: Record<string, FssaiServiceData> = {
     secondaryImage:
       "https://blogs.regacats.in/wp-content/uploads/2026/02/fssai-consultant-for-nutraceutical-services.webp",
     highlights: [
+      "FSSAI consultant support from formulation review to post-market compliance",
       "Regulatory strategy and pathway mapping",
       "Nutraceutical license support",
       "Formulation and dosage compliance",
       "Label and claims compliance",
       "NSF and novel ingredient approvals",
       "Inspection and post-market support",
+      "Training and capacity building for internal teams",
     ],
     detailedSteps: [
       {
@@ -684,6 +842,35 @@ export const fssaiServicesData: Record<string, FssaiServiceData> = {
         title: "Inspection and Ongoing Compliance",
         description:
           "Inspection readiness, CAPA handling, and post-market updates are managed for sustained compliance.",
+      },
+      {
+        title: "Who Needs an FSSAI Consultant for Nutraceuticals",
+        description:
+          "Specialist support is useful for businesses launching new categories, scaling portfolios, or entering regulated claim-driven segments.",
+        points: [
+          "Contract manufacturers and co-packers",
+          "Startups launching first SKU or MVP",
+          "Established brands entering dietary supplements",
+          "Herbal extract producers and sports nutrition companies",
+          "R&D teams developing novel ingredient blends",
+        ],
+      },
+      {
+        title: "Technical Depth and Claim Governance",
+        description:
+          "Scientific rigor is critical for nutraceutical reviews, so dossiers should include ingredient characterization, safety margin assessment, validation methods, and stability rationale.",
+        points: [
+          "Ingredient characterization and standardization",
+          "Marker compound and extraction data",
+          "Toxicology and safety margin summaries",
+          "Exposure assessments and method validation",
+          "Stability study design and shelf-life justification",
+        ],
+      },
+      {
+        title: "Case Outcomes and Pricing Models",
+        description:
+          "Regulatory planning improves submission quality, reduces rework, and enables predictable launch timelines using fixed-fee, project, or retainer engagement models.",
       },
     ],
     timeline: [
@@ -746,6 +933,7 @@ export const fssaiServicesData: Record<string, FssaiServiceData> = {
       "Import compliance and authority communication",
       "Post-market compliance continuity",
       "Single point of accountability in India",
+      "Category support for food, dietary supplements, nutraceuticals, prebiotics and probiotics",
     ],
     detailedSteps: [
       {
@@ -772,6 +960,23 @@ export const fssaiServicesData: Record<string, FssaiServiceData> = {
         title: "Post-market Compliance Management",
         description:
           "Ongoing support for updates, notices, and compliance continuity after market entry.",
+      },
+      {
+        title: "Key Responsibilities of FSSAI Authorized Agent",
+        description:
+          "An authorized agent performs core regulatory accountability functions for foreign manufacturers and exporters in India.",
+        points: [
+          "Acts as official regulatory representative in India",
+          "Submits FSSAI registration and licensing applications",
+          "Coordinates product approvals and import compliance",
+          "Responds to FSSAI queries, notices, and inspections",
+          "Manages post-market surveillance and compliance",
+        ],
+      },
+      {
+        title: "Why Choosing the Right Agent Matters",
+        description:
+          "Inexperienced representation can create rejection risk, import delays, and penalties, while structured regulatory execution protects market access and brand reputation.",
       },
     ],
     timeline: [

@@ -61,29 +61,29 @@ export const Footer = () => {
   };
 
   return (
-    <footer id="contact" className="bg-foreground text-background py-16">
+    <footer id="contact" className="bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 text-slate-100 py-16">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Company Info */}
           <div>
             <h3 className="text-2xl font-bold mb-4">Regacats Solutions</h3>
-            <p className="text-background/80 mb-4">
+            <p className="text-slate-300 mb-4 leading-relaxed">
               India's trusted partner for licensing and regulatory consultancy services.
             </p>
             <div className="space-y-3">
               <div className="flex items-start gap-2">
                 <MapPin className="h-5 w-5 mt-1 flex-shrink-0" />
-                <span className="text-sm text-background/80">
+                <span className="text-sm text-slate-300">
                   4th Floor Plot no. 8&9, MM Towers Phase IV, Udyog Vihar, Gurugram 122015
                 </span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="h-5 w-5" />
-                <span className="text-sm text-background/80">+91 9211921474 / +91 9711467307</span>
+                <span className="text-sm text-slate-300">+91 9211921474 / +91 9711467307</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-5 w-5" />
-                <span className="text-sm text-background/80">contact@regacats.in</span>
+                <span className="text-sm text-slate-300">contact@regacats.in</span>
               </div>
             </div>
           </div>
@@ -92,16 +92,24 @@ export const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              {["home", "about", "services", "portfolio", "team", "blog"].map((id) => (
-                <li key={id}>
-                  <a
-                    href={`/${id}`}
-                    className="text-background/80 hover:text-background transition-colors"
-                  >
-                    {id.charAt(0).toUpperCase() + id.slice(1)}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <Link to="/" className="text-slate-300 hover:text-white transition-colors">Home</Link>
+              </li>
+              <li>
+                <Link to="/about" className="text-slate-300 hover:text-white transition-colors">About</Link>
+              </li>
+              <li>
+                <Link to="/portfolio" className="text-slate-300 hover:text-white transition-colors">Portfolio</Link>
+              </li>
+              <li>
+                <Link to="/team" className="text-slate-300 hover:text-white transition-colors">Team</Link>
+              </li>
+              <li>
+                <Link to="/blog" className="text-slate-300 hover:text-white transition-colors">Blog</Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-slate-300 hover:text-white transition-colors">Contact</Link>
+              </li>
             </ul>
           </div>
 
@@ -135,60 +143,60 @@ export const Footer = () => {
   <h4 className="text-lg font-semibold mb-4">Our Services</h4>
   <ul className="space-y-2">
     <li>
-      <Link to="/cosmetic-import-license-india" className="text-background/80 hover:text-background transition-colors">
+      <Link to="/cosmetic-import-license-india" className="text-slate-300 hover:text-white transition-colors">
         Cosmetic Import License
       </Link>
     </li>
 
     <li>
-      <Link to="/cdsco-registration" className="text-background/80 hover:text-background transition-colors">
+      <Link to="/cdsco-registration" className="text-slate-300 hover:text-white transition-colors">
         CDSCO Drug Registration
       </Link>
     </li>
 
     <li>
-      <Link to="/medical-device-import-license-india" className="text-background/80 hover:text-background transition-colors">
+      <Link to="/medical-device-import-license-india" className="text-slate-300 hover:text-white transition-colors">
         Medical Device Import License
       </Link>
     </li>
 
     <li>
-      <Link to="/fssai-consultants-india" className="text-background/80 hover:text-background transition-colors">
+      <Link to="/fssai-consultants-india" className="text-slate-300 hover:text-white transition-colors">
         FSSAI License
       </Link>
     </li>
 
     <li>
-      <Link to="/fssai-nutraceutical-import-consultant-india" className="text-background/80 hover:text-background transition-colors">
+      <Link to="/fssai-nutraceutical-import-consultant-india" className="text-slate-300 hover:text-white transition-colors">
         FSSAI Nutraceutical Import Consultant
       </Link>
     </li>
 
     <li>
-      <Link to="/epr-registration" className="text-background/80 hover:text-background transition-colors">
+      <Link to="/epr-registration" className="text-slate-300 hover:text-white transition-colors">
         EPR Authorization
       </Link>
     </li>
 
     <li>
-      <Link to="/legal-metrology" className="text-background/80 hover:text-background transition-colors">
+      <Link to="/legal-metrology" className="text-slate-300 hover:text-white transition-colors">
         Legal Metrology
       </Link>
     </li>
     <li>
-      <Link to="/terms-and-conditions" className="text-background/80 hover:text-background transition-colors">
+      <Link to="/terms-and-conditions" className="text-slate-300 hover:text-white transition-colors">
         Terms & Conditions
       </Link>
     </li>
 
     <li>
-      <Link to="/privacy-policy" className="text-background/80 hover:text-background transition-colors">
+      <Link to="/privacy-policy" className="text-slate-300 hover:text-white transition-colors">
         Privacy Policy
       </Link>
     </li>
 
     <li>
-      <Link to="/disclaimer" className="text-background/80 hover:text-background transition-colors">
+      <Link to="/disclaimer" className="text-slate-300 hover:text-white transition-colors">
         Disclaimer
       </Link>
     </li>
@@ -206,18 +214,18 @@ export const Footer = () => {
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 placeholder="Your email"
-                className="bg-background/10 border-background/20 text-background placeholder:text-background/60"
+                className="bg-white/10 border-white/20 text-white placeholder:text-slate-300"
               />
               <Textarea
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 placeholder="Your message"
                 rows={3}
-                className="bg-background/10 border-background/20 text-background placeholder:text-background/60"
+                className="bg-white/10 border-white/20 text-white placeholder:text-slate-300"
               />
               <Button
                 type="submit"
-                className="w-full bg-background text-foreground hover:bg-background/90"
+                className="w-full bg-white text-slate-900 hover:bg-slate-100"
               >
                 Send Message
               </Button>
@@ -226,9 +234,9 @@ export const Footer = () => {
         </div>
 
         {/* Social Media & Copyright */}
-        <div className="border-t border-background/20 pt-8">
+        <div className="border-t border-white/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-background/80">
+            <p className="text-sm text-slate-300">
               © 2025 Regacats Solutions. All rights reserved.
             </p>
             <div className="flex gap-4">
@@ -236,7 +244,7 @@ export const Footer = () => {
                 <a
                   key={idx}
                   href="#"
-                  className="text-background/80 hover:text-background transition-colors"
+                  className="rounded-full p-2 bg-white/10 text-slate-300 hover:text-white hover:bg-white/20 transition-colors"
                 >
                   <Icon className="h-5 w-5" />
                 </a>

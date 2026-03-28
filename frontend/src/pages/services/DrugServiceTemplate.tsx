@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { TopBar } from "@/components/TopBar";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
@@ -18,6 +18,9 @@ import {
 } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { CheckCircle2, ChevronDown, ChevronUp } from "lucide-react";
+import SEO from "@/seo/SEO";
+import WebsiteSchema from "@/seo/schema/WebsiteSchema";
+import FAQSchema from "@/seo/schema/FAQSchema";
 
 export interface DrugFaq {
   question: string;
@@ -57,6 +60,7 @@ interface DrugServiceTemplateProps {
 
 const DrugServiceTemplate = ({ data }: DrugServiceTemplateProps) => {
   const navigate = useNavigate();
+  const location = useLocation();
   const { toast } = useToast();
 
   const heroBadge = data?.heroBadge ?? "CDSCO Service";
@@ -74,6 +78,27 @@ const DrugServiceTemplate = ({ data }: DrugServiceTemplateProps) => {
   const processImage = data?.processImage;
   const secondaryImage = data?.secondaryImage;
   const relatedServices = data?.relatedServices ?? [];
+  const siteUrl = "https://regacats.in";
+  const canonical = `${siteUrl}${location.pathname}`;
+  const schema = [
+    WebsiteSchema(),
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: heroTitle,
+      description: heroDescription,
+      provider: {
+        "@type": "Organization",
+        name: "Regacats Solutions",
+        url: siteUrl,
+      },
+      areaServed: "India",
+      serviceType: heroBadge,
+      url: canonical,
+      image: heroImage || undefined,
+    },
+    FAQSchema(faqs),
+  ];
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
@@ -135,6 +160,14 @@ const DrugServiceTemplate = ({ data }: DrugServiceTemplateProps) => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title={`${heroTitle} | Regacats Solutions`}
+        description={heroDescription}
+        canonical={canonical}
+        type="website"
+        image={heroImage}
+        jsonLd={schema}
+      />
       <TopBar />
       <Navigation onConsultClick={() => navigate("/")} />
 
@@ -155,7 +188,7 @@ const DrugServiceTemplate = ({ data }: DrugServiceTemplateProps) => {
                   <img
                     src={heroImage}
                     alt={heroTitle}
-                    className="w-full h-[220px] sm:h-[300px] md:h-[360px] object-cover rounded-xl"
+                    className="w-full h-[220px] sm:h-[300px] md:h-[360px] object-contain bg-white p-2 rounded-xl"
                     loading="eager"
                   />
                 ) : (
@@ -240,7 +273,7 @@ const DrugServiceTemplate = ({ data }: DrugServiceTemplateProps) => {
                   <img
                     src={processImage}
                     alt="CDSCO process visual"
-                    className="w-full rounded-2xl border border-cyan-100 shadow-sm object-cover"
+                    className="w-full max-h-[360px] rounded-2xl border border-cyan-100 shadow-sm object-contain bg-white p-2"
                     loading="lazy"
                   />
                 )}
@@ -248,7 +281,7 @@ const DrugServiceTemplate = ({ data }: DrugServiceTemplateProps) => {
                   <img
                     src={secondaryImage}
                     alt="CDSCO compliance visual"
-                    className="w-full rounded-2xl border border-cyan-100 shadow-sm object-cover"
+                    className="w-full max-h-[360px] rounded-2xl border border-cyan-100 shadow-sm object-contain bg-white p-2"
                     loading="lazy"
                   />
                 )}

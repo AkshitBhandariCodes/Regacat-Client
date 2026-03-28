@@ -103,38 +103,85 @@ export const drugServicesData: Record<string, DrugServiceData> = {
     processImage:
       "https://blogs.regacats.in/wp-content/uploads/2026/01/indian-authorized-agent-for-drugs-regacats-1024x683.webp",
     highlights: [
-      "Official CDSCO-facing regulatory representation",
+      "Regulatory representation for global pharmaceutical manufacturers",
+      "Representation before Indian drug authorities through local accountable entity",
       "Support for Form 40, Form 41, and Form 10 pathways",
-      "Wholesale license aligned representation guidance",
-      "Regulatory query and inspection coordination",
-      "Pharmacovigilance and PSUR support",
-      "Recall and corrective action coordination",
+      "Wholesale license requirement guidance (Form 20B and Form 21B)",
+      "Regulatory query, inspection, and correspondence management",
+      "Pharmacovigilance, ADR, PSUR, recall, and CAPA support",
+      "Indian Authorized Agent vs Importer role clarity",
     ],
     detailedSteps: [
       {
-        title: "Step 1: Feasibility and Product Mapping",
+        title: "Regulatory Representation for Global Pharmaceutical Manufacturers",
         description:
-          "Drug category, route, and import pathway are assessed for Indian compliance feasibility.",
+          "Indian Authorized Agent for Drugs services are mandatory for foreign pharmaceutical manufacturers entering India. Overseas manufacturers must comply with Indian drug regulations before importing, distributing, or marketing pharmaceutical products.",
       },
       {
-        title: "Step 2: Agent Appointment",
+        title: "What Is an Indian Authorized Agent for Drugs?",
         description:
-          "The Indian Authorized Agent is formally appointed as local regulatory representative.",
+          "An Indian Authorized Agent for drugs is a legally established Indian entity appointed by a foreign manufacturer to act as official regulatory representative in India.",
+        points: [
+          "Represents the foreign manufacturer before Indian drug authorities",
+          "Submits applications for drug registration and import permissions",
+          "Coordinates responses to regulatory queries and inspections",
+          "Manages post-approval compliance and vigilance obligations",
+        ],
       },
       {
-        title: "Step 3: Registration and Import Filing",
+        title: "Why Indian Authorized Agent Services Are Mandatory for Drugs in India",
         description:
-          "Drug registration and import documentation are compiled and submitted in prescribed formats.",
+          "India follows a local accountability model under the Drugs and Cosmetics Act, 1940 and Drugs and Cosmetics Rules, 1945. Foreign drug manufacturers cannot directly interact with regulators without appointing an authorized representative.",
+        points: [
+          "Rejection of drug registration applications",
+          "Import delays or refusal at Indian ports",
+          "Regulatory notices, penalties, or suspension",
+          "Loss of market access",
+        ],
       },
       {
-        title: "Step 4: Authority Coordination",
+        title: "Who Requires an Indian Authorized Agent for Drugs?",
         description:
-          "Technical queries, notices, and clarifications from authorities are managed through a single accountable interface.",
+          "Indian Authorized Agent services apply to foreign entities involved in finished pharmaceutical formulations, bulk drugs, APIs, biologicals, biosimilars, vaccines, injectables, and imported drugs for commercial sale or distribution.",
       },
       {
-        title: "Step 5: Pharmacovigilance and Post-Market Compliance",
+        title: "Key Regulatory Responsibilities for Pharmaceutical Products",
         description:
-          "ADR reporting, PSUR activity, and post-market compliance actions are coordinated as required.",
+          "The authorized agent performs legal and regulatory responsibilities required for compliant market entry and continuity.",
+        points: [
+          "Acting as official regulatory representative in India",
+          "Submitting drug registration applications (Form 40)",
+          "Coordinating issuance of Registration Certificate (Form 41)",
+          "Supporting procurement of import licenses (Form 10)",
+          "Managing regulatory correspondence and inspections",
+          "Supporting adverse drug reaction (ADR) reporting",
+          "Coordinating pharmacovigilance and PSUR submissions",
+          "Assisting with product recalls and corrective actions",
+        ],
+      },
+      {
+        title: "Our Indian Authorized Agent Services for Drug Compliance",
+        description:
+          "Regacats provides end-to-end Indian Authorized Agent services for drugs and pharmaceutical products from feasibility to post-market obligations.",
+        points: [
+          "Regulatory assessment and product feasibility",
+          "Appointment as Indian Authorized Agent",
+          "Drug registration and import licensing support",
+          "Pharmacovigilance and post-market compliance",
+          "Regulatory queries and recall management",
+        ],
+      },
+      {
+        title: "Our Structured Approach as Indian Authorized Agent for Drugs",
+        description:
+          "We follow a structured compliance model that ensures end-to-end coverage for pharmaceutical manufacturers.",
+        points: [
+          "Regulatory assessment and product mapping",
+          "Formal appointment as Indian Authorized Agent",
+          "Registration and import license submission",
+          "Continuous authority coordination",
+          "Pharmacovigilance and post-market compliance",
+        ],
       },
     ],
     timeline: [
@@ -147,7 +194,7 @@ export const drugServicesData: Record<string, DrugServiceData> = {
       "Manufacturer profile and legal papers",
       "Drug product and formulation details",
       "Regulatory forms and declarations",
-      "Wholesale license related records (as applicable)",
+      "Wholesale license in Form 20B and Form 21B",
       "Quality, stability, and safety documents",
       "Pharmacovigilance process details",
     ],
@@ -160,19 +207,23 @@ export const drugServicesData: Record<string, DrugServiceData> = {
     faqs: [
       {
         question: "Is an Indian Authorized Agent mandatory for imported drugs?",
-        answer: "Yes. Foreign drug manufacturers require a locally accountable representative under Indian regulatory practice.",
+        answer: "Yes. Indian law requires foreign drug manufacturers to appoint an Indian Authorized Agent.",
       },
       {
-        question: "Can one agent represent multiple products?",
-        answer: "Yes, if the regulatory scope and licensing conditions are satisfied.",
+        question: "Can one authorized agent represent multiple drugs?",
+        answer: "Yes, subject to regulatory scope and license conditions.",
       },
       {
         question: "Does the agent need a wholesale license?",
-        answer: "In many cases yes, the appointed setup must meet applicable licensing requirements for lawful representation.",
+        answer: "Yes. A valid wholesale drug license is mandatory.",
       },
       {
-        question: "Is pharmacovigilance part of agent responsibility?",
-        answer: "Yes, the agent supports ADR handling, PSUR obligations, and recall coordination.",
+        question: "Can a foreign manufacturer change its authorized agent?",
+        answer: "Yes, subject to regulatory procedures and authority approval.",
+      },
+      {
+        question: "Is pharmacovigilance the responsibility of the authorized agent?",
+        answer: "Yes. The agent supports ADR reporting, PSUR submissions, and recall actions.",
       },
     ],
     formServiceOptions: ["Drug Authorized Agent", "Drug Registration", "Import License", "Pharmacovigilance Support"],
@@ -188,38 +239,83 @@ export const drugServicesData: Record<string, DrugServiceData> = {
     processImage:
       "https://blogs.regacats.in/wp-content/uploads/2026/01/indian-authorized-agent-medical-devices-1024x683.webp",
     highlights: [
-      "Representation before CDSCO for imported devices",
-      "Class A/B/C/D and IVD pathway support",
+      "Regulatory representation for global medical device manufacturers",
+      "Mandatory Indian Authorized Agent support for imported devices",
+      "Class A, B, C, D and IVD pathway support",
       "Registration and licensing submission management",
-      "Authority query and inspection support",
-      "Post-market surveillance coordination",
-      "Long-term compliance partner model",
+      "Authority query, inspection, and enforcement coordination",
+      "Post-market compliance and vigilance support",
+      "Single point of regulatory accountability in India",
     ],
     detailedSteps: [
       {
-        title: "Step 1: Classification and Regulatory Assessment",
+        title: "Regulatory Representation for Global Medical Device Manufacturers",
         description:
-          "Device risk class, intended use, and import pathway are mapped under Indian regulations.",
+          "Indian Authorized Agent for Medical Devices services are mandatory for foreign manufacturers entering India and managing medical device import compliance under Indian regulations.",
       },
       {
-        title: "Step 2: Formal Indian Agent Appointment",
+        title: "What Is an Indian Authorized Agent (IAA) for Medical Devices?",
         description:
-          "The local representative is appointed for Indian accountability and regulator communication.",
+          "An Indian Authorized Agent is a locally appointed Indian representative for foreign manufacturers and becomes the official regulatory interface with Indian authorities.",
+        points: [
+          "Represents the foreign manufacturer before Indian regulatory authorities",
+          "Submits medical device registration and licensing applications",
+          "Coordinates responses to regulatory queries and inspections",
+          "Manages post-approval and post-market compliance obligations",
+        ],
       },
       {
-        title: "Step 3: Registration and Licensing Submissions",
+        title: "Why IAA Services Are Mandatory for Medical Devices in India",
         description:
-          "Required technical and regulatory documents are prepared and submitted for review.",
+          "Medical devices are regulated by CDSCO under Medical Devices Rules, 2017, and foreign manufacturers cannot directly engage regulators without local accountable representation.",
+        points: [
+          "Registration or license rejection",
+          "Import delays at Indian ports",
+          "Regulatory notices and penalties",
+          "Suspension or denial of market access",
+        ],
       },
       {
-        title: "Step 4: Import Compliance and Authority Liaison",
+        title: "Who Requires an Indian Authorized Agent for Medical Devices?",
         description:
-          "Import-stage and review-stage clarifications are coordinated with regulators.",
+          "IAA services apply to Class A, B, C, and D medical devices, IVD devices, active and non-active medical devices, software as medical device, and imported devices for India.",
       },
       {
-        title: "Step 5: Vigilance and Post-Market Compliance",
+        title: "Key Responsibilities of Appointed Indian Authorized Agent",
         description:
-          "Ongoing surveillance and compliance obligations are managed after approval.",
+          "The authorized agent performs critical regulatory functions for import approval and ongoing compliance.",
+        points: [
+          "Acting as the official regulatory representative in India",
+          "Submitting medical device registration or license applications",
+          "Coordinating import-related regulatory requirements",
+          "Responding to CDSCO queries, notices, and inspections",
+          "Managing post-market surveillance and vigilance coordination",
+          "Supporting corrective and preventive actions",
+        ],
+      },
+      {
+        title: "Our Indian Authorized Agent Services for Medical Device Compliance",
+        description:
+          "Regacats provides end-to-end Indian regulatory representative support for medical devices in India.",
+        points: [
+          "Regulatory assessment and device classification",
+          "Appointment as Indian Authorized Agent",
+          "Medical device registration and licensing support",
+          "Import compliance and authority coordination",
+          "Post-market compliance and vigilance support",
+        ],
+      },
+      {
+        title: "Our Structured Approach for Device Compliance",
+        description:
+          "We follow a structured and transparent approach ensuring end-to-end coverage for global medical device manufacturers.",
+        points: [
+          "Regulatory assessment and device classification",
+          "Formal appointment as Indian Authorized Agent",
+          "Submission of registrations and licenses",
+          "Continuous authority coordination",
+          "Post-market compliance and vigilance management",
+        ],
       },
     ],
     timeline: [
@@ -245,19 +341,23 @@ export const drugServicesData: Record<string, DrugServiceData> = {
     faqs: [
       {
         question: "Is an Indian Authorized Agent mandatory for imported medical devices?",
-        answer: "Yes. Foreign manufacturers need a locally established representative for Indian regulatory interaction.",
+        answer: "Yes. Indian regulations require foreign medical device manufacturers to appoint a locally established Indian Authorized Agent.",
       },
       {
-        question: "Can one agent support multiple medical devices?",
-        answer: "Yes, within approved scope and regulatory obligations.",
+        question: "Do global medical device manufacturers need an Indian Authorized Agent?",
+        answer: "Yes. All foreign manufacturers exporting medical devices to India must appoint an Indian Authorized Agent.",
       },
       {
-        question: "Can the appointed agent be changed later?",
-        answer: "Yes, changes are possible subject to prescribed procedures.",
+        question: "Can one Indian Authorized Agent represent multiple medical devices?",
+        answer: "Yes, provided regulatory scope and compliance requirements are met.",
       },
       {
-        question: "Does the agent carry regulatory accountability?",
-        answer: "Yes, the agent is accountable before Indian authorities for defined obligations.",
+        question: "Can a foreign manufacturer change its Indian Authorized Agent?",
+        answer: "Yes. Authorities permit changes, subject to prescribed procedures.",
+      },
+      {
+        question: "Does the Indian Authorized Agent carry regulatory responsibility?",
+        answer: "Yes. The agent acts as the accountable representative before Indian authorities.",
       },
     ],
     formServiceOptions: ["Medical Device Authorized Agent", "Device Classification", "CDSCO Liaison", "Post-market Support"],
@@ -273,38 +373,83 @@ export const drugServicesData: Record<string, DrugServiceData> = {
     processImage:
       "https://blogs.regacats.in/wp-content/uploads/2026/01/indian-authorized-agent-cosmetics-india-regacats-1024x683.webp",
     highlights: [
-      "Official local representation for cosmetic compliance",
-      "Support for cosmetic registrations and submissions",
-      "Label and ingredient alignment support",
-      "Authority query and notice handling",
-      "Import and documentation coordination",
-      "Post-registration compliance support",
+      "Regulatory representation for global cosmetic brands and foreign manufacturers",
+      "Mandatory Indian Authorized Agent support for imported cosmetics",
+      "Cosmetic registration and submission support",
+      "Ingredient and labeling compliance alignment",
+      "Import compliance and authority coordination with CDSCO",
+      "Post-registration and post-market compliance support",
+      "Single point of accountability for cosmetic regulatory compliance in India",
     ],
     detailedSteps: [
       {
-        title: "Step 1: Product Eligibility and Review",
+        title: "Regulatory Representation for Global Cosmetic Brands",
         description:
-          "Product composition, ingredients, and labeling requirements are reviewed for India entry readiness.",
+          "Indian Authorized Agent for Cosmetics services are mandatory for foreign cosmetic manufacturers, global beauty brands, and exporters entering India.",
       },
       {
-        title: "Step 2: Appointment of Indian Authorized Agent",
+        title: "What Is an Indian Authorized Agent for Cosmetics?",
         description:
-          "The agent is formally appointed to represent the foreign manufacturer.",
+          "An Indian Authorized Agent for cosmetics is a locally established entity appointed by a foreign cosmetic manufacturer to act as official regulatory representative in India.",
+        points: [
+          "Represents the foreign manufacturer before Indian regulatory authorities",
+          "Submits cosmetic registrations and regulatory applications",
+          "Coordinates responses to authority queries and inspections",
+          "Manages post-approval and post-market compliance obligations",
+        ],
       },
       {
-        title: "Step 3: Registration and Submission",
+        title: "Why IAA Services Are Mandatory for Cosmetics in India",
         description:
-          "Application documents are prepared and submitted under applicable cosmetic regulations.",
+          "India follows a local accountability regulatory system for cosmetics under CDSCO and foreign manufacturers cannot directly engage Indian regulators without appointing an Indian Authorized Agent.",
+        points: [
+          "Registration rejection",
+          "Import delays at ports",
+          "Regulatory notices and penalties",
+          "Suspension of market access",
+        ],
       },
       {
-        title: "Step 4: Regulatory Coordination",
+        title: "Who Requires an Indian Authorized Agent for Cosmetics?",
         description:
-          "CDSCO communication, query handling, and authority liaison are managed end-to-end.",
+          "IAA services apply to global cosmetic brands, overseas cosmetic manufacturers, exporters of finished cosmetics, private-label manufacturers, and brand owners marketing cosmetics in India.",
       },
       {
-        title: "Step 5: Post-Market and Label Compliance",
+        title: "Key Responsibilities of an Indian Authorized Agent for Cosmetics",
         description:
-          "Ongoing support is provided for regulatory updates and post-approval obligations.",
+          "The authorized agent performs critical regulatory and compliance functions for successful registration and imports.",
+        points: [
+          "Acting as the official regulatory representative in India",
+          "Submitting cosmetic registration applications",
+          "Coordinating import-related regulatory requirements",
+          "Responding to CDSCO queries, notices, and inspections",
+          "Managing post-registration compliance and documentation",
+          "Supporting corrective actions and regulatory updates",
+        ],
+      },
+      {
+        title: "Our Indian Authorized Agent Services for Cosmetic Compliance",
+        description:
+          "Regacats provides end-to-end Indian Authorized Agent services for cosmetic products in India.",
+        points: [
+          "Regulatory assessment and product review",
+          "Appointment as Indian Authorized Agent",
+          "Cosmetic registration and submission support",
+          "Import compliance and authority coordination",
+          "Post-market compliance support",
+        ],
+      },
+      {
+        title: "Our Structured Approach as Indian Authorized Agent for Cosmetics",
+        description:
+          "We follow a structured and transparent compliance approach for end-to-end regulatory coverage.",
+        points: [
+          "Regulatory assessment and product mapping",
+          "Formal appointment as Indian Authorized Agent",
+          "Submission of cosmetic registrations",
+          "Continuous authority coordination",
+          "Post-market compliance management",
+        ],
       },
     ],
     timeline: [
@@ -330,19 +475,23 @@ export const drugServicesData: Record<string, DrugServiceData> = {
     faqs: [
       {
         question: "Is an Indian Authorized Agent mandatory for imported cosmetics?",
-        answer: "Yes. Foreign cosmetic manufacturers require a locally established agent for regulatory compliance in India.",
+        answer: "Yes. Indian regulations require foreign cosmetic manufacturers to appoint a locally established Indian Authorized Agent.",
       },
       {
-        question: "Can one agent represent multiple cosmetic products?",
-        answer: "Yes, provided category scope and compliance obligations are met.",
+        question: "Do global cosmetic brands need an Indian Authorized Agent?",
+        answer: "Yes. All foreign cosmetic brands and exporters must appoint an Indian Authorized Agent to comply with Indian regulations.",
       },
       {
-        question: "Can a foreign manufacturer change the agent?",
-        answer: "Yes, changes are permitted with proper regulatory procedure.",
+        question: "Can one Indian Authorized Agent represent multiple cosmetic products?",
+        answer: "Yes, provided regulatory scope and compliance requirements are met.",
       },
       {
-        question: "Does this replace cosmetic registration itself?",
-        answer: "No. Agent appointment and registration are separate but linked compliance requirements.",
+        question: "Can a foreign manufacturer change its Indian Authorized Agent?",
+        answer: "Yes. Authorities allow changes, subject to regulatory procedures.",
+      },
+      {
+        question: "Does the Indian Authorized Agent carry regulatory responsibility?",
+        answer: "Yes. The agent acts as the accountable representative before Indian authorities.",
       },
     ],
     formServiceOptions: ["Cosmetic Authorized Agent", "Cosmetic Registration", "Label Compliance", "CDSCO Coordination"],
@@ -437,7 +586,7 @@ export const drugServicesData: Record<string, DrugServiceData> = {
     heroBadge: "Indian Authorized Agent Services",
     heroTitle: "Indian Authorized Agent Services in India",
     heroDescription:
-      "Cross-category Indian Authorized Agent support for foreign manufacturers in food, nutraceuticals, cosmetics, medical devices, and pharmaceuticals entering India.",
+      "Regulatory representation for foreign manufacturers entering India across food, nutraceuticals, cosmetics, medical devices, and pharmaceuticals.",
     heroImage:
       "https://blogs.regacats.in/wp-content/uploads/2026/01/indian-authorized-agent-services-india-regacats-1024x683.webp",
     processImage:
@@ -467,38 +616,92 @@ export const drugServicesData: Record<string, DrugServiceData> = {
       },
     ],
     highlights: [
-      "Single representation model across major regulated categories",
-      "Category-specific compliance strategy and execution",
-      "Authority communication and records management",
-      "Inspection and query response support",
-      "Importer vs representative role clarity",
-      "Long-term post-market compliance coverage",
+      "Regulatory representation for foreign manufacturers entering Indian market",
+      "Mandatory local accountability support for FSSAI and CDSCO governed categories",
+      "Category-specific compliance planning across food, supplements, cosmetics, devices, and drugs",
+      "Authority communication, inspections, and query-response management",
+      "Indian Authorized Agent vs Importer role clarity",
+      "Long-term post-market compliance and reporting coverage",
+      "Single point of accountability for Indian authorities",
     ],
     detailedSteps: [
       {
-        title: "Step 1: Category and Regulatory Assessment",
+        title: "Regulatory Representation for Foreign Manufacturers Entering India",
         description:
-          "Products are assessed under relevant Indian authority frameworks such as CDSCO and FSSAI.",
+          "Indian Authorized Agent services play a critical role for foreign manufacturers because India requires a locally established agent to legally interact with regulators and maintain compliance continuity.",
       },
       {
-        title: "Step 2: Appointment and Onboarding",
+        title: "What Is an Indian Authorized Agent (IAA)?",
         description:
-          "The Indian Authorized Agent role is formalized and aligned to category-specific obligations.",
+          "An Indian Authorized Agent is a legally appointed representative based in India who supports foreign manufacturers with regulatory, compliance, and post-market obligations.",
+        points: [
+          "Represent foreign manufacturers before Indian authorities",
+          "Submit regulatory applications and registrations",
+          "Respond to regulatory queries, inspections, and notices",
+          "Maintain compliance records and post-market obligations",
+        ],
       },
       {
-        title: "Step 3: Application and Submission Support",
+        title: "Why Appointing an Indian Authorized Agent Is Mandatory",
         description:
-          "Registrations, licenses, and approvals are prepared and filed with compliance-first documentation.",
+          "Authorities such as FSSAI and CDSCO require local accountable representation for timely communication, audit compliance, and enforcement of Indian laws.",
+        points: [
+          "Regulatory accountability within Indian jurisdiction",
+          "Timely responses to authority communications",
+          "Compliance during audits and inspections",
+          "Enforcement of applicable Indian laws",
+        ],
       },
       {
-        title: "Step 4: Continuous Authority Coordination",
+        title: "Who Requires an Indian Authorized Agent in India?",
         description:
-          "Queries, inspections, and notices are handled through a controlled regulatory communication process.",
+          "Indian Authorized Agent services apply to overseas food and beverage manufacturers, dietary supplement and nutraceutical companies, cosmetics manufacturers, medical device manufacturers, and pharmaceutical manufacturers.",
       },
       {
-        title: "Step 5: Post-Market and Lifecycle Compliance",
+        title: "Product Categories Covered",
         description:
-          "Ongoing obligations, reporting, and updates are managed to sustain market access.",
+          "Regacats provides Indian Authorized Agent services across major regulated categories with category-specific compliance management.",
+        points: [
+          "Food, dietary supplements and nutraceuticals",
+          "Cosmetics",
+          "Medical devices",
+          "Drugs and pharmaceuticals",
+        ],
+      },
+      {
+        title: "Key Responsibilities of an Indian Authorized Agent",
+        description:
+          "An Indian Authorized Agent performs core regulatory functions for foreign manufacturers operating in India.",
+        points: [
+          "Acting as the official regulatory representative in India",
+          "Submitting registrations, licenses, and approvals",
+          "Coordinating import-related regulatory requirements",
+          "Responding to authority queries and inspections",
+          "Managing post-market surveillance and compliance",
+          "Maintaining regulatory documentation and records",
+        ],
+      },
+      {
+        title: "Indian Authorized Agent Services for Global Manufacturers",
+        description:
+          "Services include feasibility and market-entry assessment, appointment and onboarding, submission support, import coordination, and continuous post-market communication support.",
+      },
+      {
+        title: "Indian Authorized Agent vs Importer of Record",
+        description:
+          "The Indian Authorized Agent handles regulatory representation and authority interface, while the importer handles customs clearance, logistics, and commercial import transactions.",
+      },
+      {
+        title: "Our Structured Approach as Your Indian Authorized Agent",
+        description:
+          "We follow a structured and transparent approach for end-to-end regulatory coverage.",
+        points: [
+          "Regulatory assessment and category mapping",
+          "Formal appointment as Indian Authorized Agent",
+          "Submission of registrations and approvals",
+          "Continuous authority coordination",
+          "Post-market compliance and reporting",
+        ],
       },
     ],
     timeline: [
@@ -524,19 +727,23 @@ export const drugServicesData: Record<string, DrugServiceData> = {
     faqs: [
       {
         question: "Is an Indian Authorized Agent mandatory for foreign manufacturers?",
-        answer: "Yes, for most regulated categories India requires local regulatory representation.",
+        answer: "Yes. Indian regulations mandate appointing a locally established authorized agent for most regulated product categories.",
       },
       {
-        question: "Can one agent represent multiple categories?",
-        answer: "Yes, if the agent has appropriate compliance capability for each category.",
+        question: "Can one Indian Authorized Agent represent multiple products?",
+        answer: "Yes. However, the agent must meet regulatory eligibility and scope requirements.",
       },
       {
-        question: "Is the agent the same as importer of record?",
-        answer: "Not always. The roles are different, though in some cases one entity may perform both.",
+        question: "Can an Indian Authorized Agent also act as an importer?",
+        answer: "The roles differ, although the same entity may perform both if regulations allow.",
       },
       {
-        question: "Can foreign manufacturers switch agents?",
-        answer: "Yes, authorities permit changes when procedures are followed correctly.",
+        question: "Does the Indian Authorized Agent carry regulatory responsibility?",
+        answer: "Yes. The agent acts as the accountable representative before Indian authorities.",
+      },
+      {
+        question: "Can foreign manufacturers change their Indian Authorized Agent later?",
+        answer: "Yes. Authorities permit changes, provided the manufacturer follows regulatory procedures.",
       },
     ],
     formServiceOptions: ["Indian Authorized Agent", "Regulatory Representation", "Cross-category Compliance", "Authority Liaison"],

@@ -5,26 +5,26 @@ const WhyChooseSection = () => {
   const reasons = [
     {
       icon: Zap,
-      title: "Fast Turnaround Time",
-      description: "End-to-end processing without delays",
+      title: "8+ Years Regulatory Expertise",
+      description: "Focused experience in Indian food laws and practical compliance execution.",
       color: "bg-accent/10 text-accent"
     },
     {
       icon: FileCheck,
-      title: "Accurate Documentation",
-      description: "No risk of rejection due to paperwork errors",
+      title: "Regulator-Aligned Documentation",
+      description: "Clear technical documentation and accurate submissions to reduce objections.",
       color: "bg-secondary/10 text-secondary"
     },
     {
       icon: Brain,
-      title: "Experienced Team",
-      description: "Handled 500+ FSSAI applications successfully",
+      title: "Compliance Strategy First",
+      description: "Pathway planning that reduces misclassification and market-entry risk.",
       color: "bg-primary/10 text-primary"
     },
     {
       icon: Globe,
-      title: "Nationwide Service",
-      description: "Serving businesses across all states",
+      title: "India and Global Support",
+      description: "PAN India and international client support for sustained compliance.",
       color: "bg-secondary/10 text-secondary"
     }
   ];
@@ -36,10 +36,10 @@ const WhyChooseSection = () => {
           {/* Heading */}
           <div className="text-center space-y-4 fade-in">
             <h2 className="text-3xl md:text-5xl font-bold text-foreground">
-              Why Choose Regacats for FSSAI Licensing?
+              Regulatory Expertise Across India & Global Markets
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Your trusted partner for food business compliance
+              We align Indian compliance with global business expectations for smoother market entry and long-term readiness.
             </p>
           </div>
 
