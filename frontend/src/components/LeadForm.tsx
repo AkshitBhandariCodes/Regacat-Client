@@ -50,7 +50,7 @@ export const LeadForm = ({ isOpen, onClose, isMinimized, onMinimize }: LeadFormP
     e.preventDefault();
   
     try {
-      const response = await fetch("https://regacats.in/api/commonLead.php", {
+      const response = await fetch("/api/commonLead.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

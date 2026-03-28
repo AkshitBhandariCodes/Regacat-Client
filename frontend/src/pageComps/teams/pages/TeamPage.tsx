@@ -10,7 +10,6 @@ import { Shield, Lightbulb, Users, ArrowRight } from "lucide-react";
 import akshay from '@/assets/teams/akshay.jpg'
 import anuj from '@/assets/teams/anuj.jpeg'
 import akash from '@/assets/teams/Akash sharma.jpeg'
-import sagar from '@/assets/teams/sagar.jpeg'
 
 
 const TeamPage = () => {
@@ -38,14 +37,7 @@ const TeamPage = () => {
       linkedin: "https://www.linkedin.com/in/aakash-sharma-72478a2aa/",
       email: "contact@regacats.in",
     },
-    {
-      name: "Sagar Chaudhary",
-      position: "Business Development",
-      image: `${sagar}`,
-      linkedin: "#",
-      email: "contact@regacats.in",
-    },
-    
+
   ];
 
   return (

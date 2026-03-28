@@ -49,14 +49,14 @@ export const HeroSection = ({ onConsultClick }: HeroSectionProps) => {
     };
 
     try {
-      // const response = await fetch('https://regacats.in/api/sendMail.php', {
+      // const response = await fetch('/api/sendMail.php', {
       //   method: 'POST',
       //   headers: {
       //     'Content-Type': 'application/json',
       //   },
       //   body: JSON.stringify(formPayload),
       // });
-      const response = await fetch("https://regacats.in/api/commonLead.php", {
+      const response = await fetch("/api/commonLead.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

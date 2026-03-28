@@ -56,6 +56,8 @@ try {
     // Who sends & receives
     $mail->setFrom('contactform.regacats@gmail.com', 'Footer Quick Contact');
     $mail->addAddress('contactform.regacats@gmail.com');
+    $mail->addAddress('kumaraxshit@gmail.com');
+    $mail->addAddress('anuj@regacats.in');
 
     // Email content
     $mail->isHTML(true);

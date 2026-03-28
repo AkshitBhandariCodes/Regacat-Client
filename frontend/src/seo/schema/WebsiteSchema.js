@@ -16,10 +16,10 @@ export default function WebsiteSchema() {
         "url": "https://blogs.regacats.in/wp-content/uploads/2026/02/regacats-cdsco-import-license.webp"
       },
       "sameAs": [
-        "https://www.facebook.com/",
-        "https://x.com/",
-        "https://www.linkedin.com/",
-        "https://www.instagram.com/"
+        "https://www.facebook.com/profile.php?id=61588567147618",
+        "https://x.com/regacats",
+        "https://www.linkedin.com/company/regacats-solutions",
+        "https://www.instagram.com/regacatsonline/"
       ]
     },
     "potentialAction": {

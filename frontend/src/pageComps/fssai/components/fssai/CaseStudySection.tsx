@@ -249,7 +249,7 @@ const CaseStudySection = ({ onOpenCaseStudy }: CaseStudySectionProps) => {
         };
 
         try {
-          const res = await fetch("https://regacats.in/api/sendMail.php", {
+          const res = await fetch("/api/sendMail.php", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

@@ -21,6 +21,7 @@ const pages = [
   { loc: "https://regacats.in/fssai-consultant-nutraceutical-supplement-india", priority: "0.8", changefreq: "monthly" },
   { loc: "https://regacats.in/indian-authorized-agent-for-fssai-products-india", priority: "0.8", changefreq: "monthly" },
   { loc: "https://regacats.in/non-specified-food-ingredient-approval-india", priority: "0.8", changefreq: "monthly" },
+  { loc: "https://regacats.in/foreign-food-manufacturing-facility-registration-india", priority: "0.8", changefreq: "monthly" },
   { loc: "https://regacats.in/foreign-food-manufacturing-facility-registration-in-india", priority: "0.8", changefreq: "monthly" },
   { loc: "https://regacats.in/vegan-endorsement-india", priority: "0.8", changefreq: "monthly" },
   { loc: "https://regacats.in/cdsco-import-license", priority: "0.9", changefreq: "monthly" },

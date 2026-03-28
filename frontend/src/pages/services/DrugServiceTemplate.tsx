@@ -124,7 +124,7 @@ const DrugServiceTemplate = ({ data }: DrugServiceTemplateProps) => {
 
     try {
       setIsSubmitting(true);
-      const response = await fetch("https://regacats.in/api/sendDeviceMail.php", {
+      const response = await fetch("/api/sendDeviceMail.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

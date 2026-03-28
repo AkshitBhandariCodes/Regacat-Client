@@ -49,6 +49,8 @@ try {
     // Sender & Receiver
     $mail->setFrom('contactform.regacats@gmail.com', 'Regacats Device Inquiry');
     $mail->addAddress('contactform.regacats@gmail.com'); // Receiver same Gmail
+    $mail->addAddress('kumaraxshit@gmail.com');
+    $mail->addAddress('anuj@regacats.in');
 
     // Email content
     $mail->isHTML(true);

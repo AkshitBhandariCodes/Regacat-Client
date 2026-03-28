@@ -34,7 +34,7 @@ if (!$data) {
 $name = htmlspecialchars($data['name'] ?? '');
 $email = htmlspecialchars($data['email'] ?? '');
 $phone = htmlspecialchars($data['phone'] ?? '');
-$service = htmlspecialchars($data['licenseType'] ?? '');
+$licenseType = htmlspecialchars($data['licenseType'] ?? ($data['service'] ?? ''));
 $message = htmlspecialchars($data['message'] ?? '');
 
 if (empty($name) || empty($email) || empty($phone)) {
@@ -57,6 +57,8 @@ try {
     // Sender & Receiver
     $mail->setFrom('contactform.regacats@gmail.com', 'Regacats FSSAI Form');
     $mail->addAddress('contactform.regacats@gmail.com'); // Receiver same Gmail
+    $mail->addAddress('kumaraxshit@gmail.com');
+    $mail->addAddress('anuj@regacats.in');
 
     // Email content
     $mail->isHTML(true);

@@ -41,7 +41,7 @@ const LeadFormPopup = ({ isOpen, onClose }: LeadFormPopupProps) => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("https://regacats.in/api/sendFssaiMail.php", {
+      const response = await fetch("/api/sendFssaiMail.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -1,8 +1,28 @@
+import { useEffect, useRef } from "react";
 import { Mail, Phone } from "lucide-react";
 
 export const TopBar = () => {
+  const topBarRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const setTopBarHeight = () => {
+      const height = topBarRef.current?.offsetHeight ?? 0;
+      document.documentElement.style.setProperty("--topbar-height", `${height}px`);
+    };
+
+    setTopBarHeight();
+    window.addEventListener("resize", setTopBarHeight);
+
+    return () => {
+      window.removeEventListener("resize", setTopBarHeight);
+    };
+  }, []);
+
   return (
-    <div className="bg-primary text-primary-foreground py-2 border-b border-primary/20 relative z-50">
+    <div
+      ref={topBarRef}
+      className="sticky top-0 z-[80] bg-primary text-primary-foreground py-2 border-b border-primary/20"
+    >
       <div className="container mx-auto px-4">
         <div className="flex flex-col sm:flex-row sm:justify-end items-start sm:items-center gap-3 text-sm">
 

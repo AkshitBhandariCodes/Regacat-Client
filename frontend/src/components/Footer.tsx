@@ -31,7 +31,7 @@ export const Footer = () => {
         message: formData.message,
       });
 
-      const response = await fetch("https://regacats.in/api/footerContact.php", {
+      const response = await fetch("/api/footerContact.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -240,15 +240,42 @@ export const Footer = () => {
               © 2025 Regacats Solutions. All rights reserved.
             </p>
             <div className="flex gap-4">
-              {[Facebook, Twitter, Linkedin, Instagram].map((Icon, idx) => (
-                <a
-                  key={idx}
-                  href="#"
-                  className="rounded-full p-2 bg-white/10 text-slate-300 hover:text-white hover:bg-white/20 transition-colors"
-                >
-                  <Icon className="h-5 w-5" />
-                </a>
-              ))}
+              <a
+                href="https://www.facebook.com/profile.php?id=61588567147618"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Regacats on Facebook"
+                className="rounded-full p-2 bg-white/10 text-slate-300 hover:text-white hover:bg-white/20 transition-colors"
+              >
+                <Facebook className="h-5 w-5" />
+              </a>
+              <a
+                href="https://x.com/regacats"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Regacats on X"
+                className="rounded-full p-2 bg-white/10 text-slate-300 hover:text-white hover:bg-white/20 transition-colors"
+              >
+                <Twitter className="h-5 w-5" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/regacats-solutions"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Regacats on LinkedIn"
+                className="rounded-full p-2 bg-white/10 text-slate-300 hover:text-white hover:bg-white/20 transition-colors"
+              >
+                <Linkedin className="h-5 w-5" />
+              </a>
+              <a
+                href="https://www.instagram.com/regacatsonline/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Regacats on Instagram"
+                className="rounded-full p-2 bg-white/10 text-slate-300 hover:text-white hover:bg-white/20 transition-colors"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
             </div>
           </div>
         </div>

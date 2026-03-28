@@ -34,7 +34,7 @@ export const Navigation = ({ onConsultClick }: NavigationProps) => {
 
   return (
     <>
-    <nav className="sticky top-0 z-[70] bg-background border-b border-border shadow-sm">
+    <nav className="sticky top-[var(--topbar-height,0px)] z-[70] bg-background border-b border-border shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}

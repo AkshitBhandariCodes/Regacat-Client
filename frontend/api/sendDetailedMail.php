@@ -57,6 +57,8 @@ try {
     // ✅ From & To
     $mail->setFrom('contactform.regacats@gmail.com', 'Regacats Website Form');
     $mail->addAddress('contactform.regacats@gmail.com');
+    $mail->addAddress('kumaraxshit@gmail.com');
+    $mail->addAddress('anuj@regacats.in');
 
     // ✅ Email Body
     $mail->isHTML(true);

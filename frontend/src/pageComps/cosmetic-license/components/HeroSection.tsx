@@ -54,7 +54,7 @@ const HeroSection = ({ onCTAClick }: HeroSectionProps) => {
       //   },
       //   body: JSON.stringify(formData),
       // });
-      const response = await fetch("https://regacats.in/api/sendMail.php", {
+      const response = await fetch("/api/sendMail.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

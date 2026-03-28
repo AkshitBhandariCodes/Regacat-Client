@@ -44,7 +44,7 @@ export const LeadFormDialog = ({ open, onOpenChange }: LeadFormDialogProps) => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("https://regacats.in/api/sendDetailedMail.php", {
+      const response = await fetch("/api/sendDetailedMail.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
