@@ -40,9 +40,108 @@
         ]
       }
     </script>
+
+    <style>
+      .seo-preload {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 24px 16px;
+        color: #0f172a;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.75;
+      }
+
+      .seo-preload h1,
+      .seo-preload h2 {
+        line-height: 1.3;
+      }
+
+      .seo-preload nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 0;
+        margin: 12px 0 24px;
+        list-style: none;
+      }
+
+      .seo-preload a {
+        color: #1d4ed8;
+      }
+    </style>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var fallback = document.getElementById("seo-static-content");
+        if (fallback) {
+          fallback.remove();
+        }
+      });
+    </script>
   </head>
 
   <body>
+    <main id="seo-static-content" class="seo-preload">
+      <h1>Licensing &amp; Regulatory Consultancy Services in India</h1>
+
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/fssai-consultants-india">Services</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <p>
+        Regacats Solutions is a trusted partner for businesses looking for structured <strong>Licensing consultancy India</strong>
+        support across product categories and regulatory frameworks. Our team helps startups, importers, manufacturers,
+        and global brands manage approvals with clear documentation, practical advisory, and timeline-focused execution.
+        Whether you are entering the food market, launching healthcare products, or expanding into certification-heavy
+        categories, we build a compliance path that reduces avoidable rework and improves acceptance quality.
+      </p>
+
+      <h2>Services We Offer</h2>
+      <p>
+        We provide end-to-end support for <strong>CDSCO registration</strong>, <strong>FSSAI license</strong>,
+        <strong> BIS certification</strong>, <strong>medical device registration</strong>, and
+        <strong> cosmetic import license India</strong> applications. Our services include eligibility mapping,
+        document planning, form validation, submission support, and authority query handling. Businesses can learn
+        more through our service pages including <a href="/cdsco-registration">CDSCO services</a>,
+        <a href="/fssai-consultants-india"> FSSAI services</a>,
+        <a href="/medical-device-import-license-india"> medical device registration support</a>, and
+        <a href="/cosmetic-import-license-india"> cosmetic import licensing</a>.
+      </p>
+
+      <h2>Why Choose Regacats Solutions</h2>
+      <p>
+        Our approach combines regulatory interpretation with practical execution. We work with clear checklists,
+        versioned documentation, and transparent communication so your team can track every milestone confidently.
+        We also align applications with current authority expectations and guide corrective updates quickly.
+        For official references, consult
+        <a href="https://cdsco.gov.in" target="_blank" rel="noopener noreferrer"> CDSCO</a> and
+        <a href="https://fssai.gov.in" target="_blank" rel="noopener noreferrer"> FSSAI</a>.
+      </p>
+
+      <h2>Our Expertise</h2>
+      <p>
+        Regacats supports domestic and international clients in pharmaceuticals, nutraceuticals, cosmetics,
+        and medical devices. We also publish practical compliance insights so teams can prepare before filing.
+        Explore our guides at <a href="/blog/cdsco-registration-guide">CDSCO Registration Guide</a>,
+        <a href="/blog/fssai-license-process"> FSSAI License Process</a>, and
+        <a href="/blog/bis-certification-india"> BIS Certification India</a>.
+        You can review our background on the <a href="/about">About page</a> or browse the
+        <a href="/team"> Team</a> and <a href="/portfolio"> Portfolio</a> sections.
+      </p>
+
+      <h2>Contact Us</h2>
+      <p>
+        If you need fast and reliable compliance execution, connect with our consultants through the
+        <a href="/contact"> Contact page</a>. We help you define the exact regulatory path,
+        required submissions, and practical timelines so your business can move from planning to approval faster.
+      </p>
+    </main>
+
     <div id="root"></div>
     <noscript>
       Regacats Solutions provides licensing consultancy India support for CDSCO registration, FSSAI license, BIS certification,
