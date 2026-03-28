@@ -38,6 +38,7 @@ import EPRPage from "./pages/services/EPRPage";
 
 import LegalPage from "./pages/services/LegalPage";
 import SEO from "./seo/SEO";
+import { GlobalConsultWidget } from "./components/GlobalConsultWidget";
 
 const queryClient = new QueryClient();
 
@@ -49,6 +50,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
+        <GlobalConsultWidget />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
