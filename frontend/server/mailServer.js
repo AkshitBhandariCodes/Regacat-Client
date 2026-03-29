@@ -43,13 +43,25 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-const recipients = [
-  process.env.MAIL_TO_PRIMARY,
-  process.env.MAIL_TO_SECONDARY || "kumaraxshit@gmail.com",
-  process.env.MAIL_TO_TERTIARY || "anuj@regacats.in",
-].filter(Boolean);
-
 const sanitize = (value) => String(value ?? "").trim();
+
+const parseEmails = (...values) => {
+  return values
+    .flatMap((value) => String(value ?? "").split(","))
+    .map((value) => value.trim())
+    .filter(Boolean);
+};
+
+const getRecipients = () => {
+  const to = parseEmails(process.env.MAIL_TO_PRIMARY);
+  const cc = parseEmails(
+    process.env.MAIL_TO_SECONDARY || "kumaraxshit@gmail.com",
+    process.env.MAIL_TO_TERTIARY || "anuj@regacats.in",
+    process.env.MAIL_TO_CC
+  );
+
+  return { to, cc };
+};
 
 const SOURCE_CONFIG = {
   commonLead: { source: "Home / Global Lead Form", subjectPrefix: "New Lead" },
@@ -85,10 +97,16 @@ async function sendLeadMail({
   }
 
   const subject = `${subjectPrefix} from ${leadName}`;
+  const recipients = getRecipients();
+
+  if (recipients.to.length === 0) {
+    return { ok: false, message: "No primary recipient configured" };
+  }
 
   await transporter.sendMail({
     from: process.env.MAIL_FROM,
-    to: recipients,
+    to: recipients.to,
+    cc: recipients.cc.length ? recipients.cc : undefined,
     subject,
     html: `
       <h2>${source}</h2>

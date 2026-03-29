@@ -12,14 +12,18 @@ const SOURCE_CONFIG = {
 
 const sanitize = (value) => String(value ?? "").trim();
 
-const getRecipients = () => {
-  const recipients = [
-    process.env.MAIL_TO_PRIMARY,
-    process.env.MAIL_TO_SECONDARY,
-    process.env.MAIL_TO_TERTIARY,
-  ].filter(Boolean);
+const parseEmails = (...values) => {
+  return values
+    .flatMap((value) => String(value ?? "").split(","))
+    .map((value) => value.trim())
+    .filter(Boolean);
+};
 
-  return recipients;
+const getRecipients = () => {
+  const to = parseEmails(process.env.MAIL_TO_PRIMARY);
+  const cc = parseEmails(process.env.MAIL_TO_SECONDARY, process.env.MAIL_TO_TERTIARY, process.env.MAIL_TO_CC);
+
+  return { to, cc };
 };
 
 const getTransporter = () => {
@@ -91,14 +95,15 @@ export default async function handler(req, res) {
     const transporter = getTransporter();
     const recipients = getRecipients();
 
-    if (recipients.length === 0) {
+    if (recipients.to.length === 0) {
       res.status(500).json({ success: false, message: "No recipients configured" });
       return;
     }
 
     await transporter.sendMail({
       from: process.env.MAIL_FROM,
-      to: recipients,
+      to: recipients.to,
+      cc: recipients.cc.length ? recipients.cc : undefined,
       subject: `${config.subjectPrefix} from ${name}`,
       html: `
         <h2>${config.source}</h2>
