@@ -1,0 +1,32 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/commonLead.php",
+      "destination": "/api/lead?source=commonLead"
+    },
+    {
+      "source": "/api/contactForm.php",
+      "destination": "/api/lead?source=contactForm"
+    },
+    {
+      "source": "/api/footerContact.php",
+      "destination": "/api/lead?source=footerContact"
+    },
+    {
+      "source": "/api/sendDetailedMail.php",
+      "destination": "/api/lead?source=sendDetailedMail"
+    },
+    {
+      "source": "/api/sendDeviceMail.php",
+      "destination": "/api/lead?source=sendDeviceMail"
+    },
+    {
+      "source": "/api/sendFssaiMail.php",
+      "destination": "/api/lead?source=sendFssaiMail"
+    },
+    {
+      "source": "/api/sendMail.php",
+      "destination": "/api/lead?source=sendMail"
+    }
+  ]
+}
