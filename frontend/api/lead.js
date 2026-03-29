@@ -67,7 +67,13 @@ export default async function handler(req, res) {
 
   const sourceKey = sanitize(req.query?.source) || "commonLead";
   const config = SOURCE_CONFIG[sourceKey] || SOURCE_CONFIG.commonLead;
-  const payload = typeof req.body === "string" ? JSON.parse(req.body || "{}") : req.body || {};
+  let payload = {};
+  try {
+    payload = typeof req.body === "string" ? JSON.parse(req.body || "{}") : req.body || {};
+  } catch {
+    res.status(400).json({ success: false, message: "Invalid JSON payload" });
+    return;
+  }
 
   const name = sanitize(payload.name);
   const email = sanitize(payload.email);
@@ -117,6 +123,10 @@ export default async function handler(req, res) {
     res.status(200).json({ success: true, message: "Email sent successfully" });
   } catch (error) {
     console.error("Mail API error:", error);
-    res.status(500).json({ success: false, message: "Failed to send email" });
+    res.status(500).json({
+      success: false,
+      message: "Failed to send email",
+      error: sanitize(error?.message || "Unknown mail error"),
+    });
   }
 }
