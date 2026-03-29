@@ -12,7 +12,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Call Us",
-    detail: "+91 99211921474",
+    detail: "+91 9211921474",
     link: "tel:+91 9211921474",
     color: "text-secondary",
   },

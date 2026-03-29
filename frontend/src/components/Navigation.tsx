@@ -82,9 +82,14 @@ export const Navigation = ({ onConsultClick }: NavigationProps) => {
             <Link to="/team" className="text-foreground hover:text-primary transition-colors">
               Team
             </Link>
-            <Link to="/blog" className="text-foreground hover:text-primary transition-colors">
+            <a
+              href="https://blogs.regacats.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground hover:text-primary transition-colors"
+            >
               Blog
-            </Link>
+            </a>
             <Link to="/contact" className="text-foreground hover:text-primary transition-colors">
               Contact
             </Link>
@@ -147,9 +152,14 @@ export const Navigation = ({ onConsultClick }: NavigationProps) => {
               <Link to="/team" className="text-foreground hover:text-primary transition-colors">
                 Team
               </Link>
-              <Link to="/blog" className="text-foreground hover:text-primary transition-colors">
+              <a
+                href="https://blogs.regacats.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground hover:text-primary transition-colors"
+              >
                 Blog
-              </Link>
+              </a>
               <Link to="/contact" className="text-foreground hover:text-primary transition-colors">
                 Contact
               </Link>
