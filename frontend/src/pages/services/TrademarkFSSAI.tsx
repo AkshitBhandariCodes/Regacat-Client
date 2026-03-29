@@ -8,6 +8,7 @@ import { CheckCircle } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import FSSAILicense from "@/pageComps/fssai/pages/FSSAILicense";
 import {LeadPopup} from "@/components/LeadPopup";
+import ServiceInternalLinks from "@/components/ServiceInternalLinks";
 
 const TrademarkFSSAI = () => {
   const navigate = useNavigate();
@@ -79,6 +80,7 @@ const TrademarkFSSAI = () => {
         </div>
       </main> */}
       <FSSAILicense/>
+      <ServiceInternalLinks />
       
       <Footer />
       <WhatsAppButton />

@@ -8,6 +8,7 @@ import { CheckCircle } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import CDSCODrug from "@/pageComps/cosmeticdrug/pages/CDSCODrug";
 import {LeadPopup}  from "@/components/LeadPopup";
+import ServiceInternalLinks from "@/components/ServiceInternalLinks";
 
 
 const CDSCODrugRegistration = () => {
@@ -18,6 +19,7 @@ const CDSCODrugRegistration = () => {
     <TopBar/>
     <Navigation onConsultClick={() => navigate("/")}/>
     <CDSCODrug/>
+    <ServiceInternalLinks />
       
       <Footer />
       <WhatsAppButton />

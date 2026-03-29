@@ -36,10 +36,10 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Regacats Solutions | Licensing & Regulatory Consultancy India"
-        description="Expert licensing consultancy in India for CDSCO, FSSAI, BIS & medical devices. Fast approvals with Regacats Solutions."
+        title="Regacats Solutions | CDSCO & FSSAI Consultant in India"
+        description="Expert CDSCO & FSSAI consultant in India for cosmetic, medical device, food & nutraceutical import. Fast, compliant approvals with end-to-end support."
         canonical="https://regacat-client.vercel.app/"
-        keywords="Licensing consultancy India, CDSCO registration, FSSAI license, BIS certification, medical device registration, cosmetic import license India"
+        keywords="CDSCO registration, FSSAI license, medical device registration, cosmetic import license India"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "Organization",

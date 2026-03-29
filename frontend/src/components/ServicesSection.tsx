@@ -39,7 +39,7 @@ const services: Service[] = [
     href: "/medical-device-import-license-india",
   },
   {
-    title: "FSSAI License",
+    title: "FSSAI Services",
     tagline: "FSSAI license ensures food businesses maintain safety, hygiene, and quality standards as per Indian regulations.",
     summary: "Complete trademark registration and FSSAI licensing for food businesses.",
     details: "We offer comprehensive services for trademark registration, brand protection, and FSSAI licensing. From state to central FSSAI licenses, we handle documentation, filing, and follow-ups. Protect your brand identity while ensuring food safety compliance.",

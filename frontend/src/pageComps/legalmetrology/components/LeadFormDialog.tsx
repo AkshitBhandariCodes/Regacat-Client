@@ -185,6 +185,7 @@ export const LeadFormDialog = ({ open, onOpenChange }: LeadFormDialogProps) => {
                 <SelectItem value="renewal">Registration Renewal</SelectItem>
                 <SelectItem value="compliance">Compliance Consultation</SelectItem>
                 <SelectItem value="inspection">Pre-Inspection Audit</SelectItem>
+                <SelectItem value="iaa-services">Indian Authorized Agent Services</SelectItem>
                 <SelectItem value="other">Other Services</SelectItem>
               </SelectContent>
             </Select>

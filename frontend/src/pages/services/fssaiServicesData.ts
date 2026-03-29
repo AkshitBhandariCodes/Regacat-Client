@@ -94,7 +94,6 @@ export const fssaiServicesData: Record<string, FssaiServiceData> = {
       "IEC (Import Export Code)",
       "Product composition and specifications",
       "Ingredient and dosage schedules mapping",
-      "Certificate of Free Sale",
       "Raw material CoA",
       "Country of origin certificate",
       "Manufacturing license copy",
@@ -495,7 +494,7 @@ export const fssaiServicesData: Record<string, FssaiServiceData> = {
       {
         title: "Types of FSSAI License and Registration",
         description:
-          "Licensing category depends on turnover, scale, and activity. Registration applies up to INR 12 lakh, State License above INR 12 lakh to INR 20 crore, and Central License above INR 20 crore and for specified activities such as import and nutraceutical categories.",
+          "Licensing category depends on turnover, scale, and activity. Registration applies up to INR 1.5 crore, State License above INR 1.5 crore to INR 20 crore, and Central License above INR 50 crore and for specified activities such as import and nutraceutical categories.",
         points: [
           "Registration fee: INR 100",
           "State License fee: INR 2000/3000/5000",

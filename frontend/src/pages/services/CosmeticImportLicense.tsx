@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 // import CosmeticImport from "@/cosmeticimport/pages/CosmeticImport";
 import CosmeticLicense from "@/pageComps/cosmetic-license/pages/CosmeticLicense";
 import {LeadPopup}  from "@/components/LeadPopup";
+import ServiceInternalLinks from "@/components/ServiceInternalLinks";
 
 const CosmeticImportLicense = () => {
   const navigate = useNavigate();
@@ -63,6 +64,7 @@ const CosmeticImportLicense = () => {
       {/* <CosmeticImport/> */}
       <CosmeticLicense/>
       <LeadPopup/>
+      <ServiceInternalLinks />
       <Footer />
       <WhatsAppButton />
     </div>

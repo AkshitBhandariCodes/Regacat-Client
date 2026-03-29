@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { CheckCircle2, ChevronDown, ChevronUp } from "lucide-react";
+import ServiceInternalLinks from "@/components/ServiceInternalLinks";
 
 const coreServiceCards = [
 	{
@@ -389,6 +390,8 @@ const CdscoImportLicenseService = () => {
 					</div>
 				</section>
 			</main>
+
+			<ServiceInternalLinks />
 
 			<Footer />
 			<WhatsAppButton />

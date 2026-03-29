@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram, Youtube } from "lucide-react";
 import { Link } from "react-router-dom";
 
 import { Button } from "@/components/ui/button";
@@ -275,6 +275,15 @@ export const Footer = () => {
                 className="rounded-full p-2 bg-white/10 text-slate-300 hover:text-white hover:bg-white/20 transition-colors"
               >
                 <Instagram className="h-5 w-5" />
+              </a>
+              <a
+                href="https://www.youtube.com/@RegacatsSolutions"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Regacats on YouTube"
+                className="rounded-full p-2 bg-white/10 text-slate-300 hover:text-white hover:bg-white/20 transition-colors"
+              >
+                <Youtube className="h-5 w-5" />
               </a>
             </div>
           </div>

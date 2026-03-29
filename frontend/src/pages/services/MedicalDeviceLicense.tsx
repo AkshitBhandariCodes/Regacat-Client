@@ -8,6 +8,7 @@ import { CheckCircle } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import CDSCOMedicalDevice from "@/pageComps/medicalDevice/pages/CDSCOMedicalDevice";
 import {LeadPopup}  from "@/components/LeadPopup";
+import ServiceInternalLinks from "@/components/ServiceInternalLinks";
 
 const MedicalDeviceLicense = () => {
   const navigate = useNavigate();
@@ -60,6 +61,7 @@ const MedicalDeviceLicense = () => {
         </div>
       </main> */}
       <CDSCOMedicalDevice/>
+      <ServiceInternalLinks />
 
       
       <Footer />

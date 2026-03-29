@@ -17,15 +17,13 @@ interface NavigationProps {
 }
 
 const services = [
-  { name: "CDSCO Import License Consultant", href: "/cdsco-import-license" },
+  { name: "CDSCO Import Service", href: "/cdsco-import-service" },
   { name: "Cosmetic Import License", href: "/cosmetic-import-license-india" },
-  { name: "CDSCO Drug Registration", href: "/cdsco-registration" },
   { name: "Medical Device Import License", href: "/medical-device-import-license-india" },
-  { name: "FSSAI License", href: "/fssai-consultants-india" },
-  { name: "Indian Authorized Agent Services", href: "/indian-authorized-agent-services-india" },
-  { name: "FSSAI Nutraceutical Import Consultant", href: "/fssai-nutraceutical-import-consultant-india" },
-  { name: "EPR Authorization", href: "/epr-registration" },
-  { name: "Legal Metrology", href: "/legal-metrology" },
+  { name: "FSSAI Services", href: "/fssai-services" },
+  { name: "Indian Authorized Agent Services", href: "/iaa-services" },
+  { name: "EPR Authorization", href: "/epr" },
+  { name: "Legal Metrology", href: "/legal" },
 ];
 
 export const Navigation = ({ onConsultClick }: NavigationProps) => {
@@ -61,14 +59,14 @@ export const Navigation = ({ onConsultClick }: NavigationProps) => {
                     Services
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="grid w-[400px] gap-3 p-4 bg-popover">
+                    <ul className="grid w-[320px] gap-1 p-3 bg-popover">
                       {services.map((service) => (
                         <li key={service.name}>
                           <Link
                             to={service.href}
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            className="block rounded-md px-3 py-2 text-sm font-medium uppercase tracking-wide transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           >
-                            <div className="text-sm font-medium leading-none">{service.name}</div>
+                            <div>{service.name}</div>
                           </Link>
                         </li>
                       ))}

@@ -25,6 +25,7 @@ const SERVICES = [
   "CDSCO Drug Registration",
   "Medical Device Import License",
   "FSSAI License",
+  "Indian Authorized Agent Services",
   "EPR Authorization",
   "Legal Metrology",
   'Any other - FSSAI',
@@ -251,14 +252,13 @@ useEffect(() => {
 
   return (
     <div
-      className="fixed inset-0 z-50 bg-black/80 animate-fade-in"
+      className="fixed inset-0 z-[120] bg-black/80 animate-fade-in p-3 sm:p-4 md:p-6"
       onClick={handleBackdropClick}
       role="dialog"
       aria-modal="true"
       aria-labelledby="popup-title"
     >
-      <div className="fixed bottom-6 right-6 w-[260px] max-h-[70vh] bg-white backdrop-blur-md border border-white/20
- rounded-2xl shadow-2xl overflow-hidden animate-slide-in-bottom-right">
+      <div className="absolute bottom-3 left-3 right-3 w-auto max-h-[calc(100dvh-24px)] bg-white backdrop-blur-md border border-white/20 rounded-2xl shadow-2xl overflow-hidden animate-slide-in-bottom-right md:bottom-6 md:left-auto md:right-6 md:w-[300px] md:max-h-[calc(100dvh-64px)]">
         {/* Close button */}
         <button
           onClick={handleClose}
@@ -269,7 +269,7 @@ useEffect(() => {
         </button>
 
         {/* Content */}
-        <div className="overflow-y-auto max-h-[70vh] p-5">
+        <div className="overflow-y-auto max-h-[calc(100dvh-120px)] md:max-h-[calc(100dvh-150px)] p-5">
           {isSuccess ? (
             <div className="text-center py-6 animate-fade-in">
               <div className="w-12 h-12 mx-auto mb-3 rounded-full bg-accent/10 flex items-center justify-center">

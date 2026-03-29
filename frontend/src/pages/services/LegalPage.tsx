@@ -8,6 +8,7 @@ import { CheckCircle } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import LegalMetrology from "@/pageComps/legalmetrology/pages/LegalMetrology";
 import {LeadPopup}  from "@/components/LeadPopup";
+import ServiceInternalLinks from "@/components/ServiceInternalLinks";
 
 const LegalPage = () => {
   const navigate = useNavigate();
@@ -60,6 +61,7 @@ const LegalPage = () => {
         </div>
       </main> */}
       <LegalMetrology/>
+      <ServiceInternalLinks />
       
       <Footer />
       <WhatsAppButton />

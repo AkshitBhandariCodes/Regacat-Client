@@ -24,6 +24,7 @@ const services = [
   "CDSCO Drug Registration",
   "Medical Device Import License",
   "FSSAI License",
+  "Indian Authorized Agent Services",
   "EPR Authorization",
   "Legal Metrology",
   'Any other - FSSAI',
@@ -76,7 +77,7 @@ export const LeadForm = ({ isOpen, onClose, isMinimized, onMinimize }: LeadFormP
 
   if (isMinimized) {
     return (
-      <div className="fixed bottom-6 right-6 z-50 animate-fade-in">
+      <div className="fixed bottom-6 right-6 z-[120] animate-fade-in">
         <Button
           onClick={onMinimize}
           size="lg"
@@ -89,7 +90,7 @@ export const LeadForm = ({ isOpen, onClose, isMinimized, onMinimize }: LeadFormP
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 animate-fade-in">
+    <div className="fixed inset-0 z-[120] flex items-start md:items-center justify-center p-4 md:p-6 pt-[calc(var(--topbar-height,0px)+16px)] md:pt-8 animate-fade-in overflow-y-auto">
       {/* Backdrop */}
       <div
         className="absolute inset-0 bg-black/50 backdrop-blur-sm"
@@ -97,7 +98,7 @@ export const LeadForm = ({ isOpen, onClose, isMinimized, onMinimize }: LeadFormP
       />
 
       {/* Form */}
-      <div className="relative bg-card rounded-lg shadow-2xl w-full max-w-md max-h-[90vh] overflow-y-auto">
+      <div className="relative bg-card rounded-lg shadow-2xl w-full max-w-md max-h-[calc(100dvh-48px)] md:max-h-[calc(100dvh-80px)] overflow-y-auto">
         <div className="sticky top-0 bg-card border-b border-border px-6 py-4 flex items-center justify-between">
           <h2 className="text-2xl font-bold text-foreground">Get Free Consulting</h2>
           <div className="flex items-center gap-2">

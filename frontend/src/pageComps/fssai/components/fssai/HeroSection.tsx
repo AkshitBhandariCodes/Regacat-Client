@@ -315,6 +315,7 @@ const HeroSection = ({ onCTAClick }: HeroSectionProps) => {
                     <SelectItem value="state">FSSAI State License</SelectItem>
                     <SelectItem value="central">FSSAI Central License</SelectItem>
                     <SelectItem value="import">FSSAI Import License</SelectItem>
+                    <SelectItem value="iaa">Indian Authorized Agent Services</SelectItem>
                     <SelectItem value="renewal">FSSAI License Renewal</SelectItem>
                     <SelectItem value="labelling">Food Labelling Compliance</SelectItem>
                   </SelectContent>

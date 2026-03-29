@@ -21,6 +21,7 @@ import { CheckCircle2, ChevronDown, ChevronUp } from "lucide-react";
 import SEO from "@/seo/SEO";
 import WebsiteSchema from "@/seo/schema/WebsiteSchema";
 import FAQSchema from "@/seo/schema/FAQSchema";
+import ServiceInternalLinks from "@/components/ServiceInternalLinks";
 
 export interface FssaiFaq {
   question: string;
@@ -69,6 +70,9 @@ const FssaiServiceTemplate = ({ data }: FssaiServiceTemplateProps) => {
   const challenges = data?.challenges ?? [];
   const faqs = data?.faqs ?? [];
   const formServiceOptions = data?.formServiceOptions ?? ["FSSAI Service"];
+  const mergedFormServiceOptions = formServiceOptions.includes("Indian Authorized Agent Services")
+    ? formServiceOptions
+    : [...formServiceOptions, "Indian Authorized Agent Services"];
   const processImage = data?.processImage;
   const secondaryImage = data?.secondaryImage;
   const siteUrl = "https://regacats.in";
@@ -99,7 +103,7 @@ const FssaiServiceTemplate = ({ data }: FssaiServiceTemplateProps) => {
     name: "",
     email: "",
     phone: "",
-    service: formServiceOptions[0] ?? "FSSAI Service",
+    service: mergedFormServiceOptions[0] ?? "FSSAI Service",
     message: "",
   });
 
@@ -137,7 +141,7 @@ const FssaiServiceTemplate = ({ data }: FssaiServiceTemplateProps) => {
         name: "",
         email: "",
         phone: "",
-        service: formServiceOptions[0] ?? "FSSAI Service",
+        service: mergedFormServiceOptions[0] ?? "FSSAI Service",
         message: "",
       });
     } catch {
@@ -387,7 +391,7 @@ const FssaiServiceTemplate = ({ data }: FssaiServiceTemplateProps) => {
                       <SelectValue placeholder="Select service" />
                     </SelectTrigger>
                     <SelectContent>
-                      {formServiceOptions.map((option) => (
+                      {mergedFormServiceOptions.map((option) => (
                         <SelectItem key={option} value={option}>
                           {option}
                         </SelectItem>
@@ -414,6 +418,8 @@ const FssaiServiceTemplate = ({ data }: FssaiServiceTemplateProps) => {
           </div>
         </section>
       </main>
+
+      <ServiceInternalLinks />
 
       <Footer />
       <WhatsAppButton />

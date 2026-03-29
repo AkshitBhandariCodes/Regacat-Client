@@ -21,6 +21,7 @@ const services = [
   "CDSCO Drug Registration",
   "Medical Device Import License",
   "FSSAI License",
+  "Indian Authorized Agent Services",
   "EPR Authorization",
   "Legal Metrology",
   "Any other -  FSSAI",
@@ -113,7 +114,7 @@ export const HeroSection = ({ onConsultClick }: HeroSectionProps) => {
           {/* Left Side - Content */}
           <div className="animate-fade-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-              Licensing & Regulatory Consultancy Services in India
+              CDSCO & FSSAI Consultant in India for Cosmetic, Medical Device & Nutraceutical Import
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8">
               Navigate complex regulatory requirements with confidence. From CDSCO cosmetic import registration, medical device import registration to

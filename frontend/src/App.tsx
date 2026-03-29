@@ -82,13 +82,18 @@ const App = () => (
           <Route path="/vegan-endorsement-india" element={<FssaiVeganEndorsementService />} />
           <Route path="/vegan-endorsement-india/" element={<FssaiVeganEndorsementService />} />
           <Route path="/cdsco-import-license" element={<CdscoImportLicenseService />} />
+          <Route path="/cdsco-import-service" element={<CdscoImportLicenseService />} />
           <Route path="/indian-authorized-agent-for-drugs" element={<IndianAuthorizedAgentDrugsService />} />
           <Route path="/indian-authorized-agent-for-medical-devices" element={<IndianAuthorizedAgentMedicalDevicesService />} />
           <Route path="/indian-authorized-agent-for-cosmetics-in-india" element={<IndianAuthorizedAgentCosmeticsService />} />
           <Route path="/indian-authorized-agent-for-fssai-products" element={<IndianAuthorizedAgentFssaiProductsService />} />
           <Route path="/indian-authorized-agent-services-india" element={<IndianAuthorizedAgentServicesIndiaMain />} />
+          <Route path="/fssai-services" element={<TrademarkFSSAI />} />
+          <Route path="/iaa-services" element={<IndianAuthorizedAgentServicesIndiaMain />} />
           <Route path="/legal-metrology" element={<LegalPage/>} />
+          <Route path="/legal" element={<LegalPage/>} />
           <Route path="/epr-registration" element={<EPRPage/>} />
+          <Route path="/epr" element={<EPRPage/>} />
           <Route path="/disclaimer" element={<Disclaimer/>} />
           <Route path="/terms-and-conditions" element={<Terms/>} />
           <Route path="/privacy-policy" element={<Privacy/>} />

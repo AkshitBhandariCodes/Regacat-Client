@@ -162,6 +162,9 @@ const LeadFormPopup = ({ isOpen, onClose }: LeadFormPopupProps) => {
                 <SelectItem value="central">
                   Central License (Above ₹20Cr)
                 </SelectItem>
+                <SelectItem value="iaa-services">
+                  Indian Authorized Agent Services
+                </SelectItem>
                 <SelectItem value="not-sure">
                   Not Sure / Need Consultation
                 </SelectItem>

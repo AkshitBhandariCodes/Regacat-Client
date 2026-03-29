@@ -8,6 +8,7 @@ import { CheckCircle } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import EPRregistration from "@/pageComps/eprregistration/pages/EPRregistration";
 import {LeadPopup}  from "@/components/LeadPopup";
+import ServiceInternalLinks from "@/components/ServiceInternalLinks";
 
 const EPRPage = () => {
   const navigate = useNavigate();
@@ -60,6 +61,7 @@ const EPRPage = () => {
         </div>
       </main> */}
       <EPRregistration/>
+      <ServiceInternalLinks />
       
       <Footer />
       <WhatsAppButton />
