@@ -50,7 +50,7 @@ export const LeadGenPopup = ({ isOpen, onClose }: LeadGenPopupProps) => {
   
     try {
       // Send form data to PHP backend
-      const response = await fetch("/api/sendDeviceMail.php", {
+      const response = await fetch("/api/lead?source=sendDeviceMail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

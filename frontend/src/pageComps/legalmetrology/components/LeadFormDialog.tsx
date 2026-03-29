@@ -73,7 +73,7 @@ export const LeadFormDialog = ({ open, onOpenChange }: LeadFormDialogProps) => {
 
     try {
       // Send data to backend
-      const res = await fetch("/api/sendFssaiMail.php", {
+      const res = await fetch("/api/lead?source=sendFssaiMail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

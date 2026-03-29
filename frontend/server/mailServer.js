@@ -36,7 +36,7 @@ if (missing.length > 0) {
 const transporter = nodemailer.createTransport({
   host: process.env.SMTP_HOST || "smtp.gmail.com",
   port: Number(process.env.SMTP_PORT || 587),
-  secure: false,
+  secure: Number(process.env.SMTP_PORT || 587) === 465,
   auth: {
     user: process.env.SMTP_USER,
     pass: process.env.SMTP_PASS,
@@ -50,6 +50,16 @@ const recipients = [
 ].filter(Boolean);
 
 const sanitize = (value) => String(value ?? "").trim();
+
+const SOURCE_CONFIG = {
+  commonLead: { source: "Home / Global Lead Form", subjectPrefix: "New Lead" },
+  contactForm: { source: "Contact Form", subjectPrefix: "New Contact Form Inquiry" },
+  footerContact: { source: "Footer Quick Contact", subjectPrefix: "New Quick Contact Inquiry" },
+  sendDetailedMail: { source: "Detailed Service Form", subjectPrefix: "New Service Inquiry" },
+  sendDeviceMail: { source: "Drug / Device / IAA Form", subjectPrefix: "New Device Inquiry" },
+  sendFssaiMail: { source: "FSSAI Service Form", subjectPrefix: "New FSSAI Inquiry" },
+  sendMail: { source: "Legacy Service Form", subjectPrefix: "New Website Inquiry" },
+};
 
 async function sendLeadMail({
   source = "Website Form",
@@ -118,10 +128,38 @@ function createLeadRoute(path, config) {
       res.json({ success: true, message: "Email sent successfully" });
     } catch (error) {
       console.error(`Mail route ${path} failed:`, error);
-      res.status(500).json({ success: false, message: "Failed to send email" });
+      res.status(500).json({
+        success: false,
+        message: "Failed to send email",
+        error: sanitize(error?.message || "Unknown mail error"),
+      });
     }
   });
 }
+
+app.options("/api/lead", (_req, res) => res.sendStatus(204));
+app.post("/api/lead", async (req, res) => {
+  try {
+    const sourceKey = sanitize(req.query?.source) || "commonLead";
+    const config = SOURCE_CONFIG[sourceKey] || SOURCE_CONFIG.commonLead;
+    const payload = req.body || {};
+    const result = await sendLeadMail({ ...config, ...payload });
+
+    if (!result.ok) {
+      res.status(400).json({ success: false, message: result.message });
+      return;
+    }
+
+    res.json({ success: true, message: "Email sent successfully" });
+  } catch (error) {
+    console.error("Mail route /api/lead failed:", error);
+    res.status(500).json({
+      success: false,
+      message: "Failed to send email",
+      error: sanitize(error?.message || "Unknown mail error"),
+    });
+  }
+});
 
 createLeadRoute("/api/commonLead.php", {
   source: "Home / Global Lead Form",

@@ -34,7 +34,7 @@ const LeadFormPopup = ({ open, onOpenChange }: LeadFormPopupProps) => {
     setLoading(true);
 
     try {
-      const response = await fetch("/api/sendDetailedMail.php", {
+      const response = await fetch("/api/lead?source=sendDetailedMail", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

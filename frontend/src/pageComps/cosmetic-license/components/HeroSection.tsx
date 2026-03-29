@@ -47,14 +47,14 @@ const HeroSection = ({ onCTAClick }: HeroSectionProps) => {
     }
 
     try {
-      // const response = await fetch("http://localhost/api/sendMail.php", {
+      // const response = await fetch("http://localhost/api/lead?source=sendMail", {
       //   method: "POST",
       //   headers: {
       //     "Content-Type": "application/json",
       //   },
       //   body: JSON.stringify(formData),
       // });
-      const response = await fetch("/api/sendMail.php", {
+      const response = await fetch("/api/lead?source=sendMail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

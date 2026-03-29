@@ -150,7 +150,7 @@ const HeroSection = ({ onCTAClick }: HeroSectionProps) => {
     }
 
     try {
-      const response = await fetch("/api/sendFssaiMail.php", {
+      const response = await fetch("/api/lead?source=sendFssaiMail", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

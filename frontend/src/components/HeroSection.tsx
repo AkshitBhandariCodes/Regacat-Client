@@ -50,14 +50,14 @@ export const HeroSection = ({ onConsultClick }: HeroSectionProps) => {
     };
 
     try {
-      // const response = await fetch('/api/sendMail.php', {
+      // const response = await fetch('/api/lead?source=sendMail', {
       //   method: 'POST',
       //   headers: {
       //     'Content-Type': 'application/json',
       //   },
       //   body: JSON.stringify(formPayload),
       // });
-      const response = await fetch("/api/commonLead.php", {
+      const response = await fetch("/api/lead?source=commonLead", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

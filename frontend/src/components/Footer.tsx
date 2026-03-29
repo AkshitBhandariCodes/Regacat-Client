@@ -31,7 +31,7 @@ export const Footer = () => {
         message: formData.message,
       });
 
-      const response = await fetch("/api/footerContact.php", {
+      const response = await fetch("/api/lead?source=footerContact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -249,7 +249,7 @@ const CaseStudySection = ({ onOpenCaseStudy }: CaseStudySectionProps) => {
         };
 
         try {
-          const res = await fetch("/api/sendMail.php", {
+          const res = await fetch("/api/lead?source=sendMail", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

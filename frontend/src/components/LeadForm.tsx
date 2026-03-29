@@ -51,7 +51,7 @@ export const LeadForm = ({ isOpen, onClose, isMinimized, onMinimize }: LeadFormP
     e.preventDefault();
   
     try {
-      const response = await fetch("/api/commonLead.php", {
+      const response = await fetch("/api/lead?source=commonLead", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

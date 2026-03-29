@@ -41,7 +41,7 @@ const LeadFormPopup = ({ isOpen, onClose }: LeadFormPopupProps) => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("/api/sendFssaiMail.php", {
+      const response = await fetch("/api/lead?source=sendFssaiMail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
