@@ -38,13 +38,13 @@ const Index = () => {
       <SEO
         title="Regacats Solutions | CDSCO & FSSAI Consultant in India"
         description="Expert CDSCO & FSSAI consultant in India for cosmetic, medical device, food & nutraceutical import. Fast, compliant approvals with end-to-end support."
-        canonical="https://regacat-client.vercel.app/"
+        canonical="https://regacats.in/"
         keywords="CDSCO registration, FSSAI license, medical device registration, cosmetic import license India"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "Organization",
           name: "Regacats Solutions",
-          url: "https://regacat-client.vercel.app/",
+          url: "https://regacats.in/",
           description: "Licensing and regulatory consultancy in India",
           sameAs: [
             "https://www.linkedin.com/company/regacats-solutions",

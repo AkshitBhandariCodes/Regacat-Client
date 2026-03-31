@@ -5,15 +5,15 @@ const internalServiceLinks = [
   { label: "Cosmetic Import License", href: "/cosmetic-import-license-india" },
   { label: "CDSCO Drug Registration", href: "/cdsco-registration" },
   { label: "Medical Device Import License", href: "/medical-device-import-license-india" },
-  { label: "FSSAI Services", href: "/fssai-services" },
+  { label: "FSSAI Services", href: "/fssai-consultants-india" },
   { label: "FSSAI License", href: "/fssai-license-registration-services-india" },
   { label: "Nutraceutical Consultant", href: "/fssai-consultant-nutraceutical-supplement-india" },
   { label: "NSF Approval", href: "/non-specified-food-ingredient-approval-india" },
   { label: "Import Assistance", href: "/fssai-import-assistance-services-india" },
   { label: "Nutraceutical Import Consultant", href: "/fssai-nutraceutical-import-consultant-india" },
   { label: "Indian Authorized Agent Services", href: "/iaa-services" },
-  { label: "Legal Metrology", href: "/legal" },
-  { label: "EPR Authorization", href: "/epr" },
+  { label: "Legal Metrology", href: "/legal-metrology" },
+  { label: "EPR Authorization", href: "/epr-registration" },
 ];
 
 const normalizePath = (path: string) => path.replace(/\/$/, "");

@@ -13,7 +13,7 @@ const CdscoRegistrationGuide = () => {
       <SEO
         title="CDSCO Registration Guide in India | Regacats Solutions"
         description="Step-by-step CDSCO registration guide for Indian and imported products with key documentation and compliance checkpoints."
-        canonical="https://regacat-client.vercel.app/blog/cdsco-registration-guide"
+        canonical="https://regacats.in/blog/cdsco-registration-guide"
       />
       <TopBar />
       <Navigation onConsultClick={() => navigate("/")} />
