@@ -64,12 +64,12 @@ const App = () => (
           <Route path="/blog/bis-certification-india" element={<BisCertificationIndia />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/cosmetic-import-license-india" element={<CosmeticLicense />} />
-          <Route path="/cosmetic-import-license-india/" element={<Navigate to="/cosmetic-import-license-india" replace />} />
+          <Route path="/cosmetic-import-license-india/" element={<CosmeticLicense />} />
           <Route path="/cdsco-registration" element={<CDSCORegistration />} />
           <Route path="/medical-device-import-license-india" element={<CDSCOMedicalDevice />} />
-          <Route path="/medical-device-import-license-india/" element={<Navigate to="/medical-device-import-license-india" replace />} />
+          <Route path="/medical-device-import-license-india/" element={<CDSCOMedicalDevice />} />
           <Route path="/fssai-consultants-india" element={<FSSAILicense />} />
-          <Route path="/fssai-consultants-india/" element={<Navigate to="/fssai-consultants-india" replace />} />
+          <Route path="/fssai-consultants-india/" element={<FSSAILicense />} />
           <Route path="/fssai-nutraceutical-import-consultant-india" element={<FssaiNutraceuticalImportConsultant />} />
           <Route path="/fssai-license-registration-services-india" element={<FssaiLicenseService />} />
           <Route path="/fssai-import-assistance-services-india" element={<FssaiImportAssistanceService />} />
@@ -93,10 +93,10 @@ const App = () => (
           <Route path="/fssai-services" element={<Navigate to="/fssai-consultants-india" replace />} />
           <Route path="/iaa-services" element={<IndianAuthorizedAgentServicesIndiaMain />} />
           <Route path="/legal-metrology" element={<LegalMetrology />} />
-          <Route path="/legal-metrology/" element={<Navigate to="/legal-metrology" replace />} />
+          <Route path="/legal-metrology/" element={<LegalMetrology />} />
           <Route path="/legal" element={<Navigate to="/legal-metrology" replace />} />
           <Route path="/epr-registration" element={<EPRregistration />} />
-          <Route path="/epr-registration/" element={<Navigate to="/epr-registration" replace />} />
+          <Route path="/epr-registration/" element={<EPRregistration />} />
           <Route path="/epr" element={<Navigate to="/epr-registration" replace />} />
           <Route path="/disclaimer" element={<Disclaimer/>} />
           <Route path="/terms-and-conditions" element={<Terms/>} />
