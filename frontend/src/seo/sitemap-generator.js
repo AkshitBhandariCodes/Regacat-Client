@@ -2,7 +2,7 @@
 import fs from "fs";
 
 const today = new Date().toISOString().split("T")[0];
-const siteUrl = "https://regacat-client.vercel.app";
+const siteUrl = "https://regacats.in";
 
 const pages = [
   { loc: `${siteUrl}/`, priority: "1.0", changefreq: "weekly" },
