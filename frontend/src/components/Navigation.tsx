@@ -20,10 +20,10 @@ const services = [
   { name: "CDSCO Import Service", href: "/cdsco-import-service" },
   { name: "Cosmetic Import License", href: "/cosmetic-import-license-india" },
   { name: "Medical Device Import License", href: "/medical-device-import-license-india" },
-  { name: "FSSAI Services", href: "/fssai-services" },
+  { name: "FSSAI Services", href: "/fssai-consultants-india" },
   { name: "Indian Authorized Agent Services", href: "/iaa-services" },
-  { name: "EPR Authorization", href: "/epr" },
-  { name: "Legal Metrology", href: "/legal" },
+  { name: "EPR Authorization", href: "/epr-registration" },
+  { name: "Legal Metrology", href: "/legal-metrology" },
 ];
 
 export const Navigation = ({ onConsultClick }: NavigationProps) => {
