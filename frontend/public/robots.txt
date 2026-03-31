@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://regacat-client.vercel.app/sitemap.xml
+Sitemap: https://regacats.in/sitemap.xml

@@ -1,4 +1,21 @@
 {
+  "redirects": [
+    {
+      "source": "/fssai-services",
+      "destination": "/fssai-consultants-india",
+      "permanent": true
+    },
+    {
+      "source": "/legal",
+      "destination": "/legal-metrology",
+      "permanent": true
+    },
+    {
+      "source": "/epr",
+      "destination": "/epr-registration",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/api/commonLead.php",
@@ -27,6 +44,10 @@
     {
       "source": "/api/sendMail.php",
       "destination": "/api/lead?source=sendMail"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
