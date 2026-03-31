@@ -6,7 +6,7 @@ const DEFAULTS = {
   title: "Regacats Solutions | Licensing & Regulatory Consultancy India",
   description:
     "Expert licensing consultancy in India for CDSCO, FSSAI, BIS & medical devices. Fast approvals with Regacats Solutions.",
-  siteUrl: "https://regacat-client.vercel.app",
+  siteUrl: "https://regacats.in",
   image: "/preview.png",
   twitterHandle: "@regacats",
   twitterSite: "@regacats",
