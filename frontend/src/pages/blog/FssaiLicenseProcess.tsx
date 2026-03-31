@@ -13,7 +13,7 @@ const FssaiLicenseProcess = () => {
       <SEO
         title="FSSAI License Process in India | Regacats Solutions"
         description="Understand the FSSAI license process with documentation, eligibility, and timelines for food businesses in India."
-        canonical="https://regacat-client.vercel.app/blog/fssai-license-process"
+        canonical="https://regacats.in/blog/fssai-license-process"
       />
       <TopBar />
       <Navigation onConsultClick={() => navigate("/")} />
