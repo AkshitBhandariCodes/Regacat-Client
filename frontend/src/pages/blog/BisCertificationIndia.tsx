@@ -13,7 +13,7 @@ const BisCertificationIndia = () => {
       <SEO
         title="BIS Certification in India | Regacats Solutions"
         description="Practical BIS certification guide for manufacturers and importers with key process stages and compliance checkpoints."
-        canonical="https://regacat-client.vercel.app/blog/bis-certification-india"
+        canonical="https://regacats.in/blog/bis-certification-india"
       />
       <TopBar />
       <Navigation onConsultClick={() => navigate("/")} />

@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import About from "./pages/About";
@@ -65,9 +65,12 @@ const App = () => (
           <Route path="/blog/bis-certification-india" element={<BisCertificationIndia />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/cosmetic-import-license-india" element={<CosmeticImportLicense />} />
+          <Route path="/cosmetic-import-license-india/" element={<Navigate to="/cosmetic-import-license-india" replace />} />
           <Route path="/cdsco-registration" element={<CDSCORegistration />} />
           <Route path="/medical-device-import-license-india" element={<MedicalDeviceLicense />} />
+          <Route path="/medical-device-import-license-india/" element={<Navigate to="/medical-device-import-license-india" replace />} />
           <Route path="/fssai-consultants-india" element={<TrademarkFSSAI />} />
+          <Route path="/fssai-consultants-india/" element={<Navigate to="/fssai-consultants-india" replace />} />
           <Route path="/fssai-nutraceutical-import-consultant-india" element={<FssaiNutraceuticalImportConsultant />} />
           <Route path="/fssai-license-registration-services-india" element={<FssaiLicenseService />} />
           <Route path="/fssai-import-assistance-services-india" element={<FssaiImportAssistanceService />} />
@@ -88,12 +91,14 @@ const App = () => (
           <Route path="/indian-authorized-agent-for-cosmetics-in-india" element={<IndianAuthorizedAgentCosmeticsService />} />
           <Route path="/indian-authorized-agent-for-fssai-products" element={<IndianAuthorizedAgentFssaiProductsService />} />
           <Route path="/indian-authorized-agent-services-india" element={<IndianAuthorizedAgentServicesIndiaMain />} />
-          <Route path="/fssai-services" element={<TrademarkFSSAI />} />
+          <Route path="/fssai-services" element={<Navigate to="/fssai-consultants-india" replace />} />
           <Route path="/iaa-services" element={<IndianAuthorizedAgentServicesIndiaMain />} />
           <Route path="/legal-metrology" element={<LegalPage/>} />
-          <Route path="/legal" element={<LegalPage/>} />
+          <Route path="/legal-metrology/" element={<Navigate to="/legal-metrology" replace />} />
+          <Route path="/legal" element={<Navigate to="/legal-metrology" replace />} />
           <Route path="/epr-registration" element={<EPRPage/>} />
-          <Route path="/epr" element={<EPRPage/>} />
+          <Route path="/epr-registration/" element={<Navigate to="/epr-registration" replace />} />
+          <Route path="/epr" element={<Navigate to="/epr-registration" replace />} />
           <Route path="/disclaimer" element={<Disclaimer/>} />
           <Route path="/terms-and-conditions" element={<Terms/>} />
           <Route path="/privacy-policy" element={<Privacy/>} />
