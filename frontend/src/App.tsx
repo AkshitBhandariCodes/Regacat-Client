@@ -13,7 +13,10 @@ import Contact from "./pages/Contact";
 import CdscoRegistrationGuide from "./pages/blog/CdscoRegistrationGuide";
 import FssaiLicenseProcess from "./pages/blog/FssaiLicenseProcess";
 import BisCertificationIndia from "./pages/blog/BisCertificationIndia";
+import CosmeticImportLicense from "./pages/services/CosmeticImportLicense";
 import CDSCORegistration from "./pages/services/CDSCORegistration";
+import MedicalDeviceLicense from "./pages/services/MedicalDeviceLicense";
+import TrademarkFSSAI from "./pages/services/TrademarkFSSAI";
 import FssaiNutraceuticalImportConsultant from "./pages/services/FssaiNutraceuticalImportConsultant";
 import FssaiLicenseService from "./pages/services/FssaiLicenseService";
 import FssaiImportAssistanceService from "./pages/services/FssaiImportAssistanceService";
@@ -32,11 +35,8 @@ import IndianAuthorizedAgentServicesIndiaMain from "./pages/services/IndianAutho
 import Privacy from "./pageComps/privacy policy/pages/Privacy";
 import Disclaimer from "./pageComps/desclaimer/pages/Disclaimer";
 import Terms from "./pageComps/termspage/pages/Terms";
-import CosmeticLicense from "./pageComps/cosmetic-license/pages/CosmeticLicense";
-import CDSCOMedicalDevice from "./pageComps/medicalDevice/pages/CDSCOMedicalDevice";
-import FSSAILicense from "./pageComps/fssai/pages/FSSAILicense";
-import LegalMetrology from "./pageComps/legalmetrology/pages/LegalMetrology";
-import EPRregistration from "./pageComps/eprregistration/pages/EPRregistration";
+import EPRPage from "./pages/services/EPRPage";
+import LegalPage from "./pages/services/LegalPage";
 
 import NotFound from "./pages/NotFound";
 import SEO from "./seo/SEO";
@@ -63,13 +63,13 @@ const App = () => (
           <Route path="/blog/fssai-license-process" element={<FssaiLicenseProcess />} />
           <Route path="/blog/bis-certification-india" element={<BisCertificationIndia />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/cosmetic-import-license-india" element={<CosmeticLicense />} />
-          <Route path="/cosmetic-import-license-india/" element={<CosmeticLicense />} />
+          <Route path="/cosmetic-import-license-india" element={<CosmeticImportLicense />} />
+          <Route path="/cosmetic-import-license-india/" element={<CosmeticImportLicense />} />
           <Route path="/cdsco-registration" element={<CDSCORegistration />} />
-          <Route path="/medical-device-import-license-india" element={<CDSCOMedicalDevice />} />
-          <Route path="/medical-device-import-license-india/" element={<CDSCOMedicalDevice />} />
-          <Route path="/fssai-consultants-india" element={<FSSAILicense />} />
-          <Route path="/fssai-consultants-india/" element={<FSSAILicense />} />
+          <Route path="/medical-device-import-license-india" element={<MedicalDeviceLicense />} />
+          <Route path="/medical-device-import-license-india/" element={<MedicalDeviceLicense />} />
+          <Route path="/fssai-consultants-india" element={<TrademarkFSSAI />} />
+          <Route path="/fssai-consultants-india/" element={<TrademarkFSSAI />} />
           <Route path="/fssai-nutraceutical-import-consultant-india" element={<FssaiNutraceuticalImportConsultant />} />
           <Route path="/fssai-license-registration-services-india" element={<FssaiLicenseService />} />
           <Route path="/fssai-import-assistance-services-india" element={<FssaiImportAssistanceService />} />
@@ -92,11 +92,11 @@ const App = () => (
           <Route path="/indian-authorized-agent-services-india" element={<IndianAuthorizedAgentServicesIndiaMain />} />
           <Route path="/fssai-services" element={<Navigate to="/fssai-consultants-india" replace />} />
           <Route path="/iaa-services" element={<IndianAuthorizedAgentServicesIndiaMain />} />
-          <Route path="/legal-metrology" element={<LegalMetrology />} />
-          <Route path="/legal-metrology/" element={<LegalMetrology />} />
+          <Route path="/legal-metrology" element={<LegalPage />} />
+          <Route path="/legal-metrology/" element={<LegalPage />} />
           <Route path="/legal" element={<Navigate to="/legal-metrology" replace />} />
-          <Route path="/epr-registration" element={<EPRregistration />} />
-          <Route path="/epr-registration/" element={<EPRregistration />} />
+          <Route path="/epr-registration" element={<EPRPage />} />
+          <Route path="/epr-registration/" element={<EPRPage />} />
           <Route path="/epr" element={<Navigate to="/epr-registration" replace />} />
           <Route path="/disclaimer" element={<Disclaimer/>} />
           <Route path="/terms-and-conditions" element={<Terms/>} />
