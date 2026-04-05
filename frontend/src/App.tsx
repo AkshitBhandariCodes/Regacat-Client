@@ -71,27 +71,28 @@ const App = () => (
           <Route path="/fssai-consultants-india" element={<TrademarkFSSAI />} />
           <Route path="/fssai-consultants-india/" element={<TrademarkFSSAI />} />
           <Route path="/fssai-nutraceutical-import-consultant-india" element={<FssaiNutraceuticalImportConsultant />} />
+          <Route path="/fssai-certification" element={<FssaiLicenseService />} />
           <Route path="/fssai-certification/" element={<FssaiLicenseService />} />
-          <Route path="/fssai-certification" element={<Navigate to="/fssai-certification/" replace />} />
           <Route path="/fssai-license-registration-services-india" element={<Navigate to="/fssai-certification/" replace />} />
           <Route path="/fssai-license-registration-servicesindia" element={<Navigate to="/fssai-certification/" replace />} />
           <Route path="/fssai-import-assistance-services-india" element={<FssaiImportAssistanceService />} />
           <Route path="/fssai-health-claim-approval-services-india" element={<FssaiHealthClaimApprovalService />} />
           <Route path="/fssai-consultant-nutraceutical-supplement-india" element={<FssaiNutraceuticalSupplementConsultant />} />
           <Route path="/indian-authorized-agent-for-fssai-products-india" element={<FssaiAuthorizedAgentService />} />
-          <Route path="/non-specified-foodingredient-approval-india" element={<FssaiNonSpecifiedFoodService />} />
-          <Route path="/non-specified-foodingredient-approval-india/" element={<Navigate to="/non-specified-foodingredient-approval-india" replace />} />
-          <Route path="/non-specified-food-ingredient-approval-india" element={<Navigate to="/non-specified-foodingredient-approval-india" replace />} />
-          <Route path="/non-specified-food-ingredient-approval-india/" element={<Navigate to="/non-specified-foodingredient-approval-india" replace />} />
+          <Route path="/non-specified-food-ingredient-approval-india" element={<FssaiNonSpecifiedFoodService />} />
+          <Route path="/non-specified-food-ingredient-approval-india/" element={<FssaiNonSpecifiedFoodService />} />
+          <Route path="/non-specified-foodingredient-approval-india" element={<Navigate to="/non-specified-food-ingredient-approval-india" replace />} />
+          <Route path="/non-specified-foodingredient-approval-india/" element={<Navigate to="/non-specified-food-ingredient-approval-india" replace />} />
           <Route path="/foreign-food-manufacturing-facility-registration-india" element={<FssaiForeignFoodFacilityService />} />
           <Route path="/foreign-food-manufacturing-facility-registration-in-india" element={<FssaiForeignFoodFacilityService />} />
           <Route path="/foreign-food-manufacturing-facility-registration-in-india/" element={<FssaiForeignFoodFacilityService />} />
           <Route path="/vegan-endorsement-india" element={<FssaiVeganEndorsementService />} />
           <Route path="/vegan-endorsement-india/" element={<FssaiVeganEndorsementService />} />
-          <Route path="/cdscoimport-service" element={<CdscoImportLicenseService />} />
-          <Route path="/cdscoimport-service/" element={<Navigate to="/cdscoimport-service" replace />} />
-          <Route path="/cdsco-import-license" element={<Navigate to="/cdscoimport-service" replace />} />
-          <Route path="/cdsco-import-service" element={<Navigate to="/cdscoimport-service" replace />} />
+          <Route path="/cdsco-import-service" element={<CdscoImportLicenseService />} />
+          <Route path="/cdsco-import-service/" element={<CdscoImportLicenseService />} />
+          <Route path="/cdscoimport-service" element={<Navigate to="/cdsco-import-service" replace />} />
+          <Route path="/cdscoimport-service/" element={<Navigate to="/cdsco-import-service" replace />} />
+          <Route path="/cdsco-import-license" element={<Navigate to="/cdsco-import-service" replace />} />
           <Route path="/indian-authorized-agent-for-drugs" element={<IndianAuthorizedAgentDrugsService />} />
           <Route path="/indian-authorized-agent-for-medical-devices" element={<IndianAuthorizedAgentMedicalDevicesService />} />
           <Route path="/indian-authorized-agent-for-cosmetics-in-india" element={<IndianAuthorizedAgentCosmeticsService />} />

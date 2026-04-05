@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { TopBar } from "@/components/TopBar";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
@@ -93,10 +93,9 @@ const faqs = [
 
 const CdscoImportLicenseService = () => {
 	const navigate = useNavigate();
-	const location = useLocation();
 	const { toast } = useToast();
 	const siteUrl = "https://regacats.in";
-	const canonical = location.pathname === "/cdscoimport-service/" ? `${siteUrl}/cdscoimport-service/` : `${siteUrl}/cdscoimport-service`;
+	const canonical = `${siteUrl}/cdsco-import-service`;
 
 	const [isSubmitting, setIsSubmitting] = useState(false);
 	const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);

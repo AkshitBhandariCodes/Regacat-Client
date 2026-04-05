@@ -20,7 +20,7 @@ const OverviewSection = () => {
       icon: MapPin,
       title: "3. Non-Specified Food/Ingredient Approval",
       description: "End-to-end scientific and technical dossier support for non-specified or novel foods under NSF regulations.",
-      href: "/non-specified-foodingredient-approval-india"
+      href: "/non-specified-food-ingredient-approval-india"
     },
     {
       icon: MapPin,

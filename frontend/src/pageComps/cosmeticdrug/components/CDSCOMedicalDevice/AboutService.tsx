@@ -26,7 +26,7 @@ export const AboutService = () => {
     {
       title: "CDSCO Import License Consultant",
       description: "End-to-end import licensing support for cosmetics, medical devices, and drugs under CDSCO pathways.",
-      href: "/cdscoimport-service",
+      href: "/cdsco-import-service",
     },
     {
       title: "Indian Authorized Agent for Drugs",
