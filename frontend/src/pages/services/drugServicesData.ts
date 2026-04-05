@@ -499,7 +499,7 @@ export const drugServicesData: Record<string, DrugServiceData> = {
 
   authorizedAgentFssaiProducts: {
     heroBadge: "Indian Authorized Agent - FSSAI Products",
-    heroTitle: "Indian Authorized Agent for FSSAI Products in India",
+    heroTitle: "FSSAI Indian Authorized Agent Services for Supplement & Nutraceutical in India",
     heroDescription:
       "Local regulatory representation for foreign food, dietary supplement, and nutraceutical manufacturers requiring FSSAI-facing accountability and compliance management.",
     heroImage:

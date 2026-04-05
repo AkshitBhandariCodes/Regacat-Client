@@ -37,6 +37,7 @@ export interface FssaiDetailSection {
 export interface FssaiServiceData {
   heroBadge: string;
   heroTitle: string;
+  seoTitle?: string;
   heroDescription: string;
   heroImage: string;
   processImage?: string;
@@ -61,6 +62,7 @@ const FssaiServiceTemplate = ({ data }: FssaiServiceTemplateProps) => {
 
   const heroBadge = data?.heroBadge ?? "FSSAI Service";
   const heroTitle = data?.heroTitle ?? "FSSAI Regulatory Service";
+  const seoTitle = data?.seoTitle ?? `${heroTitle} | Regacats Solutions`;
   const heroDescription = data?.heroDescription ?? "Complete FSSAI regulatory support for your business.";
   const heroImage = data?.heroImage ?? "";
   const highlights = data?.highlights ?? [];
@@ -158,7 +160,7 @@ const FssaiServiceTemplate = ({ data }: FssaiServiceTemplateProps) => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title={`${heroTitle} | Regacats Solutions`}
+        title={seoTitle}
         description={heroDescription}
         canonical={canonical}
         type="website"

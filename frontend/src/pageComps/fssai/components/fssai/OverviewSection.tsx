@@ -8,7 +8,7 @@ const OverviewSection = () => {
       icon: FileCheck,
       title: "1. FSSAI License",
       description: "Complete support for Central License, State License, and FSSAI Registration including category assessment, documentation, filing, and authority coordination.",
-      href: "/fssai-license-registration-services-india"
+      href: "/fssai-certification/"
     },
     {
       icon: Users,
@@ -20,7 +20,7 @@ const OverviewSection = () => {
       icon: MapPin,
       title: "3. Non-Specified Food/Ingredient Approval",
       description: "End-to-end scientific and technical dossier support for non-specified or novel foods under NSF regulations.",
-      href: "/non-specified-food-ingredient-approval-india"
+      href: "/non-specified-foodingredient-approval-india"
     },
     {
       icon: MapPin,

@@ -130,7 +130,8 @@ export const fssaiServicesData: Record<string, FssaiServiceData> = {
   },
   nonSpecifiedFood: {
     heroBadge: "Non-Specified Food Approval",
-    heroTitle: "Non-Specified Food & Ingredient Approval in India",
+    heroTitle: "Non-Specified Food & Ingredient Approval Services in India",
+    seoTitle: "Non-Specified Food & Ingredient Approval Services in India",
     heroDescription:
       "Scientific and regulatory support for NSF/novel food approvals including dossier preparation, submissions, and authority coordination under FSSAI.",
     heroImage:
@@ -447,7 +448,8 @@ export const fssaiServicesData: Record<string, FssaiServiceData> = {
 
   license: {
     heroBadge: "FSSAI License & Registration",
-    heroTitle: "FSSAI License & Registration Services in India",
+    heroTitle: "FSSAI License & Registration Services| For Supplement & Nutraceutical Industry",
+    seoTitle: "FSSAI License & Registration Services| For Supplement & Nutraceutical Industry",
     heroDescription:
       "End-to-end support for Registration, State License, and Central License through FoSCoS with documentation, filing, and authority coordination.",
     heroImage:
@@ -792,7 +794,8 @@ export const fssaiServicesData: Record<string, FssaiServiceData> = {
   },
   nutraceuticalConsultant: {
     heroBadge: "Nutraceutical Regulatory Consultant",
-    heroTitle: "FSSAI Consultant for Nutraceutical & Supplement in India",
+    heroTitle: "FSSAI License Consultant for Supplement & Nutraceutical in India",
+    seoTitle: "FSSAI License Consultant for Supplement & Nutraceutical in India",
     heroDescription:
       "Comprehensive regulatory support for nutraceutical and dietary supplement businesses from formulation review to licensing, NSF, claim support, and post-market compliance.",
     heroImage:
@@ -916,7 +919,8 @@ export const fssaiServicesData: Record<string, FssaiServiceData> = {
   },
   authorizedAgent: {
     heroBadge: "Indian Authorized Agent (FSSAI)",
-    heroTitle: "Indian Authorized Agent for FSSAI Products in India",
+    heroTitle: "FSSAI Indian Authorized Agent Services for Supplement & Nutraceutical in India",
+    seoTitle: "FSSAI Indian Authorized Agent Services for Supplement & Nutraceutical in India",
     heroDescription:
       "Regulatory representation for foreign manufacturers and exporters entering India with food, nutraceutical, and dietary supplement products.",
     heroImage:

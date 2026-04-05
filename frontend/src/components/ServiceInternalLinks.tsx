@@ -1,14 +1,14 @@
 import { Link, useLocation } from "react-router-dom";
 
 const internalServiceLinks = [
-  { label: "CDSCO Import Service", href: "/cdsco-import-service" },
+  { label: "CDSCO Import Service", href: "/cdscoimport-service" },
   { label: "Cosmetic Import License", href: "/cosmetic-import-license-india" },
   { label: "CDSCO Drug Registration", href: "/cdsco-registration" },
   { label: "Medical Device Import License", href: "/medical-device-import-license-india" },
   { label: "FSSAI Services", href: "/fssai-consultants-india" },
-  { label: "FSSAI License", href: "/fssai-license-registration-services-india" },
+  { label: "FSSAI License", href: "/fssai-certification/" },
   { label: "Nutraceutical Consultant", href: "/fssai-consultant-nutraceutical-supplement-india" },
-  { label: "NSF Approval", href: "/non-specified-food-ingredient-approval-india" },
+  { label: "NSF Approval", href: "/non-specified-foodingredient-approval-india" },
   { label: "Import Assistance", href: "/fssai-import-assistance-services-india" },
   { label: "Nutraceutical Import Consultant", href: "/fssai-nutraceutical-import-consultant-india" },
   { label: "Indian Authorized Agent Services", href: "/iaa-services" },

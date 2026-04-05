@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { TopBar } from "@/components/TopBar";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { CheckCircle2, ChevronDown, ChevronUp } from "lucide-react";
+import SEO from "@/seo/SEO";
 import ServiceInternalLinks from "@/components/ServiceInternalLinks";
 
 const coreServiceCards = [
@@ -92,7 +93,10 @@ const faqs = [
 
 const CdscoImportLicenseService = () => {
 	const navigate = useNavigate();
+	const location = useLocation();
 	const { toast } = useToast();
+	const siteUrl = "https://regacats.in";
+	const canonical = location.pathname === "/cdscoimport-service/" ? `${siteUrl}/cdscoimport-service/` : `${siteUrl}/cdscoimport-service`;
 
 	const [isSubmitting, setIsSubmitting] = useState(false);
 	const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
@@ -154,6 +158,12 @@ const CdscoImportLicenseService = () => {
 
 	return (
 		<div className="min-h-screen bg-background">
+			<SEO
+				title="CDSCO Import License Consultancy in India | Cosmetics |Medical Device"
+				description="Full-spectrum CDSCO import license consultancy in India for cosmetics, medical devices, and drugs with structured filing and compliance support."
+				canonical={canonical}
+				type="website"
+			/>
 			<TopBar />
 			<Navigation onConsultClick={() => navigate("/")} />
 
