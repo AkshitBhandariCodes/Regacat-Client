@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 
 const internalServiceLinks = [
   { label: "CDSCO Import Service", href: "/cdsco-import-service" },
+  { label: "CDSCO Cosmetic Registration India", href: "/cdsco-registration-in-india" },
   { label: "Cosmetic Import License", href: "/cosmetic-import-license-india" },
   { label: "CDSCO Drug Registration", href: "/cdsco-registration" },
   { label: "Medical Device Import License", href: "/medical-device-import-license-india" },

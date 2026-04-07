@@ -27,6 +27,7 @@ import FssaiNonSpecifiedFoodService from "./pages/services/FssaiNonSpecifiedFood
 import FssaiForeignFoodFacilityService from "./pages/services/FssaiForeignFoodFacilityService";
 import FssaiVeganEndorsementService from "./pages/services/FssaiVeganEndorsementService";
 import CdscoImportLicenseService from "./pages/services/CdscoImportLicenseService";
+import CdscoCosmeticRegistrationIndia from "./pages/services/CdscoCosmeticRegistrationIndia";
 import IndianAuthorizedAgentDrugsService from "./pages/services/IndianAuthorizedAgentDrugsService";
 import IndianAuthorizedAgentMedicalDevicesService from "./pages/services/IndianAuthorizedAgentMedicalDevicesService";
 import IndianAuthorizedAgentCosmeticsService from "./pages/services/IndianAuthorizedAgentCosmeticsService";
@@ -66,6 +67,8 @@ const App = () => (
           <Route path="/cosmetic-import-license-india" element={<CosmeticImportLicense />} />
           <Route path="/cosmetic-import-license-india/" element={<CosmeticImportLicense />} />
           <Route path="/cdsco-registration" element={<CDSCORegistration />} />
+          <Route path="/cdsco-registration-in-india" element={<CdscoCosmeticRegistrationIndia />} />
+          <Route path="/cdsco-registration-in-india/" element={<CdscoCosmeticRegistrationIndia />} />
           <Route path="/medical-device-import-license-india" element={<MedicalDeviceLicense />} />
           <Route path="/medical-device-import-license-india/" element={<MedicalDeviceLicense />} />
           <Route path="/fssai-consultants-india" element={<TrademarkFSSAI />} />
