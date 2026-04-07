@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle2, ChevronDown, ChevronUp } from "lucide-react";
 import SEO from "@/seo/SEO";
 import ServiceInternalLinks from "@/components/ServiceInternalLinks";
+import cdscoCosmeticProcessImage from "@/assets/images/image.png";
 
 const serviceHighlights = [
   "End-to-end cosmetic product registration",
@@ -123,6 +124,8 @@ const CdscoCosmeticRegistrationIndia = () => {
   const navigate = useNavigate();
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
   const canonical = "https://regacats.in/cdsco-registration-in-india/";
+  const lightLinkClass = "font-semibold text-cyan-800 hover:text-cyan-700 underline underline-offset-2";
+  const darkLinkClass = "font-semibold text-white hover:text-cyan-50 underline underline-offset-2";
 
   return (
     <div className="min-h-screen bg-background">
@@ -148,18 +151,30 @@ const CdscoCosmeticRegistrationIndia = () => {
                   CDSCO Cosmetic Registration Consultant India - Cosmetic License & Compliance Support
                 </h1>
                 <p className="text-cyan-100 text-lg leading-relaxed">
-                  If you are planning to launch, import, or manufacture cosmetic products in India, complying with CDSCO regulations is essential. Cosmetic products in India are regulated under the Drugs and Cosmetics framework, and businesses must follow proper procedures for <strong>CDSCO registration for cosmetic</strong> before entering the market.
+                  If you are planning to launch, import, or manufacture cosmetic products in India, complying with CDSCO regulations is essential. Cosmetic products in India are regulated under the Drugs and Cosmetics framework, and businesses must follow proper procedures for{" "}
+                  <Link to="/cdsco-registration" className={darkLinkClass}>
+                    CDSCO registration for cosmetic
+                  </Link>{" "}
+                  before entering the market.
                 </p>
                 <p className="text-cyan-100 text-lg leading-relaxed">
-                  At Regacats, we are a leading <strong>cosmetic registration consultant India</strong>, offering end-to-end support for manufacturers, importers, and brand owners. Our expert team ensures smooth approval, proper documentation, and compliance with Indian cosmetic regulations.
+                  At Regacats, we are a leading{" "}
+                  <Link to="/cdsco-registration" className={darkLinkClass}>
+                    cosmetic registration consultant India
+                  </Link>
+                  , offering end-to-end support for manufacturers, importers, and brand owners. Our expert team ensures smooth approval, proper documentation, and compliance with Indian cosmetic regulations.
                 </p>
                 <p className="text-cyan-100 text-lg leading-relaxed">
-                  We provide complete <strong>cosmetic registration service</strong> including regulatory strategy, dossier preparation, submission handling, labeling compliance, and testing guidance.
+                  We provide complete{" "}
+                  <Link to="/cdsco-registration" className={darkLinkClass}>
+                    cosmetic registration service
+                  </Link>{" "}
+                  including regulatory strategy, dossier preparation, submission handling, labeling compliance, and testing guidance.
                 </p>
               </div>
               <div className="rounded-2xl border border-white/20 bg-white/10 p-2 backdrop-blur-sm shadow-2xl lg:ml-auto w-full max-w-2xl">
                 <img
-                  src="https://blogs.regacats.in/wp-content/uploads/2026/02/regacats-cdsco-import-license-1024x683.webp"
+                  src={cdscoCosmeticProcessImage}
                   alt="CDSCO Cosmetic Registration Process"
                   className="w-full h-[240px] sm:h-[320px] md:h-[380px] rounded-xl border border-white/20 object-cover"
                   loading="eager"
@@ -177,7 +192,11 @@ const CdscoCosmeticRegistrationIndia = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-slate-700 leading-relaxed mb-4">
-                  As an experienced <strong>cosmetic product registration consultant</strong>, we help businesses navigate complex regulatory pathways in India.
+                  As an experienced{" "}
+                  <Link to="/cdsco-registration" className={lightLinkClass}>
+                    cosmetic product registration consultant
+                  </Link>
+                  , we help businesses navigate complex regulatory pathways in India.
                 </p>
                 <p className="text-slate-700 leading-relaxed mb-4">
                   Whether you are a domestic manufacturer or an importer, our services are tailored to your compliance needs.
@@ -186,7 +205,13 @@ const CdscoCosmeticRegistrationIndia = () => {
                   {serviceHighlights.map((item) => (
                     <li key={item} className="flex items-start gap-2 text-slate-700">
                       <CheckCircle2 className="h-5 w-5 text-cyan-700 mt-0.5 shrink-0" />
-                      <span>{item}</span>
+                      {item === "Cosmetic Import License Consultation Service for importers" ? (
+                        <Link to="/cosmetic-import-license-india" className={lightLinkClass}>
+                          {item}
+                        </Link>
+                      ) : (
+                        <span>{item}</span>
+                      )}
                     </li>
                   ))}
                 </ul>
@@ -199,7 +224,11 @@ const CdscoCosmeticRegistrationIndia = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-slate-700 leading-relaxed mb-4">
-                  A strong regulatory strategy is key to successful <strong>cosmetic registration service</strong> and smoother approvals.
+                  A strong regulatory strategy is key to successful{" "}
+                  <Link to="/cdsco-registration" className={lightLinkClass}>
+                    cosmetic registration service
+                  </Link>{" "}
+                  and smoother approvals.
                 </p>
                 <p className="text-slate-700 leading-relaxed mb-4">Our team provides:</p>
                 <ul className="space-y-2">
@@ -249,7 +278,15 @@ const CdscoCosmeticRegistrationIndia = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-slate-700 leading-relaxed mb-4">
-                  Labelling is one of the most critical compliance requirements in <strong>cosmetic registration India</strong>. Our <strong>cosmetic compliance consultant India</strong> team ensures labels meet all CDSCO norms.
+                  Labelling is one of the most critical compliance requirements in{" "}
+                  <Link to="/cdsco-registration" className={lightLinkClass}>
+                    cosmetic registration India
+                  </Link>
+                  . Our{" "}
+                  <Link to="/cosmetic-import-license-india" className={lightLinkClass}>
+                    cosmetic compliance consultant India
+                  </Link>{" "}
+                  team ensures labels meet all CDSCO norms.
                 </p>
                 <ul className="space-y-2">
                   {labelChecklist.map((item) => (
@@ -268,7 +305,11 @@ const CdscoCosmeticRegistrationIndia = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-slate-700 leading-relaxed mb-4">
-                  As a reliable <strong>cosmetic license consultant India</strong>, we ensure your product meets safety and quality standards before submission.
+                  As a reliable{" "}
+                  <Link to="/cosmetic-import-license-india" className={lightLinkClass}>
+                    cosmetic license consultant India
+                  </Link>
+                  , we ensure your product meets safety and quality standards before submission.
                 </p>
                 <ul className="space-y-2">
                   {ingredientSupport.map((item) => (
@@ -291,7 +332,11 @@ const CdscoCosmeticRegistrationIndia = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-slate-700 leading-relaxed mb-4">
-                  For successful <strong>cosmetic product registration</strong>, the following documents are typically required:
+                  For successful{" "}
+                  <Link to="/cdsco-registration" className={lightLinkClass}>
+                    cosmetic product registration
+                  </Link>
+                  , the following documents are typically required:
                 </p>
                 <ul className="space-y-2">
                   {requiredDocuments.map((item) => (
@@ -330,7 +375,11 @@ const CdscoCosmeticRegistrationIndia = () => {
               </CardHeader>
               <CardContent className="space-y-4 text-slate-700 leading-relaxed">
                 <p>
-                  This page focuses on <strong>cosmetic registration consultant</strong> services and compliance strategy for manufacturers. For import-specific licensing (COS-1 / COS-2 process), visit our detailed page on{" "}
+                  This page focuses on{" "}
+                  <Link to="/cdsco-registration" className={lightLinkClass}>
+                    cosmetic registration consultant
+                  </Link>{" "}
+                  services and compliance strategy for manufacturers. For import-specific licensing (COS-1 / COS-2 process), visit our detailed page on{" "}
                   <Link to="/cosmetic-import-license-india" className="font-semibold text-cyan-800 hover:text-cyan-700 underline underline-offset-2">
                     CDSCO Cosmetic Import License Consultant in India
                   </Link>
