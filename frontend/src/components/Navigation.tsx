@@ -18,7 +18,7 @@ interface NavigationProps {
 
 const services = [
   { name: "CDSCO Import Service", href: "/cdsco-import-service" },
-  { name: "CDSCO COSMETIC REGISTRATION", href: "/cdsco-registration-in-india" },
+  { name: "CDSCO Cosmetic Registration", href: "/cdsco-registration-in-india" },
   { name: "Cosmetic Import License", href: "/cosmetic-import-license-india" },
   { name: "Medical Device Import License", href: "/medical-device-import-license-india" },
   { name: "FSSAI Services", href: "/fssai-consultants-india" },
