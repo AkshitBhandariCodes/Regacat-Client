@@ -103,9 +103,9 @@ const Index = () => {
               Our experts support domestic and international clients in complex product categories including nutraceuticals,
               functional foods, medical devices, pharmaceuticals, and cosmetics. We also publish practical guidance to help
               teams understand timelines, documents, and approval logic before they file. Read our latest guides:
-              {" "}<Link to="/blog/cdsco-registration-guide" className="text-primary underline underline-offset-4">CDSCO Registration Guide</Link>,
-              {" "}<Link to="/blog/fssai-license-process" className="text-primary underline underline-offset-4">FSSAI License Process</Link>,
-              and {" "}<Link to="/blog/bis-certification-india" className="text-primary underline underline-offset-4">BIS Certification in India</Link>.
+              {" "}<a href="https://blogs.regacats.in/cdsco-registration-guide" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4">CDSCO Registration Guide</a>,
+              {" "}<a href="https://blogs.regacats.in/fssai-license-process" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4">FSSAI License Process</a>,
+              and {" "}<a href="https://blogs.regacats.in/bis-certification-india" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4">BIS Certification in India</a>.
               You can also visit the {" "}<Link to="/about" className="text-primary underline underline-offset-4">About page</Link>
               to learn how our compliance methodology reduces delays for first-time and repeat applicants.
             </p>

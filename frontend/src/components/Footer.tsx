@@ -105,7 +105,14 @@ export const Footer = () => {
                 <Link to="/team" className="text-slate-300 hover:text-white transition-colors">Team</Link>
               </li>
               <li>
-                <Link to="/blog" className="text-slate-300 hover:text-white transition-colors">Blog</Link>
+                <a
+                  href="https://blogs.regacats.in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-300 hover:text-white transition-colors"
+                >
+                  Blog
+                </a>
               </li>
               <li>
                 <Link to="/contact" className="text-slate-300 hover:text-white transition-colors">Contact</Link>
