@@ -377,6 +377,8 @@ const CdscoImportLicenseService = () => {
 											<SelectItem value="Medical Device Import License">Medical Device Import License</SelectItem>
 											<SelectItem value="CDSCO Drug Registration">CDSCO Drug Registration</SelectItem>
 											<SelectItem value="Indian Authorized Agent Services">Indian Authorized Agent Services</SelectItem>
+											<SelectItem value="Any other FSSAI">Any other FSSAI</SelectItem>
+											<SelectItem value="Any other CDSO">Any other CDSO</SelectItem>
 										</SelectContent>
 									</Select>
 									<div className="md:col-span-2">

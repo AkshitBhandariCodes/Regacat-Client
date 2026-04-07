@@ -76,9 +76,14 @@ const DrugServiceTemplate = ({ data }: DrugServiceTemplateProps) => {
   const challenges = data?.challenges ?? [];
   const faqs = data?.faqs ?? [];
   const formServiceOptions = data?.formServiceOptions ?? ["CDSCO Service"];
-  const mergedFormServiceOptions = formServiceOptions.includes("Indian Authorized Agent Services")
-    ? formServiceOptions
-    : [...formServiceOptions, "Indian Authorized Agent Services"];
+  const mergedFormServiceOptions = [
+    ...new Set([
+      ...formServiceOptions,
+      "Indian Authorized Agent Services",
+      "Any other FSSAI",
+      "Any other CDSO",
+    ]),
+  ];
   const processImage = data?.processImage;
   const secondaryImage = data?.secondaryImage;
   const relatedServices = data?.relatedServices ?? [];

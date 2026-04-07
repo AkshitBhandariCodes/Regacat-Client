@@ -24,8 +24,8 @@ const services = [
   "Indian Authorized Agent Services",
   "EPR Authorization",
   "Legal Metrology",
-  "Any other -  FSSAI",
-  "Any other - CDSCO"
+  "Any other FSSAI",
+  "Any other CDSO"
 ];
 
 export const HeroSection = ({ onConsultClick }: HeroSectionProps) => {

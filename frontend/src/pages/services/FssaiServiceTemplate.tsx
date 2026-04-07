@@ -72,9 +72,14 @@ const FssaiServiceTemplate = ({ data }: FssaiServiceTemplateProps) => {
   const challenges = data?.challenges ?? [];
   const faqs = data?.faqs ?? [];
   const formServiceOptions = data?.formServiceOptions ?? ["FSSAI Service"];
-  const mergedFormServiceOptions = formServiceOptions.includes("Indian Authorized Agent Services")
-    ? formServiceOptions
-    : [...formServiceOptions, "Indian Authorized Agent Services"];
+  const mergedFormServiceOptions = [
+    ...new Set([
+      ...formServiceOptions,
+      "Indian Authorized Agent Services",
+      "Any other FSSAI",
+      "Any other CDSO",
+    ]),
+  ];
   const processImage = data?.processImage;
   const secondaryImage = data?.secondaryImage;
   const siteUrl = "https://regacats.in";

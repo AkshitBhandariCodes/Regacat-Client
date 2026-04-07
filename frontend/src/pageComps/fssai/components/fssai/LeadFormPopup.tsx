@@ -165,6 +165,8 @@ const LeadFormPopup = ({ isOpen, onClose }: LeadFormPopupProps) => {
                 <SelectItem value="iaa-services">
                   Indian Authorized Agent Services
                 </SelectItem>
+                <SelectItem value="any-other-fssai">Any other FSSAI</SelectItem>
+                <SelectItem value="any-other-cdso">Any other CDSO</SelectItem>
                 <SelectItem value="not-sure">
                   Not Sure / Need Consultation
                 </SelectItem>

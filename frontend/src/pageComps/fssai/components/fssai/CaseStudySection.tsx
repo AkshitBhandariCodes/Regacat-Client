@@ -327,6 +327,8 @@ const CaseStudySection = ({ onOpenCaseStudy }: CaseStudySectionProps) => {
           <option value="Basic License">Basic License</option>
           <option value="State License">State License</option>
           <option value="Central License">Central License</option>
+          <option value="Any other FSSAI">Any other FSSAI</option>
+          <option value="Any other CDSO">Any other CDSO</option>
         </select>
       </div>
 
