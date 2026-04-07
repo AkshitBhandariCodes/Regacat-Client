@@ -81,7 +81,7 @@ const DrugServiceTemplate = ({ data }: DrugServiceTemplateProps) => {
       ...formServiceOptions,
       "Indian Authorized Agent Services",
       "Any other FSSAI",
-      "Any other CDSO",
+      "Any other CDSCO",
     ]),
   ];
   const processImage = data?.processImage;

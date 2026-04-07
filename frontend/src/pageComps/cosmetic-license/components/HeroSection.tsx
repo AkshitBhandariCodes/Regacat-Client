@@ -192,7 +192,7 @@ const HeroSection = ({ onCTAClick }: HeroSectionProps) => {
                   <SelectItem value="reg">Regulatory Compliance Support</SelectItem>
                   <SelectItem value="iaa">Indian Authorized Agent Services</SelectItem>
                   <SelectItem value="any-other-fssai">Any other FSSAI</SelectItem>
-                  <SelectItem value="any-other-cdso">Any other CDSO</SelectItem>
+                  <SelectItem value="any-other-cdsco">Any other CDSCO</SelectItem>
                   <SelectItem value="full">End-to-End Import Support</SelectItem>
                 </SelectContent>
               </Select>

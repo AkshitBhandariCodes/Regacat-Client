@@ -25,7 +25,7 @@ const services = [
   "EPR Authorization",
   "Legal Metrology",
   "Any other FSSAI",
-  "Any other CDSO"
+  "Any other CDSCO"
 ];
 
 export const HeroSection = ({ onConsultClick }: HeroSectionProps) => {

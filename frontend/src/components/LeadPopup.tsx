@@ -29,7 +29,7 @@ const SERVICES = [
   "EPR Authorization",
   "Legal Metrology",
   "Any other FSSAI",
-  "Any other CDSO"
+  "Any other CDSCO"
 ];
 
 declare global {
