@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle2, ChevronDown, ChevronUp } from "lucide-react";
 import SEO from "@/seo/SEO";
 import ServiceInternalLinks from "@/components/ServiceInternalLinks";
+import cdscoCosmeticHeroImage from "@/assets/images/hero.png";
 import cdscoCosmeticProcessImage from "@/assets/images/image.png";
 
 const serviceHighlights = [
@@ -124,8 +125,18 @@ const CdscoCosmeticRegistrationIndia = () => {
   const navigate = useNavigate();
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
   const canonical = "https://regacats.in/cdsco-registration-in-india/";
-  const lightLinkClass = "font-semibold text-cyan-800 hover:text-cyan-700 underline underline-offset-2";
-  const darkLinkClass = "font-semibold text-white hover:text-cyan-50 underline underline-offset-2";
+  const importLinkClass = "font-semibold text-cyan-800 hover:text-cyan-700 underline underline-offset-2";
+
+  const handleGetFreeConsultation = () => {
+    const availServiceButton = document.querySelector('button[aria-label="Avail Service"]') as HTMLButtonElement | null;
+
+    if (availServiceButton) {
+      availServiceButton.click();
+      return;
+    }
+
+    navigate("/contact");
+  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -151,32 +162,20 @@ const CdscoCosmeticRegistrationIndia = () => {
                   CDSCO Cosmetic Registration Consultant India - Cosmetic License & Compliance Support
                 </h1>
                 <p className="text-cyan-100 text-lg leading-relaxed">
-                  If you are planning to launch, import, or manufacture cosmetic products in India, complying with CDSCO regulations is essential. Cosmetic products in India are regulated under the Drugs and Cosmetics framework, and businesses must follow proper procedures for{" "}
-                  <Link to="/cdsco-registration" className={darkLinkClass}>
-                    CDSCO registration for cosmetic
-                  </Link>{" "}
-                  before entering the market.
+                  If you are planning to launch, import, or manufacture cosmetic products in India, complying with CDSCO regulations is essential. Cosmetic products in India are regulated under the Drugs and Cosmetics framework, and businesses must follow proper procedures for <strong>CDSCO registration for cosmetic</strong> before entering the market.
                 </p>
                 <p className="text-cyan-100 text-lg leading-relaxed">
-                  At Regacats, we are a leading{" "}
-                  <Link to="/cdsco-registration" className={darkLinkClass}>
-                    cosmetic registration consultant India
-                  </Link>
-                  , offering end-to-end support for manufacturers, importers, and brand owners. Our expert team ensures smooth approval, proper documentation, and compliance with Indian cosmetic regulations.
+                  At Regacats, we are a leading <strong>cosmetic registration consultant India</strong>, offering end-to-end support for manufacturers, importers, and brand owners. Our expert team ensures smooth approval, proper documentation, and compliance with Indian cosmetic regulations.
                 </p>
                 <p className="text-cyan-100 text-lg leading-relaxed">
-                  We provide complete{" "}
-                  <Link to="/cdsco-registration" className={darkLinkClass}>
-                    cosmetic registration service
-                  </Link>{" "}
-                  including regulatory strategy, dossier preparation, submission handling, labeling compliance, and testing guidance.
+                  We provide complete <strong>cosmetic registration service</strong> including regulatory strategy, dossier preparation, submission handling, labeling compliance, and testing guidance.
                 </p>
               </div>
-              <div className="rounded-2xl border border-white/20 bg-white/10 p-2 backdrop-blur-sm shadow-2xl lg:ml-auto w-full max-w-2xl">
+              <div className="rounded-2xl border border-white/20 bg-white/10 p-3 md:p-4 backdrop-blur-sm shadow-2xl lg:ml-auto w-full max-w-2xl mt-2 md:mt-4">
                 <img
-                  src={cdscoCosmeticProcessImage}
-                  alt="CDSCO Cosmetic Registration Process"
-                  className="w-full h-[240px] sm:h-[320px] md:h-[380px] rounded-xl border border-white/20 object-cover"
+                  src={cdscoCosmeticHeroImage}
+                  alt="CDSCO Cosmetic Registration Consultant India - For License"
+                  className="w-full h-auto max-h-[460px] rounded-xl border border-white/20 object-contain bg-white/90 p-2 md:p-3"
                   loading="eager"
                 />
               </div>
@@ -192,11 +191,7 @@ const CdscoCosmeticRegistrationIndia = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-slate-700 leading-relaxed mb-4">
-                  As an experienced{" "}
-                  <Link to="/cdsco-registration" className={lightLinkClass}>
-                    cosmetic product registration consultant
-                  </Link>
-                  , we help businesses navigate complex regulatory pathways in India.
+                  As an experienced <strong>cosmetic product registration consultant</strong>, we help businesses navigate complex regulatory pathways in India.
                 </p>
                 <p className="text-slate-700 leading-relaxed mb-4">
                   Whether you are a domestic manufacturer or an importer, our services are tailored to your compliance needs.
@@ -206,7 +201,7 @@ const CdscoCosmeticRegistrationIndia = () => {
                     <li key={item} className="flex items-start gap-2 text-slate-700">
                       <CheckCircle2 className="h-5 w-5 text-cyan-700 mt-0.5 shrink-0" />
                       {item === "Cosmetic Import License Consultation Service for importers" ? (
-                        <Link to="/cosmetic-import-license-india" className={lightLinkClass}>
+                        <Link to="/cosmetic-import-license-india" className={importLinkClass}>
                           {item}
                         </Link>
                       ) : (
@@ -224,11 +219,7 @@ const CdscoCosmeticRegistrationIndia = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-slate-700 leading-relaxed mb-4">
-                  A strong regulatory strategy is key to successful{" "}
-                  <Link to="/cdsco-registration" className={lightLinkClass}>
-                    cosmetic registration service
-                  </Link>{" "}
-                  and smoother approvals.
+                  A strong regulatory strategy is key to successful <strong>cosmetic registration service</strong> and smoother approvals.
                 </p>
                 <p className="text-slate-700 leading-relaxed mb-4">Our team provides:</p>
                 <ul className="space-y-2">
@@ -250,22 +241,35 @@ const CdscoCosmeticRegistrationIndia = () => {
               <h2 className="text-3xl md:text-4xl font-bold text-cyan-950">CDSCO Cosmetic Registration Consultant - Our Approach</h2>
               <p className="text-slate-600">A structured and compliance-focused process to reduce delays and improve approval outcomes.</p>
             </div>
-            <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-4">
-              {processSteps.map((step, index) => (
-                <Card key={step.title} className="border-cyan-100 shadow-sm h-full">
-                  <CardContent className="pt-6">
-                    <div className="flex items-start gap-3">
-                      <span className="mt-0.5 inline-flex h-7 w-7 items-center justify-center rounded-full bg-cyan-900 text-white text-sm font-bold shrink-0">
-                        {index + 1}
-                      </span>
-                      <div className="space-y-1.5">
-                        <h3 className="text-lg font-semibold text-cyan-900">{step.title}</h3>
-                        <p className="text-slate-700">{step.description}</p>
+            <div className="max-w-6xl mx-auto grid xl:grid-cols-[1.05fr_0.95fr] gap-6 items-start">
+              <div className="order-2 xl:order-1 space-y-4">
+                {processSteps.map((step, index) => (
+                  <Card key={step.title} className="border-cyan-100 shadow-sm h-full">
+                    <CardContent className="pt-6">
+                      <div className="flex items-start gap-3">
+                        <span className="mt-0.5 inline-flex h-7 w-7 items-center justify-center rounded-full bg-cyan-900 text-white text-sm font-bold shrink-0">
+                          {index + 1}
+                        </span>
+                        <div className="space-y-1.5">
+                          <h3 className="text-lg font-semibold text-cyan-900">{step.title}</h3>
+                          <p className="text-slate-700">{step.description}</p>
+                        </div>
                       </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+
+              <div className="order-1 xl:order-2 xl:sticky xl:top-24">
+                <div className="rounded-2xl border border-cyan-100 bg-white p-3 md:p-4 shadow-sm mt-1">
+                  <img
+                    src={cdscoCosmeticProcessImage}
+                    alt="CDSCO Cosmetic Registration Process"
+                    className="w-full h-auto rounded-xl object-contain"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -278,15 +282,7 @@ const CdscoCosmeticRegistrationIndia = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-slate-700 leading-relaxed mb-4">
-                  Labelling is one of the most critical compliance requirements in{" "}
-                  <Link to="/cdsco-registration" className={lightLinkClass}>
-                    cosmetic registration India
-                  </Link>
-                  . Our{" "}
-                  <Link to="/cosmetic-import-license-india" className={lightLinkClass}>
-                    cosmetic compliance consultant India
-                  </Link>{" "}
-                  team ensures labels meet all CDSCO norms.
+                  Labelling is one of the most critical compliance requirements in <strong>cosmetic registration India</strong>. Our <strong>cosmetic compliance consultant India</strong> team ensures labels meet all CDSCO norms.
                 </p>
                 <ul className="space-y-2">
                   {labelChecklist.map((item) => (
@@ -305,11 +301,7 @@ const CdscoCosmeticRegistrationIndia = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-slate-700 leading-relaxed mb-4">
-                  As a reliable{" "}
-                  <Link to="/cosmetic-import-license-india" className={lightLinkClass}>
-                    cosmetic license consultant India
-                  </Link>
-                  , we ensure your product meets safety and quality standards before submission.
+                  As a reliable <strong>cosmetic license consultant India</strong>, we ensure your product meets safety and quality standards before submission.
                 </p>
                 <ul className="space-y-2">
                   {ingredientSupport.map((item) => (
@@ -332,11 +324,7 @@ const CdscoCosmeticRegistrationIndia = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-slate-700 leading-relaxed mb-4">
-                  For successful{" "}
-                  <Link to="/cdsco-registration" className={lightLinkClass}>
-                    cosmetic product registration
-                  </Link>
-                  , the following documents are typically required:
+                  For successful <strong>cosmetic product registration</strong>, the following documents are typically required:
                 </p>
                 <ul className="space-y-2">
                   {requiredDocuments.map((item) => (
@@ -346,6 +334,13 @@ const CdscoCosmeticRegistrationIndia = () => {
                     </li>
                   ))}
                 </ul>
+                <p className="text-slate-700 leading-relaxed mt-6">
+                  We help you prepare, review, and align all documents for smooth approval under{" "}
+                  <Link to="/cosmetic-import-license-india" className={importLinkClass}>
+                    Cosmetic Import License Consultation India
+                  </Link>{" "}
+                  and domestic compliance pathways.
+                </p>
               </CardContent>
             </Card>
 
@@ -375,12 +370,8 @@ const CdscoCosmeticRegistrationIndia = () => {
               </CardHeader>
               <CardContent className="space-y-4 text-slate-700 leading-relaxed">
                 <p>
-                  This page focuses on{" "}
-                  <Link to="/cdsco-registration" className={lightLinkClass}>
-                    cosmetic registration consultant
-                  </Link>{" "}
-                  services and compliance strategy for manufacturers. For import-specific licensing (COS-1 / COS-2 process), visit our detailed page on{" "}
-                  <Link to="/cosmetic-import-license-india" className="font-semibold text-cyan-800 hover:text-cyan-700 underline underline-offset-2">
+                  This page focuses on <strong>cosmetic registration consultant</strong> services and compliance strategy for manufacturers. For import-specific licensing (COS-1 / COS-2 process), visit our detailed page on{" "}
+                  <Link to="/cosmetic-import-license-india" className={importLinkClass}>
                     CDSCO Cosmetic Import License Consultant in India
                   </Link>
                   .
@@ -417,33 +408,33 @@ const CdscoCosmeticRegistrationIndia = () => {
           </div>
         </section>
 
-        <section className="py-16 bg-cyan-950 text-white">
+        <section className="py-16 bg-[#407dd8] text-white">
           <div className="container mx-auto px-4 text-center max-w-3xl space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold">Get Expert Help for Cosmetic Registration in India</h2>
-            <p className="text-cyan-100">
+            <p className="text-blue-50">
               Looking for a reliable cosmetic product registration consultant?
             </p>
             <div className="max-w-xl mx-auto text-left">
-              <p className="text-cyan-100 mb-2">Contact Regacats today for:</p>
-              <ul className="space-y-2 text-cyan-100">
+              <p className="text-blue-50 mb-2">Contact Regacats today for:</p>
+              <ul className="space-y-2 text-blue-50">
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-cyan-200 mt-0.5 shrink-0" />
+                  <CheckCircle2 className="h-5 w-5 text-white mt-0.5 shrink-0" />
                   <span>CDSCO registration support</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-cyan-200 mt-0.5 shrink-0" />
+                  <CheckCircle2 className="h-5 w-5 text-white mt-0.5 shrink-0" />
                   <span>Label and ingredient compliance</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-cyan-200 mt-0.5 shrink-0" />
+                  <CheckCircle2 className="h-5 w-5 text-white mt-0.5 shrink-0" />
                   <span>Fast-track approval guidance</span>
                 </li>
               </ul>
             </div>
             <Button
-              onClick={() => navigate("/contact")}
+              onClick={handleGetFreeConsultation}
               size="lg"
-              className="bg-white text-cyan-900 hover:bg-cyan-100 font-semibold"
+              className="bg-white text-[#1f3b77] hover:bg-blue-50 font-semibold"
             >
               Get Free Consultation
             </Button>
