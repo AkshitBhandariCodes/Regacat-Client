@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FileCheck, Pill, Stethoscope, Award, ShieldCheck } from "lucide-react";
+import { FileCheck, Pill, Stethoscope, Award, ShieldCheck, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { Link } from "react-router-dom";
@@ -29,6 +29,14 @@ const services: Service[] = [
     details: "We provide end-to-end CDSCO registration services including Form 10 & 10A, manufacturing license, import license, and product registration. Our team ensures accurate documentation, faster processing, and complete compliance with Central Drugs Standard Control Organization requirements.",
     icon: FileCheck,
     href: "/cdsco-registration",
+  },
+  {
+    title: "CDSCO Cosmetic Registration",
+    tagline: "CDSCO cosmetic registration support helps brands and importers prepare compliant filings before launching cosmetic products in India.",
+    summary: "Get expert guidance on cosmetic documentation, compliance, and registration pathways for the Indian market.",
+    details: "We support cosmetic brands, importers, and authorized Indian entities with documentation review, regulatory strategy, labeling checkpoints, and filing support for cosmetic registration and related CDSCO approvals.",
+    icon: Sparkles,
+    href: "/cdsco-registration-in-india",
   },
   {
     title: "Medical Device Import License MD14",

@@ -5,10 +5,9 @@ import TeamCard from "@/pageComps/teams/components/TeamCard";
 import ValueCard from "@/pageComps/teams/components/ValueCard";
 import FloatingParticles from "@/pageComps/teams/components/FloatingParticles";
 import {LeadFormDialog} from "@/pageComps/eprregistration/components/LeadFormDialog";
-import FloatingSocialMedia from "@/pageComps/teams/components/FloatingSocialMedia";
 import { Shield, Lightbulb, Users, ArrowRight } from "lucide-react";
 import akshay from '@/assets/teams/akshay.jpg'
-import anuj from '@/assets/teams/anuj.jpeg'
+import anuj from '@/assets/teams/WhatsApp Image 2026-04-09 at 16.09.24.jpeg'
 import akash from '@/assets/teams/Akash sharma.jpeg'
 
 
@@ -27,8 +26,8 @@ const TeamPage = () => {
       name: "Anuj Kumar",
       position: "FSSAI Regulatory Consultant - Food, Dietary Supplement, Nutraceutical ",
       image: `${anuj}`,
-      linkedin: "#",
-      email: "contact@regacats.in",
+      linkedin: "https://www.linkedin.com/in/anujkumar1709/",
+      email: "anuj@regacats.in",
     },
     {
       name: "Akash Sharma",
@@ -41,7 +40,7 @@ const TeamPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-">
+    <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 gradient-hero opacity-90" />
@@ -56,6 +55,10 @@ const TeamPage = () => {
           <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: '200ms' }}>
             A team of professionals simplifying business compliance across India
           </p>
+          <p className="mt-4 text-base md:text-lg text-white/80 max-w-4xl mx-auto animate-fade-in-up" style={{ animationDelay: '300ms' }}>
+            Regacats Solutions has a team of over 15+ experts with deep experience across Food, Cosmetics,
+            Medical Device, Dietary Supplement, Nutraceuticals, and Drugs.
+          </p>
         </div>
         
         {/* Geometric Background Elements */}
@@ -68,13 +71,17 @@ const TeamPage = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 animate-fade-in">
             Our Talented Team
           </h2>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto animate-fade-in-up">
+            Meet the specialists who guide regulatory projects with hands-on expertise, faster documentation,
+            and practical support for every filing stage.
+          </p>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
           {teamMembers.map((member, index) => (
             <TeamCard
-              key={member.email}
+              key={member.name}
               {...member}
               delay={index * 100}
             />
@@ -135,8 +142,9 @@ const TeamPage = () => {
             <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mb-6" />
 
             <p className="text-lg text-muted-foreground mb-6">
-              Our founders bring decades of combined experience in compliance,
-              legal services, and technology innovation.
+              Regacats Solutions team brings decades of combined experience in the CDSCO & FSSAI
+              regulatory services for Food, Cosmetics, Medical Device, Dietary Supplement,
+              Nutraceuticals & Drugs.
             </p>
 
             <blockquote className="border-l-4 border-primary pl-4 italic text-foreground">

@@ -73,12 +73,13 @@ const Index = () => {
 
             <h2 className="text-2xl md:text-3xl font-bold">Services We Offer</h2>
             <p className="leading-8 text-muted-foreground">
-              We provide complete support for <strong>CDSCO registration</strong>, <strong>FSSAI license</strong>,
-              <strong> BIS certification</strong>, <strong>medical device registration</strong>, and
+              We provide complete support for <strong>CDSCO registration</strong>, <strong>CDSCO import services</strong>,
+              <strong> FSSAI license</strong>, <strong>medical device registration</strong>, and
               <strong> cosmetic import license India</strong> workflows. If your business needs import approvals,
               Indian Authorized Agent documentation, or claim-specific compliance reviews, we help you prepare end-to-end files,
               supporting declarations, and submission-ready drafts. Explore our
               {" "}<Link to="/cdsco-registration" className="text-primary underline underline-offset-4">CDSCO services</Link>,
+              {" "}<Link to="/cdsco-import-service" className="text-primary underline underline-offset-4">CDSCO import services</Link>,
               {" "}<Link to="/fssai-consultants-india" className="text-primary underline underline-offset-4">FSSAI consultancy</Link>,
               {" "}<Link to="/medical-device-import-license-india" className="text-primary underline underline-offset-4">medical device registration assistance</Link>,
               {" "}<Link to="/cosmetic-import-license-india" className="text-primary underline underline-offset-4">cosmetic import licensing</Link>,
@@ -94,20 +95,15 @@ const Index = () => {
               {" "}<a href="https://www.linkedin.com/company/regacats-solutions" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4">LinkedIn</a>
               {" "}and use authority references for current regulations from
               {" "}<a href="https://cdsco.gov.in" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4">CDSCO Guidelines</a>,
-              {" "}<a href="https://www.fssai.gov.in" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4">FSSAI Portal</a>,
-              and {" "}<a href="https://www.bis.gov.in" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4">BIS Standards</a>.
+              and {" "}<a href="https://www.fssai.gov.in" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4">FSSAI Portal</a>.
             </p>
 
             <h2 className="text-2xl md:text-3xl font-bold">Our Expertise</h2>
             <p className="leading-8 text-muted-foreground">
               Our experts support domestic and international clients in complex product categories including nutraceuticals,
-              functional foods, medical devices, pharmaceuticals, and cosmetics. We also publish practical guidance to help
-              teams understand timelines, documents, and approval logic before they file. Read our latest guides:
-              {" "}<a href="https://blogs.regacats.in/cdsco-registration-guide" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4">CDSCO Registration Guide</a>,
-              {" "}<a href="https://blogs.regacats.in/fssai-license-process" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4">FSSAI License Process</a>,
-              and {" "}<a href="https://blogs.regacats.in/bis-certification-india" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4">BIS Certification in India</a>.
-              You can also visit the {" "}<Link to="/about" className="text-primary underline underline-offset-4">About page</Link>
-              to learn how our compliance methodology reduces delays for first-time and repeat applicants.
+              functional foods, medical devices, pharmaceuticals, and cosmetics. We help teams understand timelines,
+              documents, and approval logic before they file, with practical support that reduces delays for both
+              first-time and repeat applicants.
             </p>
 
             <h2 className="text-2xl md:text-3xl font-bold">Contact Us</h2>
@@ -122,7 +118,10 @@ const Index = () => {
         </div>
       </section>
 
-      <BrandsCarousel />
+      <BrandsCarousel
+        eyebrow="Our Clientele"
+        title="Brands That Trust Regacats Solutions"
+      />
       <ReviewsSection />
       <Footer />
       <WhatsAppButton />

@@ -68,7 +68,7 @@ export const Footer = () => {
           <div>
             <h3 className="text-2xl font-bold mb-4">Regacats Solutions</h3>
             <p className="text-slate-300 mb-4 leading-relaxed">
-              India's trusted partner for licensing and regulatory consultancy services.
+              CDSCO & FSSAI Regulatory Consultancy Services in Gurugram & Delhi, India
             </p>
             <div className="space-y-3">
               <div className="flex items-start gap-2">

@@ -25,7 +25,7 @@ const TeamCard = ({ name, position, image, linkedin, email, delay = 0 }: TeamCar
             <img
               src={image}
               alt={name}
-              className="relative w-full h-full rounded-full object-contain border-4 border-border group-hover:border-primary transition-smooth"
+              className="relative w-full h-full rounded-full object-cover border-4 border-border group-hover:border-primary transition-smooth"
             />
           </div>
         </div>

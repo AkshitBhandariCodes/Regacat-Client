@@ -197,6 +197,14 @@ const CosmeticImport = () => {
                         <span>Claims validation and correction</span>
                       </li> */}
                     </ul>
+                    <a
+                      href="https://regacats.in/indian-authorized-agent-for-medical-devices"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-4 inline-flex text-sm font-semibold text-green-700 underline underline-offset-4"
+                    >
+                      Learn about authorized representative services
+                    </a>
                   </div>
 
                   {/* Service 3 */}

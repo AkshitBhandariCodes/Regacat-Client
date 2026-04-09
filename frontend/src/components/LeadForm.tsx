@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { X, Minimize2, Maximize2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -17,6 +17,7 @@ interface LeadFormProps {
   onClose: () => void;
   isMinimized?: boolean;
   onMinimize?: () => void;
+  defaultService?: string;
 }
 
 const services = [
@@ -31,14 +32,23 @@ const services = [
   "Any other CDSCO"
 ];
 
-export const LeadForm = ({ isOpen, onClose, isMinimized, onMinimize }: LeadFormProps) => {
+export const LeadForm = ({ isOpen, onClose, isMinimized, onMinimize, defaultService = "" }: LeadFormProps) => {
   const [formData, setFormData] = useState({
     name: "",
   phone: "",
   email: "",
-  service: "",
+  service: defaultService,
   message: "",
   });
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    setFormData((prev) => ({
+      ...prev,
+      service: prev.service || defaultService,
+    }));
+  }, [defaultService, isOpen]);
 
   // const handleSubmit = (e: React.FormEvent) => {
   //   e.preventDefault();
@@ -63,7 +73,7 @@ export const LeadForm = ({ isOpen, onClose, isMinimized, onMinimize }: LeadFormP
   
       if (result.success) {
         toast.success("Query submitted successfully! We'll contact you soon.");
-        setFormData({ name: "", phone: "", email: "", service: "", message: "" });
+        setFormData({ name: "", phone: "", email: "", service: defaultService, message: "" });
         onClose();
       } else {
         toast.error("Something went wrong. Please try again.");

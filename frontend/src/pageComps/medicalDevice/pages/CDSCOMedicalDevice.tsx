@@ -3,13 +3,12 @@ import { HeroSection } from "@/pageComps/medicalDevice/components/CDSCOMedicalDe
 import { AboutService } from "@/pageComps/medicalDevice/components/CDSCOMedicalDevice/AboutService";
 import { ClassificationGrid } from "@/pageComps/medicalDevice/components/CDSCOMedicalDevice/ClassificationGrid";
 import { ProcessTimeline } from "@/pageComps/medicalDevice/components/CDSCOMedicalDevice/ProcessTimeline";
-import { DocumentsRequired } from "@/pageComps/medicalDevice/components/CDSCOMedicalDevice/DocumentsRequired";
 import { WhyChooseUs } from "@/pageComps/medicalDevice/components/CDSCOMedicalDevice/WhyChooseUs";
 import { CaseStudy } from "@/pageComps/medicalDevice/components/CDSCOMedicalDevice/CaseStudy";
 import { FAQ } from "@/pageComps/medicalDevice/components/CDSCOMedicalDevice/FAQ";
 import { CTABanner } from "@/pageComps/medicalDevice/components/CDSCOMedicalDevice/CTABanner";
-import { LeadGenPopup } from "@/pageComps/cosmeticdrug/components/CDSCOMedicalDevice/LeadGenPopup";
-import MedicalDevice from '@/pageComps/medicalDevice/components/CDSCOMedicalDevice/MedicalDevice'
+import { LeadForm } from "@/components/LeadForm";
+import MedicalDevice from "@/pageComps/medicalDevice/components/CDSCOMedicalDevice/MedicalDevice";
 
 const CDSCOMedicalDevice = () => {
   const [isLeadFormOpen, setIsLeadFormOpen] = useState(false);
@@ -26,7 +25,11 @@ const CDSCOMedicalDevice = () => {
       <CaseStudy />
       <FAQ />
       <CTABanner onOpenLeadForm={() => setIsLeadFormOpen(true)} />
-      <LeadGenPopup isOpen={isLeadFormOpen} onClose={() => setIsLeadFormOpen(false)} />
+      <LeadForm
+        isOpen={isLeadFormOpen}
+        onClose={() => setIsLeadFormOpen(false)}
+        defaultService="Medical Device Import License"
+      />
     </div>
   );
 };

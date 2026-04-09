@@ -1,59 +1,81 @@
-import logo3 from '../assets/brandslogo/Paro-Oud-logo.jpg'
-import logo2 from '../assets/brandslogo/ROS.png'
-import logo1 from '../assets/brandslogo/diy.png'
-import logo4 from '../assets/brandslogo/biomaze.jpeg'
-import logo5 from '../assets/brandslogo/tcitaiwan.jpeg'
-import logo6 from '../assets/brandslogo/cloud9.jpeg'
-import logo7 from '../assets/brandslogo/cosmax.jpg'
-import logo8 from '../assets/brandslogo/supermillionhairs.png'
-import logo9 from '../assets/brandslogo/bbetter_healthcare_logo.jpeg'
+interface BrandsCarouselProps {
+  eyebrow?: string;
+  title?: string;
+  description?: string;
+  sectionClassName?: string;
+}
 
-export const BrandsCarousel = () => {
-  const brands = [
-    logo1,
-    logo2,
-    logo3, 
-    logo4,
-    logo5,
-    logo6,
-    logo7,
-    logo8,
-    logo9,
-  ];
+const brandLogoModules = import.meta.glob("../assets/brandslogo/*.{png,jpg,jpeg,webp}", {
+  eager: true,
+  import: "default",
+}) as Record<string, string>;
+
+const formatLogoName = (path: string) =>
+  path
+    .split("/")
+    .pop()
+    ?.replace(/\.[^.]+$/, "")
+    .replace(/[_-]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim() ?? "Client";
+
+export const BrandsCarousel = ({
+  eyebrow = "Our Clientele",
+  title = "Trusted by Leading Brands",
+  description,
+  sectionClassName = "bg-[#f4f1ea]",
+}: BrandsCarouselProps) => {
+  const brands = Array.from(
+    new Map(
+      Object.entries(brandLogoModules)
+        .filter(([path]) => !path.toLowerCase().endsWith("whatsapp.png"))
+        .sort((a, b) => formatLogoName(a[0]).localeCompare(formatLogoName(b[0])))
+        .map(([path, image]) => {
+          const name = formatLogoName(path);
+          return [name.toLowerCase(), { name, image }];
+        }),
+    ).values(),
+  );
+
+  const logoRows = Array.from({ length: 3 }, (_, rowIndex) =>
+    brands.filter((_, index) => index % 3 === rowIndex),
+  );
 
   return (
-    <section className="py-16 bg-muted/30">
+    <section className={`py-16 ${sectionClassName}`}>
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-foreground mb-12">
-          Trusted by Leading Brands
-        </h2>
-        
-        <div className="relative overflow-hidden">
-          <div className="flex animate-scroll space-x-12">
-            {/* First set */}
-            {brands.map((brand, index) => (
+        <div className="max-w-4xl mx-auto text-center mb-12">
+          <p className="text-sm font-semibold uppercase tracking-[0.28em] text-slate-600">{eyebrow}</p>
+          <h2 className="mt-3 text-3xl md:text-4xl font-bold text-slate-900">{title}</h2>
+          {description ? (
+            <p className="mt-4 text-slate-600 leading-7 max-w-3xl mx-auto">{description}</p>
+          ) : null}
+        </div>
+
+        <div className="space-y-4 overflow-hidden">
+          {logoRows.map((row, rowIndex) => (
+            <div key={rowIndex} className="overflow-hidden">
               <div
-                key={`first-${index}`}
-                className="flex-shrink-0 w-48 h-24 bg-card border border-border rounded-lg flex items-center justify-center shadow-sm hover:shadow-md transition-shadow"
+                className={`flex w-max gap-4 ${
+                  rowIndex % 2 === 0 ? "animate-client-tile-scroll" : "animate-client-tile-scroll-reverse"
+                }`}
               >
-                <img src={brand} alt=""  className="object-contain w-full h-full p-4"/>
+                {[...row, ...row].map((logo, logoIndex) => (
+                  <div
+                    key={`${logo.name}-${logoIndex}`}
+                    className="flex h-24 w-40 shrink-0 items-center justify-center rounded-[18px] border border-slate-200 bg-white px-5 shadow-[0_12px_30px_rgba(15,23,42,0.12)] transition-transform duration-300 hover:-translate-y-1"
+                  >
+                    <img src={logo.image} alt={logo.name} className="max-h-12 max-w-full object-contain" />
+                  </div>
+                ))}
               </div>
-            ))}
-            {/* Duplicate set for seamless loop */}
-            {brands.map((brand, index) => (
-              <div
-                key={`second-${index}`}
-                className="flex-shrink-0 w-48 h-24 bg-card border border-border rounded-lg flex items-center justify-center shadow-sm hover:shadow-md transition-shadow"
-              >
-               <img src={brand} alt=""  className="object-cover w-full h-full p-4"/>
-              </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
 
       <style>{`
-        @keyframes scroll {
+        @keyframes client-tile-scroll {
           0% {
             transform: translateX(0);
           }
@@ -61,11 +83,22 @@ export const BrandsCarousel = () => {
             transform: translateX(-50%);
           }
         }
-        .animate-scroll {
-          animation: scroll 30s linear infinite;
+
+        @keyframes client-tile-scroll-reverse {
+          0% {
+            transform: translateX(-50%);
+          }
+          100% {
+            transform: translateX(0);
+          }
         }
-        .animate-scroll:hover {
-          animation-play-state: paused;
+
+        .animate-client-tile-scroll {
+          animation: client-tile-scroll 34s linear infinite;
+        }
+
+        .animate-client-tile-scroll-reverse {
+          animation: client-tile-scroll-reverse 36s linear infinite;
         }
       `}</style>
     </section>
