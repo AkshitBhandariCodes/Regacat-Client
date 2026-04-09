@@ -29,8 +29,8 @@ export const CaseStudySection = ({ onCtaClick }: CaseStudySectionProps) => {
             <CardContent className="p-8">
               <div className="grid md:grid-cols-3 gap-8">
                 <div className="text-center animate-slide-up">
-                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-destructive/10 flex items-center justify-center">
-                    <Target className="w-8 h-8 text-destructive" />
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-red-100 flex items-center justify-center">
+                    <Target className="w-8 h-8 text-red-600" />
                   </div>
                   <h3 className="font-semibold text-lg mb-2 text-foreground">Challenge</h3>
                   <p className="text-sm text-muted-foreground">
@@ -39,8 +39,8 @@ export const CaseStudySection = ({ onCtaClick }: CaseStudySectionProps) => {
                 </div>
 
                 <div className="text-center animate-slide-up" style={{ animationDelay: "0.1s" }}>
-                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
-                    <CheckCircle2 className="w-8 h-8 text-primary" />
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-blue-100 flex items-center justify-center">
+                    <CheckCircle2 className="w-8 h-8 text-blue-600" />
                   </div>
                   <h3 className="font-semibold text-lg mb-2 text-foreground">Solution</h3>
                   <p className="text-sm text-muted-foreground">
@@ -49,8 +49,8 @@ export const CaseStudySection = ({ onCtaClick }: CaseStudySectionProps) => {
                 </div>
 
                 <div className="text-center animate-slide-up" style={{ animationDelay: "0.2s" }}>
-                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-secondary/10 flex items-center justify-center">
-                    <TrendingUp className="w-8 h-8 text-secondary" />
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-emerald-100 flex items-center justify-center">
+                    <TrendingUp className="w-8 h-8 text-emerald-600" />
                   </div>
                   <h3 className="font-semibold text-lg mb-2 text-foreground">Result</h3>
                   <p className="text-sm text-muted-foreground">
@@ -60,8 +60,8 @@ export const CaseStudySection = ({ onCtaClick }: CaseStudySectionProps) => {
               </div>
 
               <div className="mt-8 flex justify-center gap-4">
-                <Button 
-                  variant="outline"
+                <Button
+                  className="bg-blue-600 text-white hover:bg-blue-700 border border-blue-600"
                   onClick={() => setShowFullStory(true)}
                 >
                   Read Full Case Study
@@ -73,7 +73,7 @@ export const CaseStudySection = ({ onCtaClick }: CaseStudySectionProps) => {
       </section>
 
       <Dialog open={showFullStory} onOpenChange={setShowFullStory}>
-        <DialogContent className="sm:max-w-[600px] max-h-[80vh] overflow-y-auto bg-background">
+        <DialogContent className="w-[calc(100vw-1.5rem)] sm:max-w-[700px] max-h-[86vh] overflow-y-auto bg-background">
           <DialogHeader>
             <DialogTitle className="text-2xl">Complete Success Story</DialogTitle>
             <DialogDescription>Leading FMCG Brand EPR Authorization Journey</DialogDescription>
@@ -114,8 +114,8 @@ export const CaseStudySection = ({ onCtaClick }: CaseStudySectionProps) => {
             <div>
               <h3 className="font-semibold text-lg mb-2 text-foreground">Results Achieved</h3>
               <div className="grid grid-cols-2 gap-4">
-                <div className="p-4 bg-secondary/10 rounded-lg">
-                  <p className="text-3xl font-bold text-secondary">30</p>
+                <div className="p-4 bg-primary/10 rounded-lg">
+                  <p className="text-3xl font-bold text-primary">30</p>
                   <p className="text-sm text-muted-foreground">Days to Approval</p>
                 </div>
                 <div className="p-4 bg-primary/10 rounded-lg">
@@ -126,8 +126,8 @@ export const CaseStudySection = ({ onCtaClick }: CaseStudySectionProps) => {
                   <p className="text-3xl font-bold text-accent">15+</p>
                   <p className="text-sm text-muted-foreground">Product Lines Covered</p>
                 </div>
-                <div className="p-4 bg-secondary/10 rounded-lg">
-                  <p className="text-3xl font-bold text-secondary">INR 50L+</p>
+                <div className="p-4 bg-primary/10 rounded-lg">
+                  <p className="text-3xl font-bold text-primary">INR 50L+</p>
                   <p className="text-sm text-muted-foreground">Saved in Delays</p>
                 </div>
               </div>

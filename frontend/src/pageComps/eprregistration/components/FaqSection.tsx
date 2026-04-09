@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { ChevronDown } from "lucide-react";
 
 export const FaqSection = () => {
   const faqs = [
@@ -48,8 +49,9 @@ export const FaqSection = () => {
                 className="border border-border rounded-lg px-6 bg-card shadow-soft hover:shadow-medium transition-smooth animate-slide-up"
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
-                <AccordionTrigger className="text-left hover:no-underline py-4">
-                  <span className="font-semibold text-foreground pr-4">{faq.question}</span>
+                <AccordionTrigger className="text-left hover:no-underline py-4 [&>svg:last-child]:hidden [&[data-state=open]>svg:first-of-type]:rotate-180">
+                  <span className="font-semibold text-foreground pr-2">{faq.question}</span>
+                  <ChevronDown className="h-5 w-5 shrink-0 text-blue-600 transition-transform duration-200" />
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground pb-4">
                   {faq.answer}
@@ -58,12 +60,6 @@ export const FaqSection = () => {
             ))}
           </Accordion>
 
-          <div className="mt-12 text-center">
-            <p className="text-muted-foreground mb-4">Still have questions?</p>
-            <p className="text-sm text-muted-foreground">
-              Our EPR experts are here to help. Contact us for personalized guidance.
-            </p>
-          </div>
         </div>
       </div>
 

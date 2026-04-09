@@ -1,5 +1,5 @@
 import { Card } from "../components/ui/card";
-import { CheckCircle2, ChevronDown } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 import { AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 interface StepCardProps {
@@ -23,12 +23,11 @@ interface StepCardProps {
           {stepNumber}
         </div>
         
-        <AccordionTrigger className="px-6 pt-6 pb-4 hover:no-underline w-full [&[data-state=open]>svg]:rotate-180">
+        <AccordionTrigger className="px-6 pt-6 pb-4 hover:no-underline w-full">
           <div className="text-left flex-1">
             <h3 className="text-xl font-bold mb-2 text-foreground">{title}</h3>
             <p className="text-muted-foreground text-sm">{description}</p>
           </div>
-          <ChevronDown className="h-5 w-5 text-primary shrink-0 transition-transform duration-300 ml-4" />
         </AccordionTrigger>
         
         <AccordionContent className="px-6 pb-6">
