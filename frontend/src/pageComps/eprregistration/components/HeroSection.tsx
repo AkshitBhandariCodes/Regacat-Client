@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle2 } from "lucide-react";
-import EPRregistrationVideo from '../../../assets/videos/plasticrecycle.mp4'
+import EPRregistrationVideo from "../../../assets/videos/plasticrecycle.mp4";
 
 interface HeroSectionProps {
   onCtaClick: () => void;
@@ -20,12 +20,9 @@ export const HeroSection = ({ onCtaClick }: HeroSectionProps) => {
         crossOrigin="anonymous"
         poster="/placeholder.svg"
         className="absolute inset-0 w-full h-full object-cover"
-        style={{ filter: 'brightness(0.7)' }}
-        onLoadedData={() => console.log("Hero video loaded")}
-        onError={(e) => console.error("Hero video error", e)}
+        style={{ filter: "brightness(0.7)" }}
       >
         <source src={EPRregistrationVideo} type="video/mp4" />
-        
       </video>
       
       {/* Floating decoration circles */}
@@ -37,9 +34,9 @@ export const HeroSection = ({ onCtaClick }: HeroSectionProps) => {
           <h1 className="mb-6 leading-tight">
             EPR Authorization | Regacats Solutions
           </h1>
-          <h1 className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
             EPR Authorization Certificate From CPCB in India
-          </h1>
+          </p>
           
           {/* Key benefits */}
           <div className="flex flex-wrap justify-center gap-4 mb-10 text-sm md:text-base">

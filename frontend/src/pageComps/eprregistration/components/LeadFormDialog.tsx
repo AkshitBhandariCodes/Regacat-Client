@@ -55,7 +55,7 @@ export const LeadFormDialog = ({ open, onOpenChange }: LeadFormDialogProps) => {
       const result = await response.json();
 
       if (result.success) {
-        toast.success("✅ Thank you! Our expert will contact you within 24 hours.");
+        toast.success("Thank you. Our expert will contact you within 24 hours.");
         setFormData({
           name: "",
           company: "",
@@ -64,11 +64,11 @@ export const LeadFormDialog = ({ open, onOpenChange }: LeadFormDialogProps) => {
         });
         onOpenChange(false);
       } else {
-        toast.error(result.message || "❌ Failed to send message. Please try again later.");
+        toast.error(result.message || "Failed to send message. Please try again later.");
       }
     } catch (error) {
       console.error("Error:", error);
-      toast.error("⚠️ Network error. Unable to reach the server.");
+      toast.error("Network error. Unable to reach the server.");
     } finally {
       setIsSubmitting(false);
     }

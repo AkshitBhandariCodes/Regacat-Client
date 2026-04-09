@@ -1,4 +1,4 @@
-import { FileText, Users, Globe } from "lucide-react";
+import { FileText, Globe, Users } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 export const AboutSection = () => {
@@ -6,17 +6,17 @@ export const AboutSection = () => {
     {
       icon: FileText,
       title: "Fast Documentation Support",
-      description: "Expert help with all required documents and CPCB formats",
+      description: "Expert help with all required documents and CPCB-aligned formats.",
     },
     {
       icon: Users,
       title: "Dedicated EPR Experts",
-      description: "Experienced professionals managing your compliance journey",
+      description: "Experienced professionals managing your compliance workflow.",
     },
     {
       icon: Globe,
-      title: "PAN India Assistance",
-      description: "Supporting businesses across all states in India",
+      title: "Pan India Assistance",
+      description: "Support for businesses operating across all Indian states.",
     },
   ];
 
@@ -24,27 +24,28 @@ export const AboutSection = () => {
     <section className="py-20 bg-gradient-subtle">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-in">
-          <h2 className="mb-6 text-foreground"><strong>What is EPR Rules in India?</strong></h2>
+          <h2 className="mb-6 text-foreground font-semibold">What Are EPR Rules in India?</h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-          Welcome to our comprehensive guide on Extended Producer Responsibility (EPR) rules in India. As environmental concerns become increasingly urgent, India's regulatory framework for waste management, particularly for plastic and electronic waste, has evolved to hold producers accountable for the lifecycle of their products. Here, we explore the key aspects of EPR rules and their impact on sustainable waste management in India.
-
-          </p><br />
-          <h2 className="mb-6 text-foreground"><strong>What is Extended Producer Responsibility (EPR)?
-          </strong></h2>
+            Extended Producer Responsibility (EPR) rules in India assign post-consumer waste accountability to
+            Producers, Importers, and Brand Owners (PIBOs). These rules help improve collection, recycling, and
+            environmentally responsible disposal of plastic and other regulated waste streams.
+          </p>
+          <h3 className="mt-8 mb-4 text-foreground font-semibold">What Is Extended Producer Responsibility (EPR)?</h3>
           <p className="text-lg text-muted-foreground leading-relaxed">
-          Extended Producer Responsibility (EPR) is an environmental policy approach that holds producers accountable for the entire lifecycle of their products, including post-consumer waste. Under EPR rules, producers, importers, and brand owners (PIBOs) are required to manage the collection, recycling, and disposal of their products once they are discarded by consumers. This policy aims to reduce waste, encourage recycling, and promote environmentally sustainable practices.
-
+            EPR is a regulatory framework that extends producer responsibility beyond sale to end-of-life waste
+            management. Businesses are expected to plan recovery channels, partner with authorized recyclers or PROs,
+            and maintain compliance records as per CPCB requirements.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed mt-4">
-            <strong className="text-foreground">Regacats Solutions</strong> simplifies the entire process — from 
+            <strong className="text-foreground">Regacats Solutions</strong> simplifies the entire process from
             documentation and CPCB coordination to post-approval compliance.
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {features.map((feature, index) => (
-            <Card 
-              key={index}
+            <Card
+              key={feature.title}
               className="shadow-soft hover:shadow-medium transition-smooth border-border bg-card animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >

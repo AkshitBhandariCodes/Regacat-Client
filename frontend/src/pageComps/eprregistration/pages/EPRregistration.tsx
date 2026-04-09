@@ -8,8 +8,6 @@ import { CaseStudySection } from "@/pageComps/eprregistration/components/CaseStu
 import { FaqSection } from "@/pageComps/eprregistration/components/FaqSection";
 import { CtaBanner } from "@/pageComps/eprregistration/components/CtaBanner";
 import { LeadFormDialog } from "@/pageComps/eprregistration/components/LeadFormDialog";
-import EprRegistration from "@/pageComps/epr-registration/pages/eprregistration";
-
 
 const EPRregistration = () => {
   const [isLeadFormOpen, setIsLeadFormOpen] = useState(false);
@@ -22,8 +20,6 @@ const EPRregistration = () => {
     <main className="min-h-screen">
       <HeroSection onCtaClick={handleCtaClick} />
       <AboutSection />
-      <EprRegistration/>
-     
       <ProcessSection />
       <DocumentsSection />
       <WhyChooseSection />

@@ -127,7 +127,7 @@ export const CaseStudySection = ({ onCtaClick }: CaseStudySectionProps) => {
                   <p className="text-sm text-muted-foreground">Product Lines Covered</p>
                 </div>
                 <div className="p-4 bg-secondary/10 rounded-lg">
-                  <p className="text-3xl font-bold text-secondary">₹50L+</p>
+                  <p className="text-3xl font-bold text-secondary">INR 50L+</p>
                   <p className="text-sm text-muted-foreground">Saved in Delays</p>
                 </div>
               </div>
