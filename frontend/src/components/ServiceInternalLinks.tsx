@@ -12,9 +12,8 @@ const internalServiceLinks = [
   { label: "NSF Approval", href: "/non-specified-food-ingredient-approval-india" },
   { label: "Import Assistance", href: "/fssai-import-assistance-services-india" },
   { label: "Nutraceutical Import Consultant", href: "/fssai-nutraceutical-import-consultant-india" },
-  { label: "Indian Authorized Agent Services", href: "/iaa-services" },
+  { label: "Indian Authorized Agent Services", href: "/indian-authorized-agent-services-india" },
   { label: "Legal Metrology", href: "/legal-metrology" },
-  { label: "EPR Authorization", href: "/epr-registration" },
 ];
 
 const normalizePath = (path: string) => path.replace(/\/$/, "");

@@ -22,7 +22,6 @@ const pages = [
   { loc: `${siteUrl}/fssai-consultant-nutraceutical-supplement-india`, priority: "0.8", changefreq: "monthly" },
   { loc: `${siteUrl}/indian-authorized-agent-for-fssai-products-india`, priority: "0.8", changefreq: "monthly" },
   { loc: `${siteUrl}/non-specified-food-ingredient-approval-india`, priority: "0.8", changefreq: "monthly" },
-  { loc: `${siteUrl}/foreign-food-manufacturing-facility-registration-india`, priority: "0.8", changefreq: "monthly" },
   { loc: `${siteUrl}/foreign-food-manufacturing-facility-registration-in-india`, priority: "0.8", changefreq: "monthly" },
   { loc: `${siteUrl}/vegan-endorsement-india`, priority: "0.8", changefreq: "monthly" },
   { loc: `${siteUrl}/cdsco-import-service`, priority: "0.9", changefreq: "monthly" },

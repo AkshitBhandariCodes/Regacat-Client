@@ -22,7 +22,7 @@ const services = [
   { name: "Cosmetic Import License", href: "/cosmetic-import-license-india" },
   { name: "Medical Device Import License", href: "/medical-device-import-license-india" },
   { name: "FSSAI Services", href: "/fssai-consultants-india" },
-  { name: "Indian Authorized Agent Services", href: "/iaa-services" },
+  { name: "Indian Authorized Agent Services", href: "/indian-authorized-agent-services-india" },
   { name: "EPR Authorization", href: "/epr-registration" },
   { name: "Legal Metrology", href: "/legal-metrology" },
 ];
@@ -90,6 +90,14 @@ export const Navigation = ({ onConsultClick }: NavigationProps) => {
               className="text-foreground hover:text-primary transition-colors"
             >
               Blog
+            </a>
+            <a
+              href="https://blogs.regacats.in/regulatory-updates"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Regulatory Updates
             </a>
             <Link to="/contact" className="text-foreground hover:text-primary transition-colors">
               Contact
@@ -160,6 +168,14 @@ export const Navigation = ({ onConsultClick }: NavigationProps) => {
                 className="text-foreground hover:text-primary transition-colors"
               >
                 Blog
+              </a>
+              <a
+                href="https://blogs.regacats.in/regulatory-updates"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground hover:text-primary transition-colors"
+              >
+                Regulatory Updates
               </a>
               <Link to="/contact" className="text-foreground hover:text-primary transition-colors">
                 Contact

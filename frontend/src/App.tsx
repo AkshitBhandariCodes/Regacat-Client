@@ -78,9 +78,9 @@ const App = () => (
           <Route path="/non-specified-food-ingredient-approval-india/" element={<FssaiNonSpecifiedFoodService />} />
           <Route path="/non-specified-foodingredient-approval-india" element={<Navigate to="/non-specified-food-ingredient-approval-india" replace />} />
           <Route path="/non-specified-foodingredient-approval-india/" element={<Navigate to="/non-specified-food-ingredient-approval-india" replace />} />
-          <Route path="/foreign-food-manufacturing-facility-registration-india" element={<FssaiForeignFoodFacilityService />} />
+          <Route path="/foreign-food-manufacturing-facility-registration-india" element={<Navigate to="/foreign-food-manufacturing-facility-registration-in-india" replace />} />
           <Route path="/foreign-food-manufacturing-facility-registration-in-india" element={<FssaiForeignFoodFacilityService />} />
-          <Route path="/foreign-food-manufacturing-facility-registration-in-india/" element={<FssaiForeignFoodFacilityService />} />
+          <Route path="/foreign-food-manufacturing-facility-registration-in-india/" element={<Navigate to="/foreign-food-manufacturing-facility-registration-in-india" replace />} />
           <Route path="/vegan-endorsement-india" element={<FssaiVeganEndorsementService />} />
           <Route path="/vegan-endorsement-india/" element={<FssaiVeganEndorsementService />} />
           <Route path="/cdsco-import-service" element={<CdscoImportLicenseService />} />
@@ -94,7 +94,7 @@ const App = () => (
           <Route path="/indian-authorized-agent-for-fssai-products" element={<IndianAuthorizedAgentFssaiProductsService />} />
           <Route path="/indian-authorized-agent-services-india" element={<IndianAuthorizedAgentServicesIndiaMain />} />
           <Route path="/fssai-services" element={<Navigate to="/fssai-consultants-india" replace />} />
-          <Route path="/iaa-services" element={<IndianAuthorizedAgentServicesIndiaMain />} />
+          <Route path="/iaa-services" element={<Navigate to="/indian-authorized-agent-services-india" replace />} />
           <Route path="/legal-metrology" element={<LegalPage />} />
           <Route path="/legal-metrology/" element={<LegalPage />} />
           <Route path="/legal" element={<Navigate to="/legal-metrology" replace />} />
