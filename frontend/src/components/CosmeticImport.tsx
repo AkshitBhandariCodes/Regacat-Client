@@ -48,7 +48,7 @@ const CosmeticImport = () => {
 
       {/* Tabs Section */}
       <div className="container mx-auto px-4 py-8">
-        <Tabs defaultValue="fee-structure" className="w-full">
+        <Tabs defaultValue="overview" className="w-full">
           <TabsList className="grid w-full grid-cols-2 md:grid-cols-5 gap-2 bg-primary text-white p-2 h-auto">
             <TabsTrigger value="overview" className="gap-2">
               <Info className="w-4 h-4" />

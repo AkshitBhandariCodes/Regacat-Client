@@ -95,7 +95,7 @@ const InfoCards = () => {
               </CardContent>
             </Card>
 
-            <div className="space-y-4">
+            <div className="space-y-4 self-start lg:sticky lg:top-24">
               {highlights.map((highlight) => (
                 <Card key={highlight.title} className="border-none shadow-card bg-card">
                   <CardContent className="p-6">
