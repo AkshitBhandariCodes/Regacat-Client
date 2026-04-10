@@ -78,7 +78,7 @@ const Index = () => {
               <strong> cosmetic import license India</strong> workflows. If your business needs import approvals,
               Indian Authorized Agent documentation, or claim-specific compliance reviews, we help you prepare end-to-end files,
               supporting declarations, and submission-ready drafts. Explore our
-              {" "}<Link to="/cdsco-registration" className="text-primary underline underline-offset-4">CDSCO services</Link>,
+              {" "}<Link to="/cdsco-registration" className="text-primary underline underline-offset-4">CDSCO Drug license</Link>,
               {" "}<Link to="/cdsco-import-service" className="text-primary underline underline-offset-4">CDSCO import services</Link>,
               {" "}<Link to="/fssai-consultants-india" className="text-primary underline underline-offset-4">FSSAI consultancy</Link>,
               {" "}<Link to="/medical-device-import-license-india" className="text-primary underline underline-offset-4">medical device registration assistance</Link>,
