@@ -1,16 +1,24 @@
-import "dotenv/config";
 import cors from "cors";
+import dotenv from "dotenv";
 import express from "express";
 import nodemailer from "nodemailer";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+dotenv.config({ path: path.resolve(__dirname, "../.env") });
 
 const app = express();
-const port = Number(process.env.MAIL_API_PORT || 8787);
+const port = Number(process.env.PORT || process.env.MAIL_API_PORT || 8787);
+const appHomeUrl = process.env.APP_HOME_URL || "/";
+const frontendBuildPath = path.resolve(__dirname, "public");
 
 const allowedOrigins = [
   "http://localhost:8080",
   "http://127.0.0.1:8080",
   "https://regacats.in",
-  "https://www.regacats.in",
   ...(process.env.MAIL_ALLOWED_ORIGINS ? process.env.MAIL_ALLOWED_ORIGINS.split(",") : []),
 ].map((origin) => origin.trim());
 
@@ -216,6 +224,43 @@ createLeadRoute("/api/sendMail.php", {
 
 app.get("/api/health", (_req, res) => {
   res.json({ ok: true, service: "mail-api" });
+});
+
+app.get("/api/redirect-home", (_req, res) => {
+  res.redirect(302, appHomeUrl);
+});
+
+app.get(["/server", "/backend", "/api"], (_req, res) => {
+  res.redirect(302, appHomeUrl);
+});
+
+app.use(express.static(frontendBuildPath));
+
+app.get("*", (req, res, next) => {
+  if (req.path.startsWith("/api")) {
+    next();
+    return;
+  }
+
+  res.sendFile(path.join(frontendBuildPath, "index.html"), (error) => {
+    if (!error) {
+      return;
+    }
+
+    if (error.code === "ENOENT") {
+      res.status(500).json({
+        ok: false,
+        message: "Frontend build missing. Run `npm run build` before starting the server.",
+      });
+      return;
+    }
+
+    next(error);
+  });
+});
+
+app.use("/api", (_req, res) => {
+  res.status(404).json({ success: false, message: "API route not found" });
 });
 
 app.listen(port, () => {

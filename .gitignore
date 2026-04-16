@@ -32,3 +32,6 @@ pnpm-debug.log*
 
 # Bun
 **/.bun/
+
+# Frontend build output served by Node
+frontend/server/public/

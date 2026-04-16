@@ -1,25 +1,23 @@
-# Nodemailer Mail API Setup (regacats.in)
+# Node + React Unified Setup (Hostinger-ready)
 
-This server replaces the PHP form handlers and serves equivalent endpoints:
+This server now does all of the following from one Node app:
 
-- `/api/commonLead.php`
-- `/api/contactForm.php`
-- `/api/footerContact.php`
-- `/api/sendDetailedMail.php`
-- `/api/sendDeviceMail.php`
-- `/api/sendFssaiMail.php`
-- `/api/sendMail.php`
+- Serves mail APIs (`/api/...`)
+- Serves built React frontend from `server/public`
+- Redirects backend-entry URLs (`/server`, `/backend`, `/api`) back to home
 
-## 1) Configure environment
+## 1) One common env for frontend + backend
 
-Copy `.env.example` to `.env` in the `server` folder and set real values:
+Create `frontend/.env` from `frontend/.env.example`:
 
 ```bash
-cp server/.env.example server/.env
+cp .env.example .env
 ```
 
-Required keys:
+Important vars:
 
+- `APP_HOME_URL`
+- `MAIL_API_PORT`
 - `SMTP_HOST`
 - `SMTP_PORT`
 - `SMTP_USER`
@@ -27,22 +25,46 @@ Required keys:
 - `MAIL_FROM`
 - `MAIL_TO_PRIMARY`
 
-## 2) Run locally
+## 2) Local development
+
+Frontend dev server:
 
 ```bash
-npm run dev:api
 npm run dev
 ```
 
-Vite proxies `/api` to `http://localhost:8787` in development.
+Mail/API server:
 
-## 3) Deploy on regacats.in
+```bash
+npm run dev:api
+```
 
-1. Run this mail API as a Node process (PM2 or hosting process manager).
-2. Reverse proxy `https://regacats.in/api/*` to `http://127.0.0.1:8787/api/*`.
-3. Keep frontend API calls as `/api/...` (already configured in source).
+## 3) Production build + start
 
-## 4) Smoke test
+Build React into Node server folder:
 
-- `GET /api/health` should return `{ "ok": true, "service": "mail-api" }`.
-- Submit one FSSAI form and one Drug/IAA form and verify recipients receive the lead email.
+```bash
+npm run build
+```
+
+This generates static files in `server/public`.
+
+Start Node server:
+
+```bash
+npm run start
+```
+
+## 4) Hostinger deployment flow
+
+1. Upload/deploy the `frontend` project as your Node app.
+2. Ensure `.env` exists at the root of this `frontend` folder.
+3. Run build command: `npm run build`.
+4. Run start command: `npm run start`.
+5. Point domain to this Node app process/port.
+
+## 5) Smoke test
+
+- `GET /api/health` returns `{ "ok": true, "service": "mail-api" }`
+- `GET /api/redirect-home` redirects to `APP_HOME_URL`
+- Visiting `/server` or `/backend` redirects to your homepage
