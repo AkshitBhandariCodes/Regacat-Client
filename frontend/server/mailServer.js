@@ -234,15 +234,7 @@ app.get(["/server", "/backend", "/api"], (_req, res) => {
   res.redirect(302, appHomeUrl);
 });
 
-app.use(express.static(frontendBuildPath, {
-  setHeaders: (res, filePath) => {
-    if (filePath.endsWith(".js")) {
-      res.setHeader("Content-Type", "application/javascript");
-    } else if (filePath.endsWith(".css")) {
-      res.setHeader("Content-Type", "text/css");
-    }
-  },
-}));
+app.use(express.static(frontendBuildPath));
 
 app.get("*", (req, res, next) => {
   if (req.path.startsWith("/api")) {
