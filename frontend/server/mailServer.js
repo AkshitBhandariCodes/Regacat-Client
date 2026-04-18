@@ -234,11 +234,30 @@ app.get(["/server", "/backend", "/api"], (_req, res) => {
   res.redirect(302, appHomeUrl);
 });
 
-app.use(express.static(frontendBuildPath));
+app.use(
+  express.static(frontendBuildPath, {
+    setHeaders(res, filePath) {
+      if (filePath.includes(`${path.sep}assets${path.sep}`)) {
+        res.setHeader("Cache-Control", "public, max-age=31536000, immutable");
+        return;
+      }
+
+      if (filePath.endsWith("index.html")) {
+        res.setHeader("Cache-Control", "no-cache");
+      }
+    },
+  })
+);
 
 app.get("*", (req, res, next) => {
   if (req.path.startsWith("/api")) {
     next();
+    return;
+  }
+
+  const isAssetRequest = req.path.startsWith("/assets/") || /\.[a-zA-Z0-9]+$/.test(req.path);
+  if (isAssetRequest) {
+    res.status(404).type("text/plain").send("Asset not found");
     return;
   }
 
