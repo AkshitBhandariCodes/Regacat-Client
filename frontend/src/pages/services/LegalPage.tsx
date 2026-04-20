@@ -9,12 +9,14 @@ import { useNavigate } from "react-router-dom";
 import LegalMetrology from "@/pageComps/legalmetrology/pages/LegalMetrology";
 import {LeadPopup}  from "@/components/LeadPopup";
 import ServiceInternalLinks from "@/components/ServiceInternalLinks";
+import SEO from "@/seo/SEO";
 
 const LegalPage = () => {
   const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO title="Legal Metrology Service in India" />
       <TopBar />
       <Navigation onConsultClick={() => navigate("/")} />
       

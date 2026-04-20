@@ -6,12 +6,14 @@ import { Card, CardContent } from "@/components/ui/card";
 import { useNavigate } from "react-router-dom";
 import TeamPage from "@/pageComps/teams/pages/TeamPage";
 import {LeadPopup} from '@/components/LeadPopup';
+import SEO from "@/seo/SEO";
 
 const Team = () => {
   const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO title="Our team" />
       <TopBar />
       <Navigation onConsultClick={() => navigate("/")} />
       

@@ -9,6 +9,7 @@ import { LeadForm } from "@/components/LeadForm";
 import { useState } from "react";
 import ContactPage from "@/pageComps/contacts/pages/ContactPage";
 import  {LeadPopup}  from "@/components/LeadPopup";
+import SEO from "@/seo/SEO";
 
 
 const Contact = () => {
@@ -17,6 +18,7 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO title="Contact us" />
       <TopBar />
       <Navigation onConsultClick={() => setIsFormOpen(true)} />
       

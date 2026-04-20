@@ -6,12 +6,14 @@ import { useNavigate } from "react-router-dom";
 import EPRregistration from "@/pageComps/eprregistration/pages/EPRregistration";
 import {LeadPopup}  from "@/components/LeadPopup";
 import ServiceInternalLinks from "@/components/ServiceInternalLinks";
+import SEO from "@/seo/SEO";
 
 const EPRPage = () => {
   const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO title="EPR Registration Service in India" />
       <TopBar />
       <Navigation onConsultClick={() => navigate("/")} />
       

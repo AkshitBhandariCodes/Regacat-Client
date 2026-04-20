@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 import CDSCODrug from "@/pageComps/cosmeticdrug/pages/CDSCODrug";
 import {LeadPopup}  from "@/components/LeadPopup";
 import ServiceInternalLinks from "@/components/ServiceInternalLinks";
+import SEO from "@/seo/SEO";
 
 
 const CDSCODrugRegistration = () => {
@@ -16,6 +17,7 @@ const CDSCODrugRegistration = () => {
 
   return (
    <div>
+    <SEO title="CDSCO drug import Services in india" />
     <TopBar/>
     <Navigation onConsultClick={() => navigate("/")}/>
     <CDSCODrug/>
