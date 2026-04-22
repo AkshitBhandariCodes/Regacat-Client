@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Helmet } from "react-helmet";
 import Navigation from "@/pageComps/cosmetic-license/components/Navigation";
 import HeroSection from "@/pageComps/cosmetic-license/components/HeroSection";
 import InfoCards from "@/pageComps/cosmetic-license/components/InfoCards";

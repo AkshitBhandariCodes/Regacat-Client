@@ -22,8 +22,6 @@ pnpm-debug.log*
 **/*.tsbuildinfo
 
 # Environment files
-.env
-.env.*
 !.env.example
 
 # IDE/editor
@@ -35,3 +33,4 @@ pnpm-debug.log*
 
 # Frontend build output served by Node
 frontend/server/public/
+config.bat

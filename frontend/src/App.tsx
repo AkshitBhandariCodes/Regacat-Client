@@ -36,7 +36,6 @@ import EPRPage from "./pages/services/EPRPage";
 import LegalPage from "./pages/services/LegalPage";
 
 import NotFound from "./pages/NotFound";
-import SEO from "./seo/SEO";
 import { GlobalConsultWidget } from "./components/GlobalConsultWidget";
 import RouteErrorBoundary from "./components/RouteErrorBoundary";
 
@@ -45,7 +44,6 @@ const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-      <SEO />
       <Toaster />
       <Sonner />
       <BrowserRouter>
