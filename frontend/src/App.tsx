@@ -38,6 +38,7 @@ import LegalPage from "./pages/services/LegalPage";
 import NotFound from "./pages/NotFound";
 import SEO from "./seo/SEO";
 import { GlobalConsultWidget } from "./components/GlobalConsultWidget";
+import RouteErrorBoundary from "./components/RouteErrorBoundary";
 
 const queryClient = new QueryClient();
 
@@ -79,8 +80,22 @@ const App = () => (
           <Route path="/non-specified-foodingredient-approval-india" element={<Navigate to="/non-specified-food-ingredient-approval-india" replace />} />
           <Route path="/non-specified-foodingredient-approval-india/" element={<Navigate to="/non-specified-food-ingredient-approval-india" replace />} />
           <Route path="/foreign-food-manufacturing-facility-registration-india" element={<Navigate to="/foreign-food-manufacturing-facility-registration-in-india" replace />} />
-          <Route path="/foreign-food-manufacturing-facility-registration-in-india" element={<FssaiForeignFoodFacilityService />} />
-          <Route path="/foreign-food-manufacturing-facility-registration-in-india/" element={<Navigate to="/foreign-food-manufacturing-facility-registration-in-india" replace />} />
+          <Route
+            path="/foreign-food-manufacturing-facility-registration-in-india"
+            element={
+              <RouteErrorBoundary>
+                <FssaiForeignFoodFacilityService />
+              </RouteErrorBoundary>
+            }
+          />
+          <Route
+            path="/foreign-food-manufacturing-facility-registration-in-india/"
+            element={
+              <RouteErrorBoundary>
+                <FssaiForeignFoodFacilityService />
+              </RouteErrorBoundary>
+            }
+          />
           <Route path="/vegan-endorsement-india" element={<FssaiVeganEndorsementService />} />
           <Route path="/vegan-endorsement-india/" element={<FssaiVeganEndorsementService />} />
           <Route path="/cdsco-import-service" element={<CdscoImportLicenseService />} />
