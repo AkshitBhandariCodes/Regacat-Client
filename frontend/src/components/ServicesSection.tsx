@@ -132,31 +132,55 @@ export const ServicesSection = ({ onConsultClick }: ServicesSectionProps) => {
                   {/* Back of card */}
                   <div className="absolute w-full h-full backface-hidden bg-primary text-primary-foreground rounded-lg p-6 shadow-lg rotate-y-180 flex flex-col justify-between">
                     <p className="text-sm mb-4">{service.summary}</p>
-                    <Button
-                      variant="secondary"
-                      onClick={() => setSelectedService(service)}
-                      className="w-full bg-white text-primary hover:bg-white/90"
-                    >
-                      Read More
-                    </Button>
-                    {service.href.startsWith("http") ? (
-                      <a href={service.href} target="_blank" rel="noopener noreferrer" className="block">
-                        <Button
-                          variant="outline"
-                          className="w-full mt-2 border-white bg-transparent text-white hover:bg-white hover:text-primary"
-                        >
-                          Visit Service Page
-                        </Button>
-                      </a>
+                    {service.title.includes("GUIDE") ? (
+                      service.href.startsWith("http") ? (
+                        <a href={service.href} target="_blank" rel="noopener noreferrer" className="block mt-auto">
+                          <Button
+                            variant="secondary"
+                            className="w-full bg-white text-primary hover:bg-white/90"
+                          >
+                            View Guide Page
+                          </Button>
+                        </a>
+                      ) : (
+                        <Link to={service.href} className="block mt-auto">
+                          <Button
+                            variant="secondary"
+                            className="w-full bg-white text-primary hover:bg-white/90"
+                          >
+                            View Guide Page
+                          </Button>
+                        </Link>
+                      )
                     ) : (
-                      <Link to={service.href} className="block">
+                      <>
                         <Button
-                          variant="outline"
-                          className="w-full mt-2 border-white bg-transparent text-white hover:bg-white hover:text-primary"
+                          variant="secondary"
+                          onClick={() => setSelectedService(service)}
+                          className="w-full bg-white text-primary hover:bg-white/90"
                         >
-                          Visit Service Page
+                          Read More
                         </Button>
-                      </Link>
+                        {service.href.startsWith("http") ? (
+                          <a href={service.href} target="_blank" rel="noopener noreferrer" className="block">
+                            <Button
+                              variant="outline"
+                              className="w-full mt-2 border-white bg-transparent text-white hover:bg-white hover:text-primary"
+                            >
+                              Visit Service Page
+                            </Button>
+                          </a>
+                        ) : (
+                          <Link to={service.href} className="block">
+                            <Button
+                              variant="outline"
+                              className="w-full mt-2 border-white bg-transparent text-white hover:bg-white hover:text-primary"
+                            >
+                              Visit Service Page
+                            </Button>
+                          </Link>
+                        )}
+                      </>
                     )}
                   </div>
                 </div>
