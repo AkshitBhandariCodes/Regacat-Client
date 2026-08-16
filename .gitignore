@@ -1,37 +1,37 @@
-﻿# OS files
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-
-# Dependencies
-**/node_modules/
-
-# Build outputs
-**/dist/
-**/build/
-**/.cache/
-**/.turbo/
-
-# TypeScript
-**/*.tsbuildinfo
-
-# Environment files
+﻿# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependencies
+**/node_modules/
+
+# Build outputs
+**/dist/
+**/build/
+**/.cache/
+**/.turbo/
+
+# TypeScript
+**/*.tsbuildinfo
+
+# Environment files
+!.env.example
+
+# IDE/editor
+.vscode/
+.idea/
+
+# Bun
+**/.bun/
+
+# Frontend build output served by Node
+frontend/server/public/
+config.bat
 .env
-.env.*
-!.env.example
-
-# IDE/editor
-.vscode/
-.idea/
-
-# Bun
-**/.bun/
-
-# Frontend build output served by Node
-frontend/server/public/
