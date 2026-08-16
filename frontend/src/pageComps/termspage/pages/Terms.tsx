@@ -87,7 +87,6 @@ const Terms = () => {
           name="description" 
           content="Read Regacats' Terms and Conditions governing the use of our website and services. Last updated November 17, 2025." 
         />
-        <link rel="canonical" href="https://regacats.in/terms" />
         <meta property="og:title" content="Terms & Conditions — Regacats" />
         <meta property="og:description" content="Terms and Conditions for using Regacats services and website." />
         <meta property="og:type" content="website" />

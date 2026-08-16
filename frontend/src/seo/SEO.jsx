@@ -67,7 +67,6 @@ export default function SEO({
       <meta name="twitter:image" content={metaImage} />
       {publishedTime && <meta property="article:published_time" content={publishedTime} />}
       {modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
-      <link rel="canonical" href={metaUrl} />
       {jsonLd && (
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       )}

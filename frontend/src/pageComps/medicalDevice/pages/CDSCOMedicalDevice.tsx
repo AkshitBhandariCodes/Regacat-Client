@@ -9,6 +9,7 @@ import { FAQ } from "@/pageComps/medicalDevice/components/CDSCOMedicalDevice/FAQ
 import { CTABanner } from "@/pageComps/medicalDevice/components/CDSCOMedicalDevice/CTABanner";
 import { LeadForm } from "@/components/LeadForm";
 import MedicalDevice from "@/pageComps/medicalDevice/components/CDSCOMedicalDevice/MedicalDevice";
+import { SupplementalContent } from "@/pageComps/medicalDevice/components/CDSCOMedicalDevice/SupplementalContent";
 
 const CDSCOMedicalDevice = () => {
   const [isLeadFormOpen, setIsLeadFormOpen] = useState(false);
@@ -17,6 +18,7 @@ const CDSCOMedicalDevice = () => {
     <div className="min-h-screen bg-background">
       <HeroSection onOpenLeadForm={() => setIsLeadFormOpen(true)} />
       <AboutService />
+      <SupplementalContent />
       <ClassificationGrid />
       <MedicalDevice/>
       <ProcessTimeline />

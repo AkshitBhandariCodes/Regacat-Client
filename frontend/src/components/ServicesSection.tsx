@@ -70,6 +70,22 @@ const services: Service[] = [
     icon: ShieldCheck,
     href: "/legal-metrology",
   },
+  {
+    title: "COSMETIC REGISTRATION IN INDIA | GUIDE",
+    tagline: "Comprehensive guide for cosmetic registration in India including requirements, compliance, and approval process.",
+    summary: "Learn everything you need to know about cosmetic registration in India.",
+    details: "Our guide covers the CDSCO registration process, eligibility, product and document requirements, labeling rules, ingredient standards, fees, timelines, and approval conditions for cosmetics in India.",
+    icon: Sparkles,
+    href: "/cosmetic-registration-india-guide",
+  },
+  {
+    title: "COSMETIC IMPORT REGISTRATION IN INDIA | GUIDE",
+    tagline: "Comprehensive guide on CDSCO cosmetic import license COS-1 and COS-2 requirements.",
+    summary: "Understand the requirements and process for importing cosmetics into India.",
+    details: "This guide provides detailed information on obtaining a cosmetic import license in India, covering both COS-1 and COS-2 processes, documentation, and regulatory compliance for importers.",
+    icon: Sparkles,
+    href: "https://blogs.regacats.in/cdsco-cosmetic-license-for-importer-cos-1-cos-2-guide",
+  },
 ];
 
 interface ServicesSectionProps {
@@ -123,14 +139,25 @@ export const ServicesSection = ({ onConsultClick }: ServicesSectionProps) => {
                     >
                       Read More
                     </Button>
-                    <Link to={service.href} className="block">
-                      <Button
-                        variant="outline"
-                        className="w-full mt-2 border-white bg-transparent text-white hover:bg-white hover:text-primary"
-                      >
-                        Visit Service Page
-                      </Button>
-                    </Link>
+                    {service.href.startsWith("http") ? (
+                      <a href={service.href} target="_blank" rel="noopener noreferrer" className="block">
+                        <Button
+                          variant="outline"
+                          className="w-full mt-2 border-white bg-transparent text-white hover:bg-white hover:text-primary"
+                        >
+                          Visit Service Page
+                        </Button>
+                      </a>
+                    ) : (
+                      <Link to={service.href} className="block">
+                        <Button
+                          variant="outline"
+                          className="w-full mt-2 border-white bg-transparent text-white hover:bg-white hover:text-primary"
+                        >
+                          Visit Service Page
+                        </Button>
+                      </Link>
+                    )}
                   </div>
                 </div>
               </div>

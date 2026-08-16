@@ -5,8 +5,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { FileCheck, ArrowRight, Send } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
-import medicalDeviceVideo from '../../../../assets/videos/medicaldevice.mp4'
-import SEO from '../../../../seo/SEO'
+import medicalDeviceVideo from "../../../../assets/videos/medicaldevice.mp4";
+import SEO from "../../../../seo/SEO";
 
 interface HeroSectionProps {
   onOpenLeadForm: () => void;
@@ -72,8 +72,9 @@ export const HeroSection = ({ onOpenLeadForm }: HeroSectionProps) => {
   return (
     <>
     <SEO
-      title="CDSCO Medical Device Import License (MD-14) Consultant in India"
-      description="Helping global medical device manufacturers get CDSCO Import License (MD-14) in India. Expert consultants for registration, documentation & compliance"
+      title="CDSCO Medical Device Import License Consultant in India | Regacats Solutions"
+      description="Hire CDSCO Medical Device Import License Consultant in India for MD14 filing, documentation, query handling, and faster MD15 approval by Regacats Solutions."
+      keywords="CDSCO Medical Device Import License Consultant in India"
     />
 
     <section className="relative min-h-[700px] flex items-center overflow-hidden">
@@ -87,12 +88,11 @@ export const HeroSection = ({ onOpenLeadForm }: HeroSectionProps) => {
         crossOrigin="anonymous"
         poster="/placeholder.svg"
         className="absolute inset-0 w-full h-full object-cover"
-        style={{ filter: 'brightness(0.7)' }}
+        style={{ filter: "brightness(0.7)" }}
         onLoadedData={() => console.log("Hero video loaded")}
         onError={(e) => console.error("Hero video error", e)}
       >
         <source src={medicalDeviceVideo} type="video/mp4" />
-        
       </video>
 
       {/* Fade Overlay */}
@@ -115,12 +115,13 @@ export const HeroSection = ({ onOpenLeadForm }: HeroSectionProps) => {
             </div>
 
             <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-            CDSCO Medical Device Import License (MD-14, MD-15) Consultant in India
+              CDSCO Medical Device Import License Consultant in India
             </h1>
 
             <p className="text-xl text-white/90 leading-relaxed max-w-xl">
-              Fast-track your medical device approval in India with complete regulatory support —
-              from classification to license issuance.
+              Get complete CDSCO import license support for medical devices in India. Regacats Solutions helps
+              importers, foreign manufacturers, and global brands with MD14 filing, documentation, query handling,
+              and MD15 approval support.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -139,16 +140,24 @@ export const HeroSection = ({ onOpenLeadForm }: HeroSectionProps) => {
               >
                 Learn More
               </Button> */}
-               <Button
-        onClick={onOpenLeadForm}
-      className="
-       bg-accent text-accent-foreground hover:bg-accent/90 shadow-elevated group
-          px-12 py-8 text-xl font-semibold
-  "
->
-  Get Your License Now
-  <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-smooth" />
-</Button>
+              <Button
+                onClick={onOpenLeadForm}
+                className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-elevated group px-10 py-6 text-lg font-semibold"
+              >
+                Get Expert Consultation
+                <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-smooth" />
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                className="border-2 border-white bg-transparent text-white hover:bg-white/20 px-10 py-6 text-lg font-semibold"
+              >
+                <a href="tel:+919211921474">Talk to Our Experts</a>
+              </Button>
+            </div>
+
+            <div className="text-sm text-white/90">
+              contact@regacats.in | +91 9211921474
             </div>
 
             {/* Trust indicators */}

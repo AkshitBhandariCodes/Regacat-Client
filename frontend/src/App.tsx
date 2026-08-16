@@ -3,6 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { Canonical } from "@/seo";
 import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import About from "./pages/About";
@@ -24,6 +25,7 @@ import FssaiForeignFoodFacilityService from "./pages/services/FssaiForeignFoodFa
 import FssaiVeganEndorsementService from "./pages/services/FssaiVeganEndorsementService";
 import CdscoImportLicenseService from "./pages/services/CdscoImportLicenseService";
 import CdscoCosmeticRegistrationIndia from "./pages/services/CdscoCosmeticRegistrationIndia";
+import CdscoCosmeticRegistrationIndiaGuide from "./pages/services/CdscoCosmeticRegistrationIndiaGuide";
 import IndianAuthorizedAgentDrugsService from "./pages/services/IndianAuthorizedAgentDrugsService";
 import IndianAuthorizedAgentMedicalDevicesService from "./pages/services/IndianAuthorizedAgentMedicalDevicesService";
 import IndianAuthorizedAgentCosmeticsService from "./pages/services/IndianAuthorizedAgentCosmeticsService";
@@ -47,6 +49,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <Canonical />
         <ScrollToTop />
         <GlobalConsultWidget />
         <Routes>
@@ -60,6 +63,8 @@ const App = () => (
           <Route path="/cdsco-registration" element={<CDSCORegistration />} />
           <Route path="/cdsco-registration-in-india" element={<CdscoCosmeticRegistrationIndia />} />
           <Route path="/cdsco-registration-in-india/" element={<CdscoCosmeticRegistrationIndia />} />
+          <Route path="/cosmetic-registration-india-guide" element={<CdscoCosmeticRegistrationIndiaGuide />} />
+          <Route path="/cosmetic-registration-india-guide/" element={<CdscoCosmeticRegistrationIndiaGuide />} />
           <Route path="/medical-device-import-license-india" element={<MedicalDeviceLicense />} />
           <Route path="/medical-device-import-license-india/" element={<MedicalDeviceLicense />} />
           <Route path="/fssai-consultants-india" element={<TrademarkFSSAI />} />

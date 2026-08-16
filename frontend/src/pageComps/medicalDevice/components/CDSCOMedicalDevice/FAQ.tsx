@@ -8,6 +8,31 @@ import {
 export const FAQ = () => {
   const faqs = [
     {
+      question: "What does a CDSCO Medical Device Import License Consultant in India do?",
+      answer:
+        "A consultant helps with classification, documentation, MD14 filing, query handling, and MD15 approval support.",
+    },
+    {
+      question: "Do I need a consultant for medical device import licensing?",
+      answer:
+        "You do not need one by law, but a consultant helps reduce errors and improves approval readiness.",
+    },
+    {
+      question: "Can foreign manufacturers hire Regacats Solutions directly?",
+      answer:
+        "Yes. We support foreign manufacturers, Indian importers, and global brands that need medical device import license assistance.",
+    },
+    {
+      question: "What is the difference between MD14 and MD15?",
+      answer:
+        "MD14 is the application, and MD15 is the import license issued after approval.",
+    },
+    {
+      question: "How long does approval take?",
+      answer:
+        "Timelines vary by device, documentation quality, and query responses. Faster preparation usually improves the process.",
+    },
+    {
       question: "What are the key CDSCO Regulatory Requirements for Importing Medical Devices into India?",
       answer: "Key requirements include obtaining an import license from CDSCO regulatory, ensuring compliance with applicable standards, and adhering to post-import obligations. RegaCats can guide you through the complexities of CDSCO regulations for importing medical devices, ensuring compliance with all relevant requirements."
     },
