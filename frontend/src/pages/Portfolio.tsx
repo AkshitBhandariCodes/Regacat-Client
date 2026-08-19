@@ -50,7 +50,7 @@ const servicePages = [
   {
     title: "CDSCO Cosmetic Registration",
     description: "View the dedicated service page for cosmetic registration support in India.",
-    href: "/cdsco-registration-in-india",
+    href: "/cdsco-registration-in-india/",
   },
   {
     title: "Cosmetic Import License",

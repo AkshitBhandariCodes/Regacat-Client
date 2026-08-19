@@ -61,7 +61,7 @@ const App = () => (
           <Route path="/cosmetic-import-license-india" element={<CosmeticImportLicense />} />
           <Route path="/cosmetic-import-license-india/" element={<CosmeticImportLicense />} />
           <Route path="/cdsco-registration" element={<CDSCORegistration />} />
-          <Route path="/cdsco-registration-in-india" element={<CdscoCosmeticRegistrationIndia />} />
+          <Route path="/cdsco-registration-in-india" element={<Navigate to="/cdsco-registration-in-india/" replace />} />
           <Route path="/cdsco-registration-in-india/" element={<CdscoCosmeticRegistrationIndia />} />
           <Route path="/cosmetic-registration-india-guide" element={<CdscoCosmeticRegistrationIndiaGuide />} />
           <Route path="/cosmetic-registration-india-guide/" element={<CdscoCosmeticRegistrationIndiaGuide />} />

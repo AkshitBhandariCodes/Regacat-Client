@@ -36,7 +36,7 @@ const services: Service[] = [
     summary: "Get expert guidance on cosmetic documentation, compliance, and registration pathways for the Indian market.",
     details: "We support cosmetic brands, importers, and authorized Indian entities with documentation review, regulatory strategy, labeling checkpoints, and filing support for cosmetic registration and related CDSCO approvals.",
     icon: Sparkles,
-    href: "/cdsco-registration-in-india",
+    href: "/cdsco-registration-in-india/",
   },
   {
     title: "Medical Device Import License MD14",
