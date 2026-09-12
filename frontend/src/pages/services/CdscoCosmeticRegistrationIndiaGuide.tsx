@@ -304,7 +304,7 @@ const CdscoCosmeticRegistrationIndiaGuide = () => {
                   Cosmetic Registration in India
                 </p>
                 <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-                  CDSCO Cosmetic Registration in India
+                  Cosmetic Registration Process India | CDSCO Requirements
                 </h1>
                 <p className="text-cyan-100 text-lg leading-relaxed">
                   Cosmetic registration in India is governed by the Cosmetics Rules, 2020 and related standards that regulate product identity, labeling, ingredients, documents, fees, timelines, and recordkeeping.
