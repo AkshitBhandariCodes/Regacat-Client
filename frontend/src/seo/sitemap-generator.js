@@ -36,6 +36,7 @@ const pages = [
   { loc: `${siteUrl}/disclaimer`, priority: "0.3", changefreq: "yearly" },
   { loc: `${siteUrl}/terms-and-conditions`, priority: "0.3", changefreq: "yearly" },
   { loc: `${siteUrl}/privacy-policy`, priority: "0.3", changefreq: "yearly" },
+  { loc: `${siteUrl}/cosmetic-registration-india-guide`, priority: "0.9", changefreq: "monthly" },
 ];
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
