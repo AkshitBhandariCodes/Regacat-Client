@@ -13,11 +13,11 @@ const pages = [
   { loc: `${siteUrl}/contact`, priority: "0.9", changefreq: "monthly" },
   { loc: `${siteUrl}/cosmetic-import-license-india`, priority: "0.9", changefreq: "monthly" },
   { loc: `${siteUrl}/cdsco-registration`, priority: "0.9", changefreq: "monthly" },
-  { loc: `${siteUrl}/cdsco-registration-in-india/`, priority: "0.9", changefreq: "monthly" },
+
   { loc: `${siteUrl}/medical-device-import-license-india`, priority: "0.9", changefreq: "monthly" },
   { loc: `${siteUrl}/fssai-consultants-india`, priority: "0.9", changefreq: "monthly" },
   { loc: `${siteUrl}/fssai-nutraceutical-import-consultant-india`, priority: "0.8", changefreq: "monthly" },
-  { loc: `${siteUrl}/fssai-certification/`, priority: "0.8", changefreq: "monthly" },
+
   { loc: `${siteUrl}/fssai-import-assistance-services-india`, priority: "0.8", changefreq: "monthly" },
   { loc: `${siteUrl}/fssai-health-claim-approval-services-india`, priority: "0.8", changefreq: "monthly" },
   { loc: `${siteUrl}/fssai-consultant-nutraceutical-supplement-india`, priority: "0.8", changefreq: "monthly" },
