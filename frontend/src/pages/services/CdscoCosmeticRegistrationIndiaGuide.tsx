@@ -284,7 +284,7 @@ const CdscoCosmeticRegistrationIndiaGuide = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Cosmetic Registration in India: CDSCO Registration Guide"
+        title="Cosmetic Registration Process India | CDSCO Requirements"
         description="Learn everything about Cosmetic Registration in India, including CDSCO Registration, requirements, compliance obligations, approval process"
         canonical={canonical}
         type="website"

@@ -39,7 +39,7 @@ const OverviewSection = () => {
       icon: MapPin,
       title: "6. FSSAI Authorized Agent (India)",
       description: "Indian Authorized Agent support for foreign manufacturers with regulatory representation, submissions, and post-approval compliance.",
-      href: "/indian-authorized-agent-for-fssai-products-india"
+      href: "/indian-authorized-agent-for-fssai-products"
     },
     {
       icon: MapPin,

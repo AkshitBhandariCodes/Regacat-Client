@@ -121,6 +121,20 @@ const faqs = [
   },
 ];
 
+const metaKeywords = [
+  "cdsco registration in india",
+  "cdsco cosmetic registration in india",
+  "cosmetic registration consultant india",
+  "cdsco registration for cosmetic",
+  "cosmetic product registration consultant",
+  "cosmetic license consultant india",
+  "cosmetic compliance consultant india",
+  "cdsco cosmetic import license consultant",
+  "cosmetic registration service",
+  "how to get cosmetic registration in india",
+  "cdsco portal cosmetic registration",
+].join(", ");
+
 const CdscoCosmeticRegistrationIndia = () => {
   const navigate = useNavigate();
   const location = useLocation();
@@ -137,6 +151,7 @@ const CdscoCosmeticRegistrationIndia = () => {
         description="CDSCO cosmetic registration consultant in India for manufacturers and importers. Get expert support for cosmetic registration, labeling, compliance, and approval."
         canonical={canonical}
         type="website"
+        keywords={metaKeywords}
       />
       <TopBar />
       <Navigation onConsultClick={() => navigate("/")} />

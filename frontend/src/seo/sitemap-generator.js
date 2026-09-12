@@ -20,7 +20,7 @@ const pages = [
   { loc: `${siteUrl}/fssai-import-assistance-services-india`, priority: "0.8", changefreq: "monthly" },
   { loc: `${siteUrl}/fssai-health-claim-approval-services-india`, priority: "0.8", changefreq: "monthly" },
   { loc: `${siteUrl}/fssai-consultant-nutraceutical-supplement-india`, priority: "0.8", changefreq: "monthly" },
-  { loc: `${siteUrl}/indian-authorized-agent-for-fssai-products-india`, priority: "0.8", changefreq: "monthly" },
+
   { loc: `${siteUrl}/non-specified-food-ingredient-approval-india`, priority: "0.8", changefreq: "monthly" },
   { loc: `${siteUrl}/foreign-food-manufacturing-facility-registration-in-india`, priority: "0.8", changefreq: "monthly" },
   { loc: `${siteUrl}/vegan-endorsement-india`, priority: "0.8", changefreq: "monthly" },
