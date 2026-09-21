@@ -27,13 +27,13 @@
       "permanent": true
     },
     {
-      "source": "/fssai-certification/",
-      "destination": "/fssai-certification",
+      "source": "/fssai-certification",
+      "destination": "/fssai-certification/",
       "permanent": true
     },
     {
-      "source": "/cdsco-registration-in-india/",
-      "destination": "/cdsco-registration-in-india",
+      "source": "/cdsco-registration-in-india",
+      "destination": "/cdsco-registration-in-india/",
       "permanent": true
     }
   ],
