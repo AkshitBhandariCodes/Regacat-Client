@@ -25,6 +25,16 @@
       "source": "/epr",
       "destination": "/epr-registration",
       "permanent": true
+    },
+    {
+      "source": "/fssai-certification/",
+      "destination": "/fssai-certification",
+      "permanent": true
+    },
+    {
+      "source": "/cdsco-registration-in-india/",
+      "destination": "/cdsco-registration-in-india",
+      "permanent": true
     }
   ],
   "rewrites": [
