@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Canonical } from "@/seo";
 import ScrollToTop from "./components/ScrollToTop";
+import GoogleTagTracker from "./components/GoogleTagTracker";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
@@ -51,6 +52,7 @@ const App = () => (
       <BrowserRouter>
         <Canonical />
         <ScrollToTop />
+        <GoogleTagTracker />
         <GlobalConsultWidget />
         <Routes>
           <Route path="/" element={<Index />} />

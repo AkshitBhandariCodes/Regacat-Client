@@ -4,11 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "dev:api": "node server/mailServer.js",
-    "build": "vite build",
-    "build:dev": "vite build --mode development",
-    "start": "npm run build && node server/mailServer.js",
+    "dev": "node init && vite",
+    "dev:api": "node init && node server/mailServer.js",
+    "build": "node init && vite build",
+    "build:dev": "node init && vite build --mode development",
+    "start": "node init && npm run build && node server/mailServer.js",
     "lint": "eslint .",
     "preview": "vite preview",
     "generate-sitemap": "node src/seo/sitemap-generator.js"
